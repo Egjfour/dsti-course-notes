@@ -21,7 +21,7 @@
 # Additional Resources
 - [Equivalence and Order Relations (Libretexts)](https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2150%3A_Higher_Arithmetic/2%3A_Binary_relations/2.2%3A_Equivalence_Relations%2C_and_Partial_order)
 - [Symmetric Relations (Wikipedia)](https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2150%3A_Higher_Arithmetic/2%3A_Binary_relations/2.2%3A_Equivalence_Relations%2C_and_Partial_order)
-- [Infinimum and Supremum (Wikipedia)](https://en.wikipedia.org/wiki/Infimum_and_supremum
+- [Infinimum and Supremum (Wikipedia)](https://en.wikipedia.org/wiki/Infimum_and_supremum)
 - [Equivalence Classes (Wikipedia)](https://en.wikipedia.org/wiki/Equivalence_class)
 - [Types of Numbers (Wikipedia)](https://en.wikipedia.org/wiki/List_of_types_of_numbers)
 

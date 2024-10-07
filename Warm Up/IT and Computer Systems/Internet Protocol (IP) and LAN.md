@@ -54,3 +54,14 @@
 - The range 1025 to 10240 are where common services bind
 	- Ex: HTTP is on port 80 and HTTPS is on port 443
 	- Anything above 10240 is the "ephemeral range" which is where the client will bind to (local IP Port provided in the [[Networking (TCP and UDP)|TCP envelope]])
+## DNS
+- DNS is a globally distributed service that translates human readable names such as `www.myweb.com` into the numeric IP addresses such as 192.0.2.1 that computers use to connect to each other
+- [[AWS Managed Services|Route 53]] is the AWS managed service that provides this
+	- Domain purchasing, health checks, DNS routing, etc
+	- Also used for multi-region failover
+- Clients generally connect to another type of DNS service known a resolver, or a recursive DNS service
+	- The recursive DNS service caches responses from the authoritative DNS resolver but will progressively work its way to more and more authoritative responses
+- Record Types
+	- A is for IPv4
+	- AAAA is for IPv6
+	- CNAME is to redirect one domain to another (`mysite.com` really points to `mysite.fr`)
