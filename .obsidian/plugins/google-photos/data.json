@@ -1,0 +1,23 @@
+{
+  "clientId": "584879949712-0ghi9h22ec61lr49jhg6fchvkk1jmtn6.apps.googleusercontent.com",
+  "clientSecret": "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",
+  "accessToken": "ya29.a0Ael9sCOnKgkWLL2ZQjkylUwURMfqimQzO6V98XHknpIFMmfzWZcOTWcwMmOA6pT6SGXGLYn9ObOxghijfo89_LVoaLlEtjdalD-G4VqqUFJZL9PTEOOd3HkSt0GqD9c9VPE8iMZgqCefj6bilEjN8qN1J2l0aCgYKARMSARMSFQF4udJhr4HwGXf9DFnmH7Qv997zMg0163",
+  "refreshToken": "",
+  "expires": "2023-03-27T22:11:57-04:00",
+  "thumbnailWidth": 400,
+  "thumbnailHeight": 280,
+  "filename": "YYYY-MM-DD[_google-photo_]HHmmss[.jpg]",
+  "thumbnailMarkdown": "[![]({{local_thumbnail_link}})]({{google_photo_url}}) ",
+  "defaultToDailyPhotos": false,
+  "locationOption": "specified",
+  "locationFolder": "google_image_thumbnails",
+  "locationSubfolder": "photos",
+  "convertPastedLink": true,
+  "getDateFrom": "Note's title",
+  "getDateFromFrontMatterKey": "date",
+  "getDateFromFormat": "YYYY-MM-DD",
+  "showPhotosInDateRange": false,
+  "showPhotosXDaysPast": 7,
+  "showPhotosXDaysFuture": 1,
+  "parseNoteTitle": "YYYY-MM-DD"
+}
