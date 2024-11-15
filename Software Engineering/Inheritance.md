@@ -150,7 +150,7 @@ LineSegment2D::LineSegment2D(Point2D& const pointA, Point2D& const pointB):Strai
 		- Proxies
 		- Automatic resource locking/synchronization
 	```python
-	class FuncCallCounter(type):
+class FuncCallCounter(type):
     """ A Metaclass which decorates all the methods of the
         subclass using call_counter as the decorator
     """

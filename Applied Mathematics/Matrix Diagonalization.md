@@ -12,6 +12,7 @@
 1. Goal is to find numbers that when multiplied with the [[Matrices|identity matrix]] and then multiplied with the original matrix, produce the zero matrix: $det(\textbf A - \lambda \textbf I) = 0$
 2. The original matrix $\textbf A$ and the new diagonal matrix $\textbf D$ have the same determinant
 3. <mark style="background: #FFB86CA6;">The values of the diagonal matrix are simply the eigenvalues of the original matrix</mark>
+4. All square, symmetric matrices have positive eigenvalues
 
 # Definitions
 - Rotation Matrix ($\textbf Q$): The set of all eigenvectors

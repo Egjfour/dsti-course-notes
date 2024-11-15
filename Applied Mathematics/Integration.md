@@ -15,6 +15,8 @@
 # Definitions
 - Integration ($\int$): Inverse process of differentiation
 	- An anti-derivative $F(x)$ is defined for $f(x)$ such that $F'(x) = f(x)$
+- Primitive: The function that is differentiated to $f(x)$
+	- The result of an indefinite integral
 
 # Additional Resources
 - [Integration by Parts](https://www.youtube.com/watch?v=2I-_SV8cwsw)

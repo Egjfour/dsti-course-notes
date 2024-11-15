@@ -69,6 +69,8 @@
 - Example: Let $\textbf A = \begin{pmatrix}2,7\\7,2\end{pmatrix}$
 	- Calculate eigenvalues: $\lambda_1 = 9; \hspace{2mm} \lambda_2 = 5$
 	- Apply $\lambda_1$ to solve for $\textbf x$: $(\textbf A - \lambda_1 \textbf I) \textbf x = \textbf 0$
+		- $-7x_1 + 7x_2 = 9x_1$ AND $7x_1 - 7x_2 = 9x_2$
+			- So the eigenvector is $\begin{pmatrix}7\\16\end{pmatrix}$
 		- $\begin{pmatrix}2-9, 7\\7, 2-9\end{pmatrix}\textbf x = \textbf 0 = \begin{pmatrix}-7,7\\7,-7\end{pmatrix}\textbf x$
 		- Solve: $\left(\begin{array}{cc|c}-7 & 7 & 0\\7 & -7 & 0\end{array}\right) = \begin{pmatrix}\frac{1}{\sqrt 2}\\ \frac{1}{\sqrt 2}\end{pmatrix}$
 	- Apply $\lambda_2$ to solve for $\textbf x$

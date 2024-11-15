@@ -54,6 +54,8 @@
 	- $a_{ij} = a_{ji} \hspace{2mm} \forall i,j$
 	- Denoted as a superscript with "$T$"
 		- Transpose of $\textbf A$: $\textbf A^T$
+	- The transpose of a matrix is defined as a dot product with different vectors
+		- $Ax * y = xA^Ty$: <mark style="background: #FFB86CA6;">Moving a matrix to the other side means to multiply by its transpose</mark>
 ## Matrix Multiplication
 - NOT defined as the element-wise product
 - Instead, this is <mark style="background: #FFB86CA6;">viewed as the linear application of a function</mark>

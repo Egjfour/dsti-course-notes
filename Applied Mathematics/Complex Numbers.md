@@ -39,6 +39,11 @@
 - Operations
 	- Sum of vectors is the same as the sum of complex numbers
 	- Multiplication is treated like a FOIL operation (NOT matrix multiplication or a dot product)
+		- ![[Pasted image 20241115121922.png]]
+		- Example: $z_1 = 4 + 2i$ & $z_2 = 3 - 4i$, find $z_1 z_2$
+			- $(4 + 2i)(3 - 4i) = 12 - 14i +6i -8i^2$
+				- $8i^2 = 8*-1 = -8$
+			- $= 20 - 8i$
 	- Division is not defined without a real number in the denominator
 		- We need to multiply by the conjugate of the denominator
 		- Example: $\frac{1 + 2i}{-3 + 3i} = \frac{(1 + 2i)(-3-3i)}{(-3+3i)(-3-3i)}=\frac{3-9i}{18} = \frac{1}{6} - \frac {1}{2}i$

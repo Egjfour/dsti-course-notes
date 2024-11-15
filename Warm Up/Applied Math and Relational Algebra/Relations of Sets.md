@@ -66,5 +66,5 @@
 - Any set with this relation is partially-ordered. If the relation exists for all elements, it is totally ordered (either the initial rule or contraposition is true)
 	- In a totally ordered set, a is an upper bound if $xRa, \forall x \in A$
 
-
+[[Functions.jpg]]
 
