@@ -5,7 +5,7 @@
 [Class Video Link](URL)
 
 # Summary
-*Polar coordinates are a mechanism for representing the complex number space in a means that is better *
+*Polar coordinates are a mechanism for representing the [[Complex Numbers|complex number]] space in a means that is better-suited for mathematical operations such as multiplication and division. The polar coordinates represent the complex number space as a length of the vector and an angle between the vector and the real number axis (x-axis). To calculate the polar coordinates, we use the normalized vector alongside trigonometric properties of the sine and cosine functions. Euler also provides a mechanism to represent these coordinates: $||z||e^{i\pi}$. Using this representation, multiplication and division of complex numbers becomes trivial.*
 
 # Key Takeaways
 1. The polar coordinates are used to express [[Complex Numbers|complex numbers]]
@@ -15,7 +15,7 @@
 5. $sin$ and $cos$ are periodic functions with periods of $2\pi$
 
 # Definitions
-- Modulus of z: $|\textbf z|$ = $\sqrt{\textbf z \cdot \bar{\textbf z}} = \sqrt{\textbf x^2 + \textbf y^2}$ 
+- Modulus of z: $||\textbf z||$ = $\sqrt{\textbf z \cdot \bar{\textbf z}} = \sqrt{\textbf x^2 + \textbf y^2}$ 
 	- Simply the norm of $\textbf z$
 - Argument of z: The angle between the real axis and z ($\theta$)
 
@@ -73,10 +73,10 @@
 			- So, $\theta = \frac{\pi}{3}$
 		- Polar Coordinates = $(2, \frac{\pi}{3})$
 - Convert FROM polar
-	- $x = |z| * cos(\theta)$ - Modulus of the complex number times cosine(argument) = *real part*
-	- $y = |z| * sin(\theta)$ - Modulus of the complex number times sine(argument) = *imaginary part*
+	- $x = ||z|| * cos(\theta)$ - Modulus of the complex number times cosine(argument) = *real part*
+	- $y = ||z|| * sin(\theta)$ - Modulus of the complex number times sine(argument) = *imaginary part*
 	- Example: Given polar coordinates (2, $\frac{\pi}{3}$), find the cartesian coordinates
-		- $|z| * (cos(\theta) + isin(\theta)) = 2(cos(\frac{\pi}{3}) + isin(\frac{\pi}{3}))$
+		- $||z|| * (cos(\theta) + isin(\theta)) = 2(cos(\frac{\pi}{3}) + isin(\frac{\pi}{3}))$
 			- $cos(\frac{\pi}{3}) = \frac{\sqrt 3}{2}$
 			- $sin(\frac{\pi}{3}) = \frac{1}{2}$
 		- So, $\begin{pmatrix}\frac{\sqrt 3}{2} * 2\\ \frac{1}{2} *2\end{pmatrix} = \begin{pmatrix}\sqrt 3\\ 1\end{pmatrix}$
@@ -84,15 +84,15 @@
 ## Complex Exponential Form
 - Complex exponential form is derived from Euler's identity and uses the polar coordinates to express
 - The exponential piece always has a modulus of 1
-	- $|e^{i \hspace{1mm}*\hspace{1mm} anything}| = 1$
+	- $||e^{i \hspace{1mm}*\hspace{1mm} anything}|| = 1$
 - This is represented using the modulus $|z|$ and argument $\theta$ 
 	- Formula: $|z|e^{i\pi}$
 - <mark style="background: #FFB86CA6;">Allows for much easier multiplication and division of complex numbers</mark>
 	- Since multiplication of two exponents of the same base is just addition of the exponents
 		- Example: $e^{i\theta_1}e^{i\theta_2} = e^{i\theta_1 + i\theta_2} = e^{i(\theta_1 + \theta_2)}$
-		- $z_1 * z_2 = (|z_1| * |z_2|) * e^{i(\theta_1 + \theta_2)}$
+		- $z_1 * z_2 = (||z_1|| * ||z_2||) * e^{i(\theta_1 + \theta_2)}$
 	- Division is subtraction of the exponents with the same base
-		- $\frac{z_1}{z_2} = \frac{|z_1|e^{i\theta_1}}{|z_2|e^{i\theta_2}}= \frac{|z_1|}{z_2}e^{i(\theta_1 - \theta_2)}$
+		- $\frac{z_1}{z_2} = \frac{||z_1||e^{i\theta_1}}{||z_2||e^{i\theta_2}}= \frac{||z_1||}{z_2}e^{i(\theta_1 - \theta_2)}$
 ## Properties to Remember
 - Multiples of $2\pi$ get us to the same spot, so $25\pi$ = $\pi$ since $25\pi = 24\pi * \pi$
 - $e^{i\pi} = -1$

@@ -5,7 +5,7 @@
 [Class Video Link](URL)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*Complex numbers are a superset of the set of real numbers that account for $\sqrt{-1}$ which does not exist on the real number plane. In the complex number space, $i$ defines $\sqrt{-1}$, and such numbers are represented as a [[Vectors|vector]] in $\mathbb R^2$ or as the sum of a real and imaginary component. Operations on complex numbers are similar to vector operations with an exception of multiplication and division. These numbers show up when calculating the eigenvalues of a non-symmetric matrix.*
 
 # Key Takeaways
 1. A [[Matrices|non-symmetric matrix]] will have complex roots when calculating [[Eigenvalues and Eigenvectors|eigenvalues]]
@@ -15,7 +15,7 @@
 5. Multiplying complex numbers includes both a scale ([[Trigonometry and Polar Coordinates|modulus]]) and rotation
 
 # Definitions
-- Complex number: A superset of the real numbers $\mathbb R$ which define negatives for square roots
+- Complex number: A superset of the [[Real Numbers, Real Sequences, and Limits|real numbers]] $\mathbb R$ which define negatives for square roots
 - Conjugate of a Complex Number: Same number with the opposite sign on the imaginary part
 
 # Additional Resources
