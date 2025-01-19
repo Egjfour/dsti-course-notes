@@ -1,6 +1,6 @@
-|                             Course Name                             |    Topic    |     Professor      |        Date        |    Tags     |
-| :-----------------------------------------------------------------: | :---------: | :----------------: | :----------------: | :---------: |
-| **Foundations of Statistical Analysis and Machine Learning Part 1** | Probability | Christophe Bécavin | 14-15 janvier 2025 | #Statistics |
+|                             Course Name                             |    Topic    |     Professor      |        Date        |          Tags          |
+| :-----------------------------------------------------------------: | :---------: | :----------------: | :----------------: | :--------------------: |
+| **Foundations of Statistical Analysis and Machine Learning Part 1** | Probability | Christophe Bécavin | 14-15 janvier 2025 | #Statistics #SetTheory |
 
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250114%5F095131%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eb0f1ed8c%2D56ad%2D47f3%2D8945%2D9e7c7c39a16f)
 

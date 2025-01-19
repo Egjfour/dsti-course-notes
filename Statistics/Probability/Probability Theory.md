@@ -1,6 +1,6 @@
-|                             Course Name                             |    Topic    |     Professor      |        Date        |    Tags     |
-| :-----------------------------------------------------------------: | :---------: | :----------------: | :----------------: | :---------: |
-| **Foundations of Statistical Analysis and Machine Learning Part 1** | Probability | Christophe Bécavin | 14-15 janvier 2025 | #Statistics |
+|                             Course Name                             |    Topic    |     Professor      |      Date       |          Tags          |
+| :-----------------------------------------------------------------: | :---------: | :----------------: | :-------------: | :--------------------: |
+| **Foundations of Statistical Analysis and Machine Learning Part 1** | Probability | Christophe Bécavin | 14 janvier 2025 | #Statistics #SetTheory |
 
 [Class Video Link](URL)
 

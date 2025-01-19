@@ -56,7 +56,7 @@ WHERE NOT EXISTS(
 - An existence query will ALWAYS be the optimal way to answer the question "Are there any X that are not found in Y"
 
 ## Additional Example (Standard, Inner Query, Existence Query)
-- Find all orders that have not yet invoices
+- Find all orders that have not yet invoiced
 ```sql
 -- Question: Find all orders that have not yet invoiced
 -- Version 1: With a Left Outer Join
