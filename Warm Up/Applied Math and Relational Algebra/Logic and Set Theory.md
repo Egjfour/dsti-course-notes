@@ -16,6 +16,7 @@
 - Reciprocal: The inverse of an implication
 	- If (A) $\implies$ (B), then the reciprocal is (B) $\implies$ (A) which may not necessarily be true
 - Empty Set ($\emptyset$): A set with zero elements contained within
+- Cardinality ($|A|$): The size of a set (A)
 
 # Additional Resources
 - [Introductory Set Theory - University of Houston](https://www.math.uh.edu/~dlabate/settheory_Ashlock.pdf)
@@ -62,3 +63,4 @@ Proof:
 	- Example: E = {1, 2, 3}, P(E) = {{1}, {2}, {3}, {1,2}, {2,3}, {1,3}, {1,2,3}, {$\emptyset$}}
 	- The cardinality of the parts of a set is 2^cardinality of the original set
 	 ![[Pasted image 20240508094820.png]]
+

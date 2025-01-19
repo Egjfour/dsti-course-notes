@@ -47,5 +47,5 @@
 		- a = 1, b = $\frac{1}{4}$, c = $-\frac{1}{2}$
 ### Using the Determinant
 - An inverse can be easily found if we know the determinant
-	- $\textbf A^{-1} = \frac{1}{det(\textbf A)}\textbf C^T$
+	- $\textbf A^{-1} = \frac{1}{det(\textbf A)}\textbf C^T_A$
 	- We multiply the [[Matrices|transposed]] [[Matrix Determinant|cofactor matrix]] with the inverse of the [[Matrix Determinant|determinant]] of $\textbf A$

@@ -42,7 +42,7 @@
 		- The sum of the eigenvalues is the trace
 - In $\mathbb R^2$ the trace and determinant are in the [[Eigenvalues and Eigenvectors|polynomial expression]] that solves $\lambda$
 	- $\lambda^2 - 4\lambda - 45 = 0$
-	- $tr(\textbf A) = -4$
+	- $tr(\textbf A) = 4$
 	- $det(\textbf A) = -45$
 ## Handling Non-Square Matrices
 - Calculating [[Eigenvalues and Eigenvectors|eigenvalues and eigenvectors]] requires matrices that are square

@@ -17,6 +17,8 @@
 - First Bisector: The 45-degree line through the origin
 - Bounded: A set that has both a lower (infinimum) and upper (supremum) bound
 - <mark style="background: #FFB86CA6;">Relative Numbers: Integers</mark>
+- Omega ($\omega$): The universe of all elements from the result of a set
+	- {$\omega$: $\omega \in \mathbb Z$} acts as a lambda function to generate the set of all integers
 
 # Additional Resources
 - [Equivalence and Order Relations (Libretexts)](https://math.libretexts.org/Courses/Mount_Royal_University/MATH_2150%3A_Higher_Arithmetic/2%3A_Binary_relations/2.2%3A_Equivalence_Relations%2C_and_Partial_order)
@@ -66,5 +68,10 @@
 - Any set with this relation is partially-ordered. If the relation exists for all elements, it is totally ordered (either the initial rule or contraposition is true)
 	- In a totally ordered set, a is an upper bound if $xRa, \forall x \in A$
 
-[[Functions.jpg]]
+## Subsets and Equivalence
+- Given 2 sets, A and B
+	- $A \subset B \Leftrightarrow (\omega \in A \implies \omega \in B)$
+		- A is included in B and/or A is a subset of B
+	- $A=B \Leftrightarrow A \subset B$ and $B \subset A$
+		- A is equal to B, so both are a subset of each other
 

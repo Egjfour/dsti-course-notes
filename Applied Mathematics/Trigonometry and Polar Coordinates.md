@@ -77,10 +77,10 @@
 	- $y = ||z|| * sin(\theta)$ - Modulus of the complex number times sine(argument) = *imaginary part*
 	- Example: Given polar coordinates (2, $\frac{\pi}{3}$), find the cartesian coordinates
 		- $||z|| * (cos(\theta) + isin(\theta)) = 2(cos(\frac{\pi}{3}) + isin(\frac{\pi}{3}))$
-			- $cos(\frac{\pi}{3}) = \frac{\sqrt 3}{2}$
-			- $sin(\frac{\pi}{3}) = \frac{1}{2}$
-		- So, $\begin{pmatrix}\frac{\sqrt 3}{2} * 2\\ \frac{1}{2} *2\end{pmatrix} = \begin{pmatrix}\sqrt 3\\ 1\end{pmatrix}$
-		- Thus, $z = \sqrt 3 + i$
+			- $cos(\frac{\pi}{3}) = \frac{1}{2}$
+			- $sin(\frac{\pi}{3}) = \frac{\sqrt 3}{2}$
+		- So, $\begin{pmatrix}\frac{1}{2} * 2\\ \frac{\sqrt 3}{2} *2\end{pmatrix} = \begin{pmatrix}1\\ \sqrt 3\end{pmatrix}$
+		- Thus, $z = 1 + \sqrt{3i}$
 ## Complex Exponential Form
 - Complex exponential form is derived from Euler's identity and uses the polar coordinates to express
 - The exponential piece always has a modulus of 1

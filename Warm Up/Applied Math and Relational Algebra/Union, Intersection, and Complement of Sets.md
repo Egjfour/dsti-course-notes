@@ -49,6 +49,13 @@
 ## Complementary Sets
 - Any element "x" in a set E that is not a member of set A
 	- $C_E A = {x \in E, x \notin A}$
+	- $A^C =${$\omega: \omega \notin A$} - The complement of set A is the universe of elements not in A 
 - The complement of the empty set is the full set and the complement of the full set is the empty set: $C_E \emptyset = E$ AND $C_E E = \emptyset$
 - The complement of the complement of a subset is the subset $C_E C_E A = A$
 ![[Complementary Sets Diagram.jpg]]
+## De Morgan's Laws
+- <mark style="background: #FFB86CA6;">The complement of a relation between two sets is equal to the opposite relation of the complements of the same sets</mark>
+	- Example: NOT(A & B) = NOT A **or** NOT B
+	- This is a very useful property to remember when filtering datasets
+- $(A \cup B)^C = A^C \cap B^C$
+- $(A \cap B)^C = A^C \cup B^C$

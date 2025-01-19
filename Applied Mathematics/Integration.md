@@ -19,7 +19,8 @@
 	- The result of an indefinite integral
 
 # Additional Resources
-- [Integration by Parts](https://www.youtube.com/watch?v=2I-_SV8cwsw)
+- [Integration by Parts](https://www.youtube.com/watch?v=KKg88oSUv0o)
+- [Integration by Parts - DI Method](https://www.youtube.com/watch?v=2I-_SV8cwsw)
 - [U-Substitution](https://www.youtube.com/watch?v=8B31SAk1nD8)
 
 # Notes

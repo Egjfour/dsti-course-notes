@@ -46,4 +46,4 @@
 - To find a min/max of $f$,
 	- $\nabla f = \textbf 0$ ; <mark style="background: #FFB86CA6;">ALL the first order conditions must be 0</mark>
 	- The <mark style="background: #FFB86CA6;">entire hessian matrix must be positive (minimum) or negative (maximum)</mark>
-		- Since it is symmetric, we can just check the (*sign of*) eigenvalues
+		- Since it is symmetric, we can just check the (*sign of*) [[Eigenvalues and Eigenvectors|eigenvalues]]

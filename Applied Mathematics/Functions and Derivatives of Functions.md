@@ -23,7 +23,7 @@
 	- $f(\alpha x) = \alpha f(x)$, $\forall \alpha \in \mathbb R, \forall x$: A function of a constant times x is the same as that constant times the output
 - Affine Functions: Linear functions that contain and intercept
 - [[Continuity & Derivability|Derivative]]: $f'(x) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$
-- Partial Derivative: In a multivariable function (e.g., $f(x,y) = SomeFormula$), the partial derivative is the derivative of the function only considering one of the variables and treating the others as constant terms
+- Partial Derivative: In a multivariable function (e.g., $f(x,y) = Some\hspace{1.5mm}Formula$), the partial derivative is the derivative of the function only considering one of the variables and treating the others as constant terms
 - Young's Theorem: Cross partial derivatives are always equal
 	- Ex: $\frac{\partial ^2 f(x,y)}{\partial x \partial y}$ = $\frac{\partial ^2f(x,y)}{\partial y \partial x}$
 
