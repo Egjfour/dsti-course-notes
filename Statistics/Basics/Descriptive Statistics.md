@@ -2,7 +2,7 @@
 | :------------------------------------------------------------: | :-------------------------------------------: | :----------------: | :-------------: | :---------: |
 | **Foundations of Statistical Analysis and Machine Learning 1** | Univariate and Multivariate Descriptive Stats | Christophe Bécavin | 13 janvier 2025 | #Statistics |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250113%5F095353%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E552f191e%2D6841%2D439e%2Da247%2D672ece766a97)
 
 # Summary
 *Descriptive statistics are used to summarize, visualize, and understand individual (univariate) sets of data, and are used to compare joint distributions of multivariate sets of data. Common statistics to examine include the mean and median which express position. The mean also serves as the first moment for data with axes of variability and symmetry representing higher order moments.*
