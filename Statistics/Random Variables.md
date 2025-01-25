@@ -2,10 +2,10 @@
 | :----------------------------------------------------------: | :------------------------: | :----------------: | :----------------: | :---------: |
 | **Foundations of Statistical Analysis and Maching Learning** | Distributions of Variables | Christophe Bécavin | 15-16 janvier 2025 | #Statistics |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250116%5F095107%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E00f8464c%2D5165%2D473e%2Dba3a%2D6418387d76cf)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*Random variables are the mapping between events that can happen in the physical world and the real number space which allows for effective measurement. Random variables are also distributed much like probability.*
 
 # Key Takeaways
 1. Random variables are the link between the possible outcomes ($\Omega$) and the events

@@ -1,11 +1,11 @@
-|   Course Name    | Topic | Professor |        Date        |    Tags     |
-| :--------------: | :---: | :-------: | :----------------: | :---------: |
-| **Name in Bold** | Topic | Professor | 15-16 janvier 2025 | #Statistics |
+|                             Course Name                             |           Topic           |     Professor      |        Date        |    Tags     |
+| :-----------------------------------------------------------------: | :-----------------------: | :----------------: | :----------------: | :---------: |
+| **Foundations of Statistical Analysis and Machine Learning Part 1** | Probability Distributions | Christophe Bécavin | 15-16 janvier 2025 | #Statistics |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250116%5F095107%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E00f8464c%2D5165%2D473e%2Dba3a%2D6418387d76cf)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*Distributions allow us to express the shape of the expectations around an event as a real number space. Every event has a cumulative distribution function which represents the likelihood that the random variable for the event is less than or equal to a given value. For specific values of probability given a point, we use the probability mass function for discrete variables and the probability density function for continuous variables. Many of the same concepts from [[Probability Theory|probability theory]] related to independence apply as well.*
 
 # Key Takeaways
 1. Probability distributions are able to be plotted since they are in the real number space $\mathbb R$

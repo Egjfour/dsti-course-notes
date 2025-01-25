@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistics/Distributions of Probability and Random Variables.md",
+                "file": "Statistics/Basics/Descriptive Statistics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Distributions of Probability and Random Variables"
+              "title": "Descriptive Statistics"
             }
           }
         ]
@@ -175,12 +175,22 @@
   },
   "active": "319196ce0853b5de",
   "lastOpenFiles": [
-    "Statistics/Random Variables.md",
-    "Statistics/Distributions of Probability and Random Variables.md",
-    "Statistics/Probability/Conditional Probability and Independence.md",
-    "Statistics/Basics/Descriptive Statistics.md",
     "Statistics/Basics/Properties of Sums and Products.md",
+    "Statistics/Probability/Conditional Probability and Independence.md",
+    "Statistics/Probability/Probability Theory.md",
     "Statistics/Convergence.md",
+    "Statistics/Distributions of Probability and Random Variables.md",
+    "Statistics/Random Variables.md",
+    "google_image_thumbnails/Pasted image 20250125110432.png",
+    "Statistics/Basics/Descriptive Statistics.md",
+    "Cloud Computing (AWS)/Identity and Access Management (IAM).md",
+    "Cloud Computing (AWS)/Computation (EC2, Lambda, Containers).md",
+    "NoSQL and Graph Databases/MongoDB.md",
+    "NoSQL and Graph Databases/Cypher Query Language.md",
+    "Cloud Computing (AWS)/AWS Managed Services.md",
+    "Applied Mathematics/Matrix Inverse.md",
+    "Applied Mathematics/Matrices.md",
+    "Applied Mathematics/Complex Numbers.md",
     "Applied Mathematics/Vectors.md",
     "Warm Up/Applied Math and Relational Algebra/Real Functions of a Real Variable.md",
     "Warm Up/Applied Math and Relational Algebra/Continuity & Derivability.md",
@@ -191,16 +201,6 @@
     "Software Engineering/Data Structures.md",
     "Software Engineering/Inheritance.md",
     "Software Engineering/Object-Oriented Design.md",
-    "Software Engineering/Pointers & References.md",
-    "Software Engineering/Polymorphism.md",
-    "Software Engineering/Programming Languages.md",
-    "Software Engineering/Python Classes.md",
-    "Software Engineering/Visual Studio and Code Organization.md",
-    "NoSQL and Graph Databases/Cypher Query Language.md",
-    "NoSQL and Graph Databases/MongoDB.md",
-    "NoSQL and Graph Databases/Neo4j.md",
-    "Statistics/Probability/Probability Theory.md",
-    "Warm Up/Applied Math and Relational Algebra/Logic and Set Theory.md",
     "google_image_thumbnails/Pasted image 20250119140751.png",
     "google_image_thumbnails/Pasted image 20250119134051.png",
     "google_image_thumbnails/Pasted image 20250119134027.png",
@@ -210,7 +210,6 @@
     "google_image_thumbnails/Pasted image 20250119121559.png",
     "google_image_thumbnails/Pasted image 20250119121503.png",
     "google_image_thumbnails/Pasted image 20250119121403.png",
-    "google_image_thumbnails/Pasted image 20250119091824.png",
     "Statistics/Probability",
     "Statistics/Basics",
     "Statistics/Probability",
