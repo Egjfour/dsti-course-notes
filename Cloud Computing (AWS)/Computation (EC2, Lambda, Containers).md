@@ -134,7 +134,7 @@
 - Lambda functions
 	- Run small compute jobs with low time and memory needs
 		- Max 15 minutes and 10 GB
-	- Works synchronously (lambda service runs function and waits for a response) or asynchronously (lambda service places the even in an internal queue with an error queue as well)
+	- Works synchronously (lambda service runs function and waits for a response) or asynchronously (lambda service places the event in an internal queue with an error queue as well)
 	- Lambda layers are zip file archives that contain supplementary code or data (libraries, custom runtimes, or config files)
 - Containers
 	- Long or memory-intensive workloads are much cheaper in containers

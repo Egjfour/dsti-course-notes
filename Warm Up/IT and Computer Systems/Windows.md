@@ -1,6 +1,6 @@
-|        Course Name        |          Topic           |   Professor   |  Date   |             Tags              |
-| :-----------------------: | :----------------------: | :-----------: | :-----: | :---------------------------: |
-| **Computer Systems Labs** | Windows Operating System | Clément Ziane | 4/16/23 | #Windows #ComputerEngineering |
+|        Course Name        |          Topic           |   Professor   |  Date   |         Tags         |
+| :-----------------------: | :----------------------: | :-----------: | :-----: | :------------------: |
+| **Computer Systems Labs** | Windows Operating System | Clément Ziane | 4/16/23 | #ComputerEngineering |
 
 [Class Video Link](https://learn.dsti.institute/mod/url/view.php?id=12734)
 

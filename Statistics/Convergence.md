@@ -19,6 +19,8 @@
 
 # Additional Resources
 - [Proof of the Central Limit Theorem](https://medium.com/@oguo/proof-of-the-central-limit-theorem-214813be6e2c)
+- [Weak vs Strong Law of Large Numbers](https://math.stackexchange.com/questions/2024255/what-is-the-difference-between-the-weak-and-strong-law-of-large-numbers)
+- [Almost-Sure Convergence (and general convergence)](https://www.probabilitycourse.com/chapter7/7_2_7_almost_sure_convergence.php)
 
 # Notes
 ## Convergence in Distribution
@@ -41,7 +43,8 @@
 ## Law of Large Numbers
 - $\underset{n \to \infty}{lim} P(|\bar{x}_n - \mu| < \epsilon) = 1, \forall \epsilon \in \mathbb R^+$
 	- As the sample size increases, the probability that the sample average deviates from the expected value $\mu$ by more than $\epsilon$ becomes increasingly small
-- This implies [[Probability Theory|almost-sure convergence]]
+- This implies [[Probability Theory|almost-sure convergence]] in the Strong Law of Large Numbers
+	- The Weak Law of Large Numbers only implies convergence in probability
 - Central Limit Theorem
 	- $\sqrt n (\bar X_n - \mu) \overset{d}{\to} \mathcal N(0, \sigma^2)$ as $n \to \infty$
 	- The difference between sample means from a sequence of random variables and the true mean converges in distribution to a centered normal distribution as the sample sizes get sufficiently large

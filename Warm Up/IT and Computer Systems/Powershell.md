@@ -1,6 +1,6 @@
-|        Course Name        |   Topic    |   Professor   |  Date   |   Tags   |
-| :-----------------------: | :--------: | :-----------: | :-----: | :------: |
-| **Computer Systems Labs** | Powershell | Clément Ziane | 4/16/23 | #Windows |
+|        Course Name        |   Topic    |   Professor   |  Date   |     Tags     |
+| :-----------------------: | :--------: | :-----------: | :-----: | :----------: |
+| **Computer Systems Labs** | Powershell | Clément Ziane | 4/16/23 | #Programming |
 
 
 [Class Video Link](https://learn.dsti.institute/mod/url/view.php?id=12747)

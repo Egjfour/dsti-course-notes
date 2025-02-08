@@ -62,6 +62,8 @@
 	- [[Random Variables|Support]] is binary
 - Binomial (Discrete): Tossing a coin multiple times
 	- Repeated trials of a binary event
+	- Expected value = number of trials * probability of success
+		- $E[X] = np$
 - Poisson (Discrete): Counting the number of people in a store
 - Normal (Continuous): Grades
 	- Standard normal has an [[Random Variables|expected value]] of 0 and a variance/standard deviation of 1

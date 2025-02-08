@@ -1,6 +1,7 @@
-| Course Name  |         Topic         | Professor |     Date      |             Tags              |
-| :----------: | :-------------------: | :-------: | :-----------: | :---------------------------: |
-| **Clean IT** | Creating a Windows VM | Sebastien | 08 April 2024 | #Windows #ComputerEngineering |
+| Course Name  |         Topic         | Professor |     Date      |         Tags         |
+| :----------: | :-------------------: | :-------: | :-----------: | :------------------: |
+| **Clean IT** | Creating a Windows VM | Sebastien | 08 April 2024 | #ComputerEngineering |
+|              |                       |           |               |   #CloudComputing    |
 
 [Class Video Link](https://learn.dsti.institute/mod/url/view.php?id=17651)
 

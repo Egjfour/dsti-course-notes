@@ -1,6 +1,6 @@
-|       Course Name        |          Topic           | Professor |      Date      |  Tags  |
-| :----------------------: | :----------------------: | :-------: | :------------: | :----: |
-| **Computer System Labs** | Linux and Bash Scripting |  Clément  | Date of course | #Linux |
+|       Course Name        |          Topic           | Professor |      Date      |         Tags          |
+| :----------------------: | :----------------------: | :-------: | :------------: | :-------------------: |
+| **Computer System Labs** | Linux and Bash Scripting |  Clément  | Date of course | #ComputerEngineering  |
 
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/ronald_fisher_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fronald%5Ffisher%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FS24%2DWarmUp%20%2D%20One%2DTime%2DLink%2D20240417%5F092420%2DMeeting%20Recording%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0=&ga=1)
 
