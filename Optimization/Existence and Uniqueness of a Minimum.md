@@ -10,6 +10,7 @@
 # Key Takeaways
 1. The corollary of the Weierstrass Theorem allows us to prove the existence of a minimum
 2. Convexity is the condition which allows us to demonstrate the uniqueness of a minimum
+3. Existence of a minimum requires a continuous function $J$ on a closed, non-empty set with either $J(v) \to \infty \textrm{ as } ||v|| \to \infty$ or $K \subset V$ bounded or $J$ is alpha convex
 
 # Definitions
 - Closed Set: A set which includes its boundary
