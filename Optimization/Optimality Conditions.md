@@ -11,7 +11,7 @@
 1. When $\Omega$ is the full domain ($\Omega = \mathbb R^2$), we are finding the optimum with no constraints
 2. Euler's equation is used when we are operating on an open subset (or no constraints) and Euler's inequality is used when we are operating on a closed, convex subset
 3. Euler's equation states that the gradient must be the zero vector if we are at a local extremum
-4. Euler's equation/inequality are necessary conditions in the general case and are necessary and sufficient conditions in the [[Convexity and Convex Optimization|convex]] case
+4. Euler's equation/inequality are necessary conditions in the general case and are necessary and sufficient conditions in the [[Convexity|convex]] case
 5. It is necessary that the hessian matrix is positive at a local minimum
 # Definitions
 - First-Order Condition: A condition which involves the gradient of a function
@@ -38,7 +38,7 @@
 	- Proof is that there is a bowl centered on $u$ in $\Omega$ which represents a neighborhood around $u$ and all points in that neighborhood have $J(u + \theta v) \ge J(u)$
 - Proposition 2
 	- Applies to constrained optimization problems where the feasible set is convex
-	- Let $V = \mathbb R^n$ and $K$ be a [[Convexity and Convex Optimization|convex subset]] of $V$
+	- Let $V = \mathbb R^n$ and $K$ be a [[Convexity|convex subset]] of $V$
 	- If $J$ has a local minimum on $K$ at point $u$, the $(J'(u), v-u) \ge 0, \forall v\in k$
 		- Known as Euler's Inequality
 		- Ensures that moving from point $u$ to another point $v \in K$ does not decrease the value of $J$

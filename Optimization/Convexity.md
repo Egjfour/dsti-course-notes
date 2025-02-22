@@ -2,7 +2,7 @@
 | :-------------------------: | :-------: | :----------: | :-------------: | :--: |
 | **Continuous Optimization** | Convexity | Jacques Blum | 21 janvier 2025 |      |
 
-[Class Video Link 1](https://learn.dsti.institute/mod/url/view.php?id=22609)
+[Class Video Link](https://learn.dsti.institute/mod/url/view.php?id=22609)
 
 # Summary
 *Convexity is a critical topic in optimization because convex functions allow for much simpler and exact methods of solving. Convexity of a set means that there are no two points in the set for which the chord between the points goes outside the set. Convexity of a function is different and comes in 3 forms which are in increasing order of strength: convexity, strict convexity, and alpha convexity. We can use the second-order Gâteaux derivative to identify what level (if any) of convexity a given function displays.*
@@ -23,6 +23,7 @@
 
 # Additional Resources
 - [Convexity PDF (Stanford)](https://ai.stanford.edu/~gwthomas/notes/convexity.pdf)
+- [Convexity and the Principle of Duality Video](https://www.youtube.com/watch?v=d0CF3d5aEGc)
 
 # Notes
 ## Convexity

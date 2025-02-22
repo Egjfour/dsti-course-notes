@@ -25,6 +25,7 @@
 - Local Optimum: A point $u$ is an optimum if there is a neighborhood of points around $u, \mathcal N(u)$ such that $J(u) \le J(v), \forall v \in \mathcal N(u)$
 
 # Additional Resources
+- [What is Mathematical Optimization Video](https://www.youtube.com/watch?v=AM6BY4btj-M)
 - [Gâteaux Derivative Video](https://www.youtube.com/watch?v=w1Vzjbd5g8g)
 - [Geometrical Interpretation of Gateaux and Directional Derivatives]([https://youtu.be/NomUbVmmyro?si=3hIH0aRawodE_RcA](https://youtu.be/NomUbVmmyro?si=3hIH0aRawodE_RcA "https://youtu.be/nomubvmmyro?si=3hih0arawode_rca"))
 

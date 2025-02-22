@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Optimization/Algorithms.md",
+                "file": "Optimization/Convexity.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Algorithms"
+              "title": "Convexity"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -103,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Optimization/Algorithms.md",
+                "file": "Optimization/Constrained Optimization - Lagrangian.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Algorithms"
+              "title": "Backlinks for Constrained Optimization - Lagrangian"
             }
           },
           {
@@ -122,12 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Optimization/Algorithms.md",
+                "file": "Optimization/Constrained Optimization - Lagrangian.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Algorithms"
+              "title": "Outgoing links from Constrained Optimization - Lagrangian"
             }
           },
           {
@@ -174,33 +175,33 @@
   },
   "active": "73e0b4700672626d",
   "lastOpenFiles": [
+    "Optimization/Optimization Basics & Problem Statement.md",
+    "Optimization/Optimality Conditions.md",
+    "Optimization/Convexity.md",
+    "Optimization/Constrained Optimization - Lagrangian.md",
+    "Optimization/Algorithms.md",
     "Applied Mathematics/Vectors.md",
+    "Optimization/Existence and Uniqueness of a Minimum.md",
+    "Software Engineering/Polymorphism.md",
+    "Software Engineering/Object-Oriented Design.md",
+    "Software Engineering/C Programming Basics.md",
+    "Data Wrangling/Special Queries.md",
+    "Cloud Computing (AWS)/Monitoring and Events.md",
+    "Cloud Computing (AWS)/Computation (EC2, Lambda, Containers).md",
+    "Applied Mathematics/Eigenvalues and Eigenvectors.md",
+    "Applied Mathematics/Matrix Determinant.md",
+    "Applied Mathematics/Matrix Diagonalization.md",
+    "Applied Mathematics/Matrices.md",
+    "Applied Mathematics/Matrix Inverse.md",
     "Applied Mathematics/Trigonometry and Polar Coordinates.md",
     "Applied Mathematics/Taylor Series.md",
-    "Applied Mathematics/Matrix Inverse.md",
-    "Applied Mathematics/Matrix Diagonalization.md",
-    "Applied Mathematics/Matrix Determinant.md",
-    "Applied Mathematics/Matrices.md",
     "Applied Mathematics/Integration.md",
     "Applied Mathematics/Functions and Derivatives of Functions.md",
     "Applied Mathematics/Function Optimization.md",
-    "Applied Mathematics/Eigenvalues and Eigenvectors.md",
     "Applied Mathematics/Complex Numbers.md",
-    "Optimization/Algorithms.md",
-    "Optimization/Optimality Conditions.md",
-    "Optimization/Optimization Basics & Problem Statement.md",
-    "Optimization/Existence and Uniqueness of a Minimum.md",
-    "Optimization/Convexity and Convex Optimization.md",
     "google_image_thumbnails/Pasted image 20250209122845.png",
     "Data Wrangling/Basic Querying.md",
     "Software Engineering/Aggregation of Objects.md",
-    "Software Engineering/Inheritance.md",
-    "Warm Up/IT and Computer Systems/Central Processing Unit.md",
-    "Warm Up/IT and Computer Systems/Operating System.md",
-    "Warm Up/IT and Computer Systems/Powershell.md",
-    "Warm Up/IT and Computer Systems/Networking (TCP and UDP).md",
-    "Statistics/Distributions of Probability and Random Variables.md",
-    "Statistics/Convergence.md",
     "google_image_thumbnails/Pasted image 20240430155028.png",
     "google_image_thumbnails/Pasted image 20240427200625.png",
     "google_image_thumbnails/Complementary Sets Diagram.jpg",

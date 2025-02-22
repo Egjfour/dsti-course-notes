@@ -97,7 +97,6 @@ for (k in 1:niter) {
 	- This inner optimization occurs in dimension 1
 	- It also occurs on an open set and therefore can find the solution using [[Optimality Conditions|Euler's equation]]
 		- The best step $\rho_k$ is such that $f'(\rho_k) = 0$ for $f: \mathbb R \to \mathbb R$ as $\rho \to J(\beta_k - \rho \nabla J(\beta_k))$
-		- 
 - The optimal step algorithm performs a line search which <mark style="background: #FFB86CA6;">always converges</mark> with no conditions on $\rho$
 - In the quadratic case,
 	- $\rho_k = \frac{||\nabla J(\beta_k)||^2}{<(H\nabla J(\beta_k)), \nabla J(\beta_k)>}$
@@ -179,7 +178,7 @@ for (k in 1:niter) {
 ## The Constrained Case - Gradient Descent with Projection
 - Need to make the projection at each step of the iteration
 	- Take the point that is not allowed and project it onto the set which is allowed
-		- Permissible so long as $K$ is [[Convexity and Convex Optimization|closed and convex]]
+		- Permissible so long as $K$ is [[Convexity|closed and convex]]
 	- This projection is applied to each condition independently
 - Example in R: all beta values should be positive
 ```R

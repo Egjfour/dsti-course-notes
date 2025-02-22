@@ -2,10 +2,10 @@
 | :-------------------------: | :------------: | :----------: | :-------------: | :--: |
 | **Continuous Optimization** | Proving Minima | Jacques Blum | 21 janvier 2025 |      |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250121%5F095012%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E659d14cc%2Dda79%2D4441%2D8a42%2D86d3d4673ba0)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*The Weierstrass Theorem and its corollary are what define the existence of a minimum. Ultimately, the key condition is that the cost function must go to infinity as the absolute value of the inputs goes to infinity. Uniqueness can be determined simply by looking at the domain of the function (closed and convex) and the [[Convexity|convexity]] of the cost function (strictly convex and continuous).*
 
 # Key Takeaways
 1. The corollary of the Weierstrass Theorem allows us to prove the existence of a minimum
@@ -18,7 +18,7 @@
 - Bounded Set: A set which does not go to infinity
 
 # Additional Resources
-- [Weirstrass Theorem](https://www.sciencedirect.com/topics/mathematics/weierstrass-theorem)
+- [Weierstrass Theorem](https://www.sciencedirect.com/topics/mathematics/weierstrass-theorem)
 
 # Notes
 ## Weierstrass Theorem - Existence
@@ -29,7 +29,7 @@
 	- If true, then $\exists$ at least 1 point of $K$ where $J$ reaches its minimum on $K$
 	- In other words, so long as the [[Optimization Basics & Problem Statement|cost function]] goes to infinity as the inputs go to infinity, then there is at least one point within the subset where we reach the minimum
 ## Uniqueness
-- If $V = \mathbb R^n$ and $K$ is a [[Convexity and Convex Optimization|convex subset]] of $V$
+- If $V = \mathbb R^n$ and $K$ is a [[Convexity|convex subset]] of $V$
 - If $J$ is <mark style="background: #FFB86CA6;">strictly convex, then there exists at most 1 minimum</mark>
 - So, given a strictly convex function, if $J'(u) = 0$, then $u$ is a global minimum of $J$ on $K$
-	- If the [[Optimality Conditions|first-order condition]] is met
+	- If the [[Optimality Conditions|first-order condition]] is met, then we have the global minimum of the function
