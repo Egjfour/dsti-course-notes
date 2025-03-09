@@ -150,7 +150,7 @@ In summary, the saddle point of the Lagrangian is crucial because it signifies t
 			- $\begin{pmatrix}2x+y+2-p\\2y+x-4+p\\-x+y-1 \end{pmatrix} = \begin{pmatrix}0\\0\\0\end{pmatrix}$
 			- $\left(\begin{array}{ccc|c}2 & 1 & -1 & -2\\1 & 2 & 1 & 4\\-1 & 1 & 0 & 1\end{array}\right) = \left(\begin{array}{ccc|c}2 & 1 & -1 & -2\\-1 & 1 & 0 & 1\\1 & 2 & 1 & 4\end{array}\right) = \left(\begin{array}{ccc|c}1 & \frac{1}{2} & -\frac{1}{2} & -1\\0 & \frac{3}{2} & -\frac{1}{2} & 0\\0 & \frac{3}{2} & \frac{3}{2} & 5\end{array}\right) =$
 			- $\left(\begin{array}{ccc|c}1 & \frac{1}{2} & -\frac{1}{2} & -1\\0 & 1 & -\frac{1}{3} & 0\\0 & \frac{3}{2} & \frac{3}{2} & 5\end{array}\right) = \left(\begin{array}{ccc|c}1 & \frac{1}{2} & -\frac{1}{2} & -1\\0 & 1 & -\frac{1}{3} & 0\\0 & 0 & 1 & \frac{5}{2}\end{array}\right) = \left(\begin{array}{ccc|c}1 & \frac{1}{2} & 0 & \frac{1}{4}\\0 & 1 & 0 & \frac{5}{6}\\0 & 0 & 1 & \frac{5}{2}\end{array}\right) =$
-			- $\left(\begin{array}{ccc|c}1 & \frac{1}{2} & 0 & -\frac{1}{6}\\0 & 1 & 0 & \frac{5}{6}\\0 & 0 & 1 & \frac{5}{2}\end{array}\right)$, so $x = -\frac{1}{6}, y = \frac{5}{6}$, and $p = \frac{5}{2}$
+			- $\left(\begin{array}{ccc|c}1 & 0 & 0 & -\frac{1}{6}\\0 & 1 & 0 & \frac{5}{6}\\0 & 0 & 1 & \frac{5}{2}\end{array}\right)$, so $x = -\frac{1}{6}, y = \frac{5}{6}$, and $p = \frac{5}{2}$
 			- We again need to check the constraint:
 				- $g(-\frac{1}{6}, \frac{5}{6}) = \frac{1}{6} + \frac{5}{6} - 1 = 0 \le 0$, so the constraint is satisfied and this is the unique solution
 	- Given our solution $(-\frac{1}{6}, \frac{5}{6})$, the minimum value of the cost function $J$ subject to the constraints is $-\frac{1}{12}$
