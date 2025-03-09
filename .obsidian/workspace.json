@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Ethics, Data Laws, and Project Management/Laws and Regulations/Ethics and Laws Overview.md",
+                "file": "Ethics, Data Laws, and Project Management/Laws and Regulations/Intellectual Property.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ethics and Laws Overview"
+              "title": "Intellectual Property"
             }
           }
         ]
@@ -175,15 +175,19 @@
   },
   "active": "73e0b4700672626d",
   "lastOpenFiles": [
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/Ethics and Laws Overview.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/Anti-Competition Law.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/Intellectual Property.md",
     "Ethics, Data Laws, and Project Management/Laws and Regulations/GDPR.md",
+    "google_image_thumbnails/Pasted image 20250309174646.png",
+    "google_image_thumbnails/Pasted image 20250309172713.png",
+    "google_image_thumbnails/Pasted image 20250309165703.png",
     "Ethics, Data Laws, and Project Management/Project Management/SAFe (Scaled Agile Framework).md",
     "Ethics, Data Laws, and Project Management/Project Management/Agile.md",
     "Ethics, Data Laws, and Project Management/Project Management/Waterfall.md",
-    "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
     "Ethics, Data Laws, and Project Management/Project Management",
-    "Ethics, Data Laws, and Project Management/Laws and Regulations/Anti-Competition Law.md",
     "Ethics, Data Laws, and Project Management/Laws and Regulations",
-    "Ethics, Data Laws, and Project Management/Laws and Regulations/Ethics and Laws Overview.md",
     "Optimization/Constrained Optimization - Lagrangian.md",
     "MLOps",
     "Ethics, Data Laws, and Project Management",
@@ -203,8 +207,6 @@
     "Applied Mathematics/Vectors.md",
     "Software Engineering/Polymorphism.md",
     "Software Engineering/Object-Oriented Design.md",
-    "Software Engineering/C Programming Basics.md",
-    "Data Wrangling/Special Queries.md",
     "google_image_thumbnails/Pasted image 20250209122845.png",
     "google_image_thumbnails/Pasted image 20240430155028.png",
     "google_image_thumbnails/Pasted image 20240427200625.png",
@@ -212,9 +214,6 @@
     "google_image_thumbnails/Composition of Applications.jpg",
     "google_image_thumbnails/Adjacent Sequences.jpg",
     "google_image_thumbnails/Kernel and Shell.png",
-    "google_image_thumbnails/Linear Independence Example.jpg",
-    "google_image_thumbnails/Pasted image 20240419144402.png",
-    "google_image_thumbnails/Pasted image 20240420104526.png",
     "Optimization",
     "Statistics/Probability",
     "Statistics/Basics",

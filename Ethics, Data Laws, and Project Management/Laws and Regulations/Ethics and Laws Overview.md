@@ -45,9 +45,15 @@
 	- Created the Ethical Guidelines for Trustworthy AI
 		- Defined AI as "software (and possibly also hardware) systems designed by humans that, given a complex goal, act in the physical or digital dimension by perceiving their environment through data acquisition, interpreting the collected structured or unstructured data, reasoning on the knowledge, or processing the information, derived from this data and deciding the best action(s) to take to achieve the given goal."
 	- Council of Europe's contribution to AI and law
+	- AI white paper from the European Commission in 2020
 ## Status of AI Under the Law
 - Currently there is no legal person status for AI, so AI cannot be party to a court dispute
 	- However, the European Parliament debated making a status of "electronic persons" which only failed after significant pushback
 - AI under patent law
 	- Originally, algorithms were considered mathematical problems which are "abstract ideas" and so therefore could not be patented (Gottschalk v Benson, 1972)
 	- Parker v Flook (1978) and Diamond v Diehr (1981) however said that a larger process which contains an algorithm can still be patented
+## History of AI Regulation
+- "Regulation could kill the sector or arrive too late to prevent harm"
+- Europe stands between "Big Brother" China and "Big Data" America
+- Main difference between AI and previous risky tech like nuclear is that AI advancements are being driven largely by the private sector
+- Google argued against the 2020 
