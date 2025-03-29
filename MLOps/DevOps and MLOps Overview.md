@@ -1,6 +1,6 @@
-|   Course Name    | Topic |  Professor  |      Date      | Tags |
-| :--------------: | :---: | :---------: | :------------: | :--: |
-| **Name in Bold** | Topic | Joe Sanchez | Date of course |      |
+| Course Name |      Topic       |  Professor  |     Date     | Tags |
+| :---------: | :--------------: | :---------: | :----------: | :--: |
+|  **MLOps**  | DevOps and MLOps | Joe Sanchez | 03 mars 2025 |      |
 
 [Professor Notes Link (Devops)](https://github.com/adaltas/dsti-mlops-2025-spring/blob/main/01.devops-introduction/index.md)
 [Professor Notes Link (MLOps)](https://github.com/adaltas/dsti-mlops-2025-spring/blob/main/02.mlops-introduction/index.md)

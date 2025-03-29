@@ -1,6 +1,6 @@
-| Course Name |      Topic      |  Professor  |     Date     | Tags |
-| :---------: | :-------------: | :---------: | :----------: | :--: |
-|  **MLOps**  | Version Control | Joe Sanchez | 03 mars 2025 |      |
+| Course Name |      Topic      |  Professor  |       Date        | Tags |
+| :---------: | :-------------: | :---------: | :---------------: | :--: |
+|  **MLOps**  | Version Control | Joe Sanchez | 03 & 07 mars 2025 |      |
 
 [Professor Notes Link (Source Control)](https://github.com/adaltas/dsti-mlops-2025-spring/blob/main/03.scm/index.md)
 [Professor Notes Link (Data Versioning)](https://github.com/adaltas/dsti-mlops-2025-spring/blob/main/07.data-versioning/index.md)
