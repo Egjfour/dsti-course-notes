@@ -1,6 +1,6 @@
-|   Course Name    | Topic | Professor |      Date      | Tags |
-| :--------------: | :---: | :-------: | :------------: | :--: |
-| **Name in Bold** | Topic | Professor | Date of course |      |
+|   Course Name    | Topic | Professor |      Date      |     Tags     |
+| :--------------: | :---: | :-------: | :------------: | :----------: |
+| **Name in Bold** | Topic | Professor | Date of course | #GraphTheory |
 
 [Class Video Link](URL)
 

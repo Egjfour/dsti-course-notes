@@ -8,58 +8,72 @@
   "collapse-color-groups": false,
   "colorGroups": [
     {
-      "query": "tag:#Programming",
+      "query": "tag:#CloudComputing  ",
+      "color": {
+        "a": 1,
+        "rgb": 1398028
+      }
+    },
+    {
+      "query": "tag:#Calculus  ",
       "color": {
         "a": 1,
         "rgb": 14725458
       }
     },
     {
-      "query": "tag:#SetTheory  ",
+      "query": "tag:#Data_Management tag:",
       "color": {
         "a": 1,
-        "rgb": 11657298
+        "rgb": 3496947
+      }
+    },
+    {
+      "query": "tag:#Statistics  ",
+      "color": {
+        "a": 1,
+        "rgb": 14537895
+      }
+    },
+    {
+      "query": "tag:#GraphTheory  ",
+      "color": {
+        "a": 1,
+        "rgb": 11071625
+      }
+    },
+    {
+      "query": "tag:#LinearAlgebra  ",
+      "color": {
+        "a": 1,
+        "rgb": 9099519
       }
     },
     {
       "query": "tag:#ComputerEngineering  ",
       "color": {
         "a": 1,
-        "rgb": 6902496
+        "rgb": 14504999
       }
     },
     {
-      "query": "tag:#CloudComputing  ",
+      "query": "tag:#SetTheory  ",
       "color": {
         "a": 1,
-        "rgb": 670986
-      }
-    },
-    {
-      "query": "tag:#LinearAlgebra",
-      "color": {
-        "a": 1,
-        "rgb": 15231562
-      }
-    },
-    {
-      "query": "tag:#Calculus",
-      "color": {
-        "a": 1,
-        "rgb": 2500614
+        "rgb": 11621088
       }
     }
   ],
   "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": -2.2,
-  "nodeSizeMultiplier": 1.01875,
-  "lineSizeMultiplier": 0.916666666666667,
+  "textFadeMultiplier": -0.4,
+  "nodeSizeMultiplier": 1.27837370242215,
+  "lineSizeMultiplier": 1.54965397923875,
   "collapse-forces": false,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
-  "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 0.5087618855792639,
+  "centerStrength": 0.389273356401384,
+  "repelStrength": 12.0761245674741,
+  "linkStrength": 0.441176470588235,
+  "linkDistance": 30,
+  "scale": 0.5087618855792654,
   "close": true
 }

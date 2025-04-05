@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "988109ee6524fe7a",
+        "id": "42beda72d62f4846",
         "type": "tabs",
         "children": [
           {
-            "id": "831fbfed1e420587",
+            "id": "403f00a2ddde6960",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "MLOps/Monitoring.md",
+                "file": "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monitoring"
+              "title": "Internet and Web"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Optimization/Constrained Optimization - Lagrangian.md",
+                "file": "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Constrained Optimization - Lagrangian"
+              "title": "Backlinks for Internet and Web"
             }
           },
           {
@@ -138,7 +138,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -150,13 +152,17 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Applied Mathematics/Trigonometry and Polar Coordinates.md"
+                "file": "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Trigonometry and Polar Coordinates"
+              "title": "Outline of Internet and Web"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -173,46 +179,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "831fbfed1e420587",
+  "active": "403f00a2ddde6960",
   "lastOpenFiles": [
-    "google_image_thumbnails/Pasted image 20250329135319.png",
-    "google_image_thumbnails/Pasted image 20250329135212.png",
-    "MLOps/Deployment (CI-CD and Containers).md",
+    "google_image_thumbnails/Pasted image 20250405112508.png",
+    "Warm Up/IT and Computer Systems/Internet Protocol (IP) and LAN.md",
+    "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
+    "URL.md",
+    "NoSQL and Graph Databases/MongoDB.md",
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
+    "Data Wrangling/Basic Querying.md",
+    "Data Wrangling/Relational Database Management System.md",
+    "Cloud Computing (AWS)/Networking and Virtual Private Cloud (VPC).md",
+    "google_image_thumbnails/Pasted image 20250405092926.png",
+    "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
+    "Statistics/Random Variables.md",
+    "Statistics/Distributions of Probability and Random Variables.md",
+    "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
+    "NoSQL and Graph Databases/Semantic Web/Existing Ontologies and Vocabularies.md",
     "Ethics, Data Laws, and Project Management/Laws and Regulations/Intellectual Property.md",
     "Ethics, Data Laws, and Project Management/Laws and Regulations/GDPR.md",
-    "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
     "Ethics, Data Laws, and Project Management/Laws and Regulations/Ethics and Laws Overview.md",
-    "MLOps/Monitoring.md",
-    "google_image_thumbnails/Pasted image 20250329133349.png",
-    "MLOps/DevOps and MLOps Overview.md",
-    "MLOps/Testing.md",
-    "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL).md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
-    "NoSQL and Graph Databases/Semantic Web/Accessing RDF Data Sources.md",
-    "NoSQL and Graph Databases/Semantic Web/desktop.ini",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
+    "Ethics, Data Laws, and Project Management/Project Management/Agile.md",
+    "Ethics, Data Laws, and Project Management/Project Management/Waterfall.md",
+    "Ethics, Data Laws, and Project Management/Project Management/SAFe (Scaled Agile Framework).md",
+    "NoSQL and Graph Databases/Neo4j.md",
+    "NoSQL and Graph Databases/Cypher Query Language.md",
+    "NoSQL and Graph Databases/Semantic Web/OWL Logic Extensions.md",
+    "NoSQL and Graph Databases/Semantic Web/OWL Class and Property Extensions.md",
     "NoSQL and Graph Databases/Semantic Web/RDF.md",
-    "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
+    "google_image_thumbnails/Pasted image 20250331102251.png",
+    "google_image_thumbnails/Pasted image 20250329135319.png",
+    "google_image_thumbnails/Pasted image 20250329135212.png",
+    "google_image_thumbnails/Pasted image 20250329133349.png",
+    "NoSQL and Graph Databases/Semantic Web/desktop.ini",
     "NoSQL and Graph Databases/Semantic Web",
-    "NoSQL and Graph Databases/Untitled.md",
-    "Cloud Computing (AWS)/Cloud Overview.md",
-    "Cloud Computing (AWS)/Building Resilient Architecture.md",
-    "Cloud Computing (AWS)/AWS Well-Architected Framework.md",
-    "Cloud Computing (AWS)/AWS Physical Architecture.md",
-    "Warm Up/IT and Computer Systems/Internet Protocol (IP) and LAN.md",
-    "Warm Up/IT and Computer Systems/Networking (TCP and UDP).md",
-    "Warm Up/IT and Computer Systems/Computer Systems Basics.md",
-    "MLOps/Version Control (Code, Data, and Model).md",
     "google_image_thumbnails/Pasted image 20250324153919.png",
     "google_image_thumbnails/Pasted image 20250324153620.png",
     "google_image_thumbnails/Pasted image 20250323134459.png",
     "google_image_thumbnails/Pasted image 20250323132129.png",
     "google_image_thumbnails/Pasted image 20250323121046.png",
-    "Applied Mathematics/Trigonometry and Polar Coordinates.md",
-    "Optimization/Optimality Conditions.md",
-    "google_image_thumbnails/Pasted image 20250323113429.png",
-    "google_image_thumbnails/Pasted image 20250323113242.png",
-    "google_image_thumbnails/Pasted image 20250323104742.png",
     "Ethics, Data Laws, and Project Management/Project Management",
     "Ethics, Data Laws, and Project Management/Laws and Regulations",
     "MLOps",

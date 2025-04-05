@@ -14,6 +14,7 @@
 2. Github Actions are a mechanism which allows for the automation of CI-CD pipelines
 3. In containers, code and all dependencies are packaged together to let apps run quickly and reliably in different computing environments
 4. In containers, applications are secure and Docker has strongest default isolation capabilities
+5. The metadata store is what makes End-to-End ML pipelines data and task-aware
 
 # Definitions
 - Delivery (ML): A step before deployment. Model is ready just waiting to be deployed
@@ -26,6 +27,8 @@
 - Registries: Software package hosting services
 - Serving (ML): A model put in disposition to end users
 - Release: A version of a service is now responsible for serving production traffic
+- End-to-End ML Platform: A tool that treats multiple steps from development to deployment
+- Modular: modules can be used independently or to build pipelines
 
 # Additional Resources
 - [Understanding Github Actions](https://docs.github.com/en/actions/about-github-actions/understanding-github-actions)
@@ -113,3 +116,17 @@
 - The `flask` library lets us run models as APIs and `gunicorn` lets us deploy production-grade deployment servers
 	- Uses the same code, so we don't have to make any changes to productionize flask
 - When we run the model API container, we will need to make sure to expose and bind to the correct port for our service to be accessible
+## End-to-End Deployment
+- There are many steps to get a model to production, and even after deployment, pipelines will evolve
+- End-to-End ML platforms let us synchronize the entire process from development to deployment in one framework
+- Many are open source though most are managed (e.g., [[AWS Managed Services|SageMaker]])
+- Tensorflow Extended (TFX) library is an open-source solution from Google
+	- modular library which uses output from one module is input for the next one
+	- reduction of boilerplate code to connect modules and make the pipeline work
+	 ![[Pasted image 20250331102251.png]]
+- Based on a metadata store
+	- Stores the information about the state of the system after an execution of a component
+	- Stores the outputs of the components:
+	    - Information about the models, the data they were trained on, and the evaluation metrics
+	    - Execution records for every component
+	    - Lineage of the data objects as they flow through the pipeline
