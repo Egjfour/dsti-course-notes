@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
+                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Validation (SHACL and OWL)"
+              "title": "SPARQL Basics"
             }
           }
         ]
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
+                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
                 "collapseAll": true,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Data Validation (SHACL and OWL)"
+              "title": "Backlinks for SPARQL Basics"
             }
           },
           {
@@ -152,13 +152,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
+                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Data Validation (SHACL and OWL)"
+              "title": "Outline of SPARQL Basics"
             }
           }
         ],
@@ -181,10 +181,17 @@
   },
   "active": "403f00a2ddde6960",
   "lastOpenFiles": [
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
+    "Data Wrangling/Basic Querying.md",
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
     "NoSQL and Graph Databases/Semantic Web/RDF.md",
+    "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
+    "Warm Up/Applied Math and Relational Algebra/Applications and Compositions of Sets.md",
+    "Warm Up/Applied Math and Relational Algebra/Relations of Sets.md",
+    "Warm Up/Applied Math and Relational Algebra/Logic and Set Theory.md",
+    "Warm Up/Applied Math and Relational Algebra/Union, Intersection, and Complement of Sets.md",
     "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
     "NoSQL and Graph Databases/Semantic Web/Accessing RDF Data Sources.md",
-    "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
     "google_image_thumbnails/Pasted image 20250405160305.png",
     "google_image_thumbnails/Pasted image 20250405154931.png",
     "google_image_thumbnails/Pasted image 20250405154423.png",
@@ -192,8 +199,6 @@
     "Warm Up/IT and Computer Systems/Internet Protocol (IP) and LAN.md",
     "URL.md",
     "NoSQL and Graph Databases/MongoDB.md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-    "Data Wrangling/Basic Querying.md",
     "Data Wrangling/Relational Database Management System.md",
     "Cloud Computing (AWS)/Networking and Virtual Private Cloud (VPC).md",
     "google_image_thumbnails/Pasted image 20250405092926.png",
@@ -207,11 +212,6 @@
     "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
     "Ethics, Data Laws, and Project Management/Project Management/Agile.md",
     "Ethics, Data Laws, and Project Management/Project Management/Waterfall.md",
-    "Ethics, Data Laws, and Project Management/Project Management/SAFe (Scaled Agile Framework).md",
-    "NoSQL and Graph Databases/Neo4j.md",
-    "NoSQL and Graph Databases/Cypher Query Language.md",
-    "NoSQL and Graph Databases/Semantic Web/OWL Logic Extensions.md",
-    "NoSQL and Graph Databases/Semantic Web/OWL Class and Property Extensions.md",
     "google_image_thumbnails/Pasted image 20250331102251.png",
     "google_image_thumbnails/Pasted image 20250329135319.png",
     "google_image_thumbnails/Pasted image 20250329135212.png",
