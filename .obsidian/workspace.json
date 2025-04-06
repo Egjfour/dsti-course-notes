@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "42beda72d62f4846",
+        "id": "f4dbbdb2371bfcfc",
         "type": "tabs",
         "children": [
           {
@@ -13,12 +13,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
+                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
                 "mode": "source",
-                "source": false
+                "source": false,
+                "backlinks": false
               },
               "icon": "lucide-file",
-              "title": "SPARQL Basics"
+              "title": "SPARQL Advanced"
             }
           }
         ]
@@ -65,16 +66,6 @@
             }
           },
           {
-            "id": "ec1651896d2e0af3",
-            "type": "leaf",
-            "state": {
-              "type": "starred",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Plugin no longer active"
-            }
-          },
-          {
             "id": "eccb4bdab7050d72",
             "type": "leaf",
             "state": {
@@ -93,78 +84,7 @@
   "right": {
     "id": "000a40d206344b08",
     "type": "split",
-    "children": [
-      {
-        "id": "59cfe5d87186b8a6",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "a1d66b51fe64b949",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-                "collapseAll": true,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": true,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for SPARQL Basics"
-            }
-          },
-          {
-            "id": "d7bbd3f88ffcfe72",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Optimization/Constrained Optimization - Lagrangian.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from Constrained Optimization - Lagrangian"
-            }
-          },
-          {
-            "id": "ed61b537b6446ae7",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "a194a7cdb6217c6a",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of SPARQL Basics"
-            }
-          }
-        ],
-        "currentTab": 3
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
@@ -181,16 +101,16 @@
   },
   "active": "403f00a2ddde6960",
   "lastOpenFiles": [
+    "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
     "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
     "Data Wrangling/Basic Querying.md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
     "NoSQL and Graph Databases/Semantic Web/RDF.md",
     "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
     "Warm Up/Applied Math and Relational Algebra/Applications and Compositions of Sets.md",
     "Warm Up/Applied Math and Relational Algebra/Relations of Sets.md",
     "Warm Up/Applied Math and Relational Algebra/Logic and Set Theory.md",
     "Warm Up/Applied Math and Relational Algebra/Union, Intersection, and Complement of Sets.md",
-    "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
     "NoSQL and Graph Databases/Semantic Web/Accessing RDF Data Sources.md",
     "google_image_thumbnails/Pasted image 20250405160305.png",
     "google_image_thumbnails/Pasted image 20250405154931.png",
