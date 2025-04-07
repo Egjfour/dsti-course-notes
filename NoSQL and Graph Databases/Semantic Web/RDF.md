@@ -17,6 +17,7 @@
 6. RDF graphs are serialized as [[Internet and Web|XML]] which is a tree-based structure
 7. Blank/Anonymous nodes can exist if a URI is unknown or for decomposition of complex values
 8. RDF is a monotonous logic - what is true and inferred now remains that way as new statements are added to the graph
+9. The URI for RDF (to use as a prefix) is `<http://www.w3.org/1999/02/22-rdf-syntax-ns#>`
 
 # Definitions
 - Resource Description Framework (RDF): Standard graph model linking descriptions of [[Internet and Web|resources]]
