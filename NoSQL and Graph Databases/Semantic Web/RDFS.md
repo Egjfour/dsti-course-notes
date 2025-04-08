@@ -13,7 +13,7 @@
 3. Everything in RDFS which is not a property (the classes) is an `rdfs:Resource`
 4. RDFS supports both multi-typing and [[Inheritance|multiple inheritance]]
 5. Signature inheritance for properties applies to the [[Object-Oriented Design|instances of classes]]
-6. Multiple classes in a domain/range of a property are all applied to instances using that. There is no OR for a domain/range in RDFS (see [[OWL Class and Property Extensions|OWL]] for "or")
+6. Multiple classes in a domain/range of a property are all applied to instances using that. There is no OR for a domain/range in RDFS (see [[OWL Property Extensions|OWL]] for "or")
 7. The `rdfs:seeAlso`and `rdfs:isDefinedBy` classes allow for linking
 8. Everything - triples, validation, ontologies, and inferences - are all in the graph
 9. When the schema and data are both loaded, all additional properties and classes granted through inheritance and signatures are materialized in the graph (for most engines)

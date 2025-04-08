@@ -2,21 +2,20 @@
 | :--------------: | :---------------------------------: | :-----------: | :-----------: | :----------: |
 | **Semantic Web** | Building [[Ontologies\|Ontologies]] | Fabien Gandon | 03 avril 2025 | #GraphTheory |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250403%5F094949%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E398d60a4%2D9862%2D4d86%2Dba30%2D300e621c6eb1)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*OWL is a language written in RDF to extend RDFS and allow for more complex writing of schemata/ontologies. OWL is divided into a disjoint set of resources, classes, and properties which all have enhanced definition availability. With OWL, for the first time in RDF-based languages, we are able to fully express union conditions among many other things.*
 
 # Key Takeaways
 1. OWL is an extension of RDFS for heavyweight ontologies
 2. In OWL, individuals/resources, classes, and properties are disjoint sets (i.e., a URI can only be one of these)
 
 # Definitions
-- Term: Definition
-	- Practical examples can be added below
+- Web Ontology Language (OWL): Semantic Web language designed to represent rich and complex knowledge about things, groups of things, and relations between things
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [OWL Overview (W3C)](https://www.w3.org/OWL/)
 
 # Notes
 ## OWL Overview
@@ -61,4 +60,25 @@
 		- Classes are first defined separately, then a blank node is used to create the disjunction
 		- Example: Given classes (`:Square, :Circle, and :Triangle`)
 			- `[] a owl:AllDisjointClasses ; owl:members (`:Square, :Circle, and :Triangle`) .`
-## Equivalence and Difference of Primitives and Resources
+## Equivalence and Difference of Classes and Resources
+- Equivalent Classes (`owl:equivalentClass`)
+	- Used to define two classes with exactly the same resources
+	- Allows us to map other ontologies into our own
+	- Example `mySchema:Human owl:equivalentClass foaf:Person .`
+- Identical Resources (`owl:sameAs`)
+	- Two resources (URIs) which identify <mark style="background: #FFB86CA6;">exactly the same thing</mark>
+	- Example: `:EddieJenkins owl:sameAs :EdwardJenkins`
+- Different Resources (`owl:differentFrom`)
+	- Two resources (URIs) which are known to represent different things
+	- Example: `:Good owl:differentFrom :Evil`
+## Identification with Keys (`owl:hasKey`)
+- Two resources with the same key values are considered the same (`owl:sameAs`)
+- A class <mark style="background: #FFB86CA6;">can be defined with multiple different keys</mark>
+	- If ANY of the keys are a match, then the URIs are considered the same
+- Example: A unique DNA sequence, social security number, or combination of first name, last name, birthdate, and birth place will define a unique person 
+	```turtle
+	:Person owl:hasKey 
+	( :name :firstname :birthdate :birthplace ) , 
+	( :socialSecurityNumber ),
+	( :hashDNA ) .
+	```

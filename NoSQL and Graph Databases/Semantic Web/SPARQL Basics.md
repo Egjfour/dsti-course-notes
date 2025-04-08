@@ -38,7 +38,7 @@
 - Since [[RDF|RDF is directed]], resources on different sides of the same relation could be returned twice
 	- Example: `?person1 foaf:knows ?person2` $\ne$ `?person2 foaf:knows ?person1`
 		- So, if I query all resources with a `foaf:knows` relation between them, I would find both combinations (person1 with person2 / person 2 with person 1)
-	- Trick to remove duplicates of [[OWL Class and Property Extensions|symmetric properties]] is to use the `FILTER()` operation
+	- Trick to remove duplicates of [[OWL Property Extensions|symmetric properties]] is to use the `FILTER()` operation
 		- Example: `select * where{?person1 foaf:knows: ?person2. filter(?person1 < ?person2)}` would only return one of the pairs
 	- This is why the syntax is disambiguous. In [[Cypher Query Language|Cypher]], links can be undirected, so the query language has to provide additional specifications to provide for that unlike SPARQL
 ## Query Structure
