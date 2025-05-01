@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "268c9c561eab0dd5",
+        "id": "fe4378d04aca4eb9",
         "type": "tabs",
         "children": [
           {
-            "id": "efee24706a3bae57",
+            "id": "b2fd3108e8c417ef",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
+                "file": "Statistics and Probability/Random Variables and Vectors/Moments of Random Variables.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Other (non-RDF) Protocols"
+              "title": "Moments of Random Variables"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
+                "file": "NoSQL and Graph Databases/Neo4j.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Other (non-RDF) Protocols"
+              "title": "Backlinks for Neo4j"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
+                "file": "NoSQL and Graph Databases/Neo4j.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Other (non-RDF) Protocols"
+              "title": "Outgoing links from Neo4j"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
+                "file": "NoSQL and Graph Databases/Neo4j.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Other (non-RDF) Protocols"
+              "title": "Outline of Neo4j"
             }
           }
         ]
@@ -168,44 +168,46 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "efee24706a3bae57",
+  "active": "b2fd3108e8c417ef",
   "lastOpenFiles": [
-    "Cloud Computing (AWS)/Cloud Overview.md",
-    "NoSQL and Graph Databases/Semantic Web/Other (non-RDF) Protocols.md",
-    "NoSQL and Graph Databases/Semantic Web/Existing Vocabularies.md",
+    "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
+    "Statistics and Probability/Random Variables and Vectors/Moments of Random Variables.md",
+    "Statistics and Probability/Random Variables and Vectors/Random Variables.md",
+    "Statistics and Probability/Basics/Descriptive Statistics.md",
+    "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
+    "Statistics and Probability/Convergence.md",
+    "Optimization/Constrained Optimization - Lagrangian.md",
+    "Optimization/Algorithms.md",
+    "Statistics and Probability/Estimation/Point Estimators.md",
+    "Statistics and Probability/Estimation/Estimators-Convergence & Comparison.md",
+    "Statistics and Probability/Estimation",
+    "Statistics and Probability/Random Variables and Vectors/Expectation and Variance.md",
+    "Applied Mathematics/Integration.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/GDPR.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/Ethics and Laws Overview.md",
+    "Ethics, Data Laws, and Project Management/Laws and Regulations/AI Act.md",
+    "Ethics, Data Laws, and Project Management/Project Management/Waterfall.md",
+    "Ethics, Data Laws, and Project Management/Project Management/Agile.md",
+    "Ethics, Data Laws, and Project Management/Project Management/SAFe (Scaled Agile Framework).md",
+    "Statistics and Probability/Basics/Properties of Sums and Products.md",
+    "Statistics and Probability/Random Variables and Vectors",
+    "google_image_thumbnails/Pasted image 20250419103442.png",
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
+    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
+    "NoSQL and Graph Databases/Semantic Web/OWL Property Extensions.md",
+    "NoSQL and Graph Databases/Semantic Web/RDFS.md",
+    "NoSQL and Graph Databases/Semantic Web/OWL Logic and Class Extensions.md",
+    "MLOps/Deployment (CI-CD and Containers).md",
+    "MLOps/Testing.md",
     "google_image_thumbnails/Pasted image 20250409104211.png",
     "google_image_thumbnails/Pasted image 20250409104131.png",
     "google_image_thumbnails/Pasted image 20250409103811.png",
     "google_image_thumbnails/Pasted image 20250409103724.png",
     "google_image_thumbnails/Pasted image 20250409103117.png",
-    "NoSQL and Graph Databases/Semantic Web/Internet and Web.md",
-    "NoSQL and Graph Databases/Semantic Web/Data Validation (SHACL and OWL).md",
-    "NoSQL and Graph Databases/Semantic Web/OWL Property Extensions.md",
-    "NoSQL and Graph Databases/Semantic Web/OWL Logic and Class Extensions.md",
-    "NoSQL and Graph Databases/Semantic Web/RDF.md",
-    "NoSQL and Graph Databases/Semantic Web/RDFS.md",
     "google_image_thumbnails/Pasted image 20250407162018.png",
-    "Data Wrangling/Programmatic SQL.md",
     "google_image_thumbnails/Pasted image 20250407102412.png",
     "google_image_thumbnails/Pasted image 20250407100850.png",
     "google_image_thumbnails/Pasted image 20250407100541.png",
-    "google_image_thumbnails/Pasted image 20250407100404.png",
-    "Software Engineering/Inheritance.md",
-    "Software Engineering/Object-Oriented Design.md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-    "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
-    "NoSQL and Graph Databases/Semantic Web/Ontologies.md",
-    "Data Wrangling/Basic Querying.md",
-    "Warm Up/Applied Math and Relational Algebra/Applications and Compositions of Sets.md",
-    "Warm Up/Applied Math and Relational Algebra/Relations of Sets.md",
-    "Warm Up/Applied Math and Relational Algebra/Logic and Set Theory.md",
-    "Warm Up/Applied Math and Relational Algebra/Union, Intersection, and Complement of Sets.md",
-    "NoSQL and Graph Databases/Semantic Web/Accessing RDF Data Sources.md",
-    "Warm Up/IT and Computer Systems/Internet Protocol (IP) and LAN.md",
-    "URL.md",
-    "NoSQL and Graph Databases/MongoDB.md",
-    "Data Wrangling/Relational Database Management System.md",
-    "Cloud Computing (AWS)/Networking and Virtual Private Cloud (VPC).md",
     "NoSQL and Graph Databases/Semantic Web/desktop.ini",
     "NoSQL and Graph Databases/Semantic Web",
     "Ethics, Data Laws, and Project Management/Project Management",
@@ -213,9 +215,7 @@
     "MLOps",
     "Ethics, Data Laws, and Project Management",
     "Optimization",
-    "Statistics/Probability",
-    "Statistics/Basics",
-    "Statistics/Probability",
+    "Statistics and Probability/Probability",
     "Untitled.canvas"
   ]
 }

@@ -9,6 +9,7 @@
 
 # Key Takeaways
 1. As sample size increases, the distribution of a sample approaches the theoretical distribution
+	![[Pasted image 20250419103442.png]]
 2. Almost-sure convergence $\implies$ convergence in probability $\implies$ convergence in distribution
 3. The universal boundary exists for every distribution
 4. For convergence to be achieved, the values in the random sample must be [[Distributions of Probability and Random Variables|independently and identically distributed]]
