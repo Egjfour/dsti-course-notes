@@ -91,7 +91,7 @@
 		print(paste("The probability of [0, 1.2] U [1.8, 2] is",
 					round(expression, 3)))
 		```
-## Common Distributions
+## Common Probability Distributions
 - Uniform (Discrete): Rolling a single die
 	- Equal probability
 - Bernoulli (Discrete): Tossing a coin

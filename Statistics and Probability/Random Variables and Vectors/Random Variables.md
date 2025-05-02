@@ -1,11 +1,12 @@
-|                         Course Name                          |           Topic            |     Professor      |        Date        |    Tags     |
-| :----------------------------------------------------------: | :------------------------: | :----------------: | :----------------: | :---------: |
-| **Foundations of Statistical Analysis and Maching Learning** | Distributions of Variables | Christophe Bécavin | 15-16 janvier 2025 | #Statistics |
+|                             Course Name                             |                       Topic                        |     Professor      |        Date        |    Tags     |
+| :-----------------------------------------------------------------: | :------------------------------------------------: | :----------------: | :----------------: | :---------: |
+|    **Foundations of Statistical Analysis and Maching Learning**     |             Distributions of Variables             | Christophe Bécavin | 15-16 janvier 2025 | #Statistics |
+| **Foundations of Statistical Analysis and Maching Learning Part 2** | Common Distributions and Graphical Representations |  Christine Malot   |   28 avril 2025    |             |
 
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250116%5F095107%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E00f8464c%2D5165%2D473e%2Dba3a%2D6418387d76cf)
 
 # Summary
-*Random variables are the mapping between events that can happen in the physical world and the real number space which allows for effective measurement. Random variables are also distributed much like probability.*
+*Random variables are the mapping between events that can happen in the physical world and the real number space which allows for effective measurement. Like probability distributions, there are also common distributions of random variables which have known expectation and variance calculations. *
 
 # Key Takeaways
 1. Random variables are the link between the possible outcomes ($\Omega$) and the events
@@ -15,23 +16,28 @@
 5. The moments of a random vector create a vector of moments: $E[X, Y] = \begin{pmatrix}E[X]\\E[Y]\end{pmatrix}$
 6. The random variables of a random vector are independent if and only if their [[Distributions of Probability and Random Variables|joint distribution]] is equal to the product of their marginal distributions
 7. A necessary (not sufficient) condition for $X, Y$ to be independent is to have no instances with a probability of 0 in the joint domain
+8. When the degrees of freedom are $+ \infty$ for the $\mathcal T$-distribution, $\mathcal T(d) = \mathcal N(0,1)$
+9. Two random variables with the same expectation and variance are not necessarily from the same distribution. The Fisher random variable allows us to confirm if they are or not
+10. However, two random variables with the same expectation, variance, and distribution may not always be equal (e.g., $X \sim \mathcal U(-1, 1)$ and $Y = -X$)
 
 # Definitions
 - Random Variable: A function that maps from a [[Probability Theory|sample space]] $\Omega$ to a numeric value $\mathbb R$
 - Support $(\mathcal B)$: The smallest closed set $R_X \in \mathcal B$ such that the probability is one
 	- The height of humans cannot be negative, so even though the random variable can exist in $\mathbb R$, the support would be $\mathbb R^+$.
-- Random Vector: $\Omega \rightarrow \mathbb R^n$, mapping from a space to a real vector
+- [[Random Vectors|Random Vector]]: $\Omega \rightarrow \mathbb R^n$, mapping from a space to a real vector
 	- Multidimensional Random Variable
 
 # Additional Resources
 - [Markov and Tchebychev Inequalities](https://www.probabilitycourse.com/chapter6/6_2_2_markov_chebyshev_inequalities.php)
+- [Chi-Square Distribution Video](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction)
+- [Student's T Distribution Video](https://www.youtube.com/watch?v=0wjK7Ya7lOA)
+- [F-distribution](https://www.statlect.com/probability-distributions/F-distribution)
 
 # Notes
 ## Random Variables as Functions
 - Random variables must be measurable
 	- $\forall B \in \mathcal B, X^{-1}(B)\in \mathcal A$
 		- For any outcome in the support set, the inverse of the event must be within the [[Probability Theory|sigma algebra]]
-
 ## Moments of a Random Variable
 - Similar definitions to [[Descriptive Statistics|descriptive statistics moments]], but random variables are based on [[Distributions of Probability and Random Variables|probability distributions]]
 	- Raw moments are on raw data, centered moments remove the expected value, and scaled centered moments both remove the expected value and the variance
@@ -60,8 +66,7 @@
 		- $\tilde{\mu_k}= \frac{\mu_k}{\sigma_k}$
 			- $\mu_k = E[(X - \mu)^k]$
 			- $\sigma_k = \mu_2^{k/2}$
-
-## Inequalities of Random Variables
+## Important Inequalities of Random Variables
 - Markov's Inequality
 	- If X is positive, then $\forall r > 0, P(X\ge r) \le \frac{E[X]}{r}$ 
 		- The probability that a random variable is greater than a chosen value is at most the ratio of the expected value of that random variable and the chosen value
@@ -69,3 +74,50 @@
 	- Let X be a random variable and g(x) be a non-negative function of that random variable
 	- $\forall r > 0, P(g(X) \ge r) \le \frac{E[g(x)]}{r}$
 	- Same as Markov's, but this applies to non-negative functions of the random variable
+## Classical Random Variables and Their Properties
+- Uniform ($X \sim \mathcal U(a, b)$)
+	- Density Function: $f_X(t) = \begin{cases}\frac{1}{b - a} \text{ if } t \in [a,b]\\ 0 \text{ otherwise }\end{cases}$
+	- $\mathbb E[X] = \frac{a+b}{2}$ and $\mathbb V[X] = (b-a)^2/12$
+	- Distribution Function: $F_X(t) = \begin{cases}0 \text{ if } t \lt a\\\frac{t-a}{b-a} \text{ if } t\in [a,b]\\1 \text{ if }t \gt b\end{cases}$
+	- The distribution $X \sim \mathcal U(0,1)$ can be converted to any range
+		- $Y = a + (b-a)X \implies Y \sim \mathcal U(a, b)$
+	- R Function: `runif(n, min = 0, max = 1)`
+- Exponential ($X \sim \epsilon(\lambda)$)
+	- Density Function: $f_X(t) = \begin{cases}\lambda t e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
+	- $\mathbb E[X] = \frac{1}{\lambda}$ and $\mathbb V[X] = \frac{1}{\lambda^2}$
+		- This is the French version. English version is $\lambda$ and $\lambda^2$
+	- $F_X(t)=\begin{cases}1-e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
+	- The distribution $X \sim \epsilon(1)$ can be converted to anything
+		- $Y = \frac{1}{\lambda}X \implies Y \sim \epsilon(\lambda)$
+	- R Function: `rexp(n, rate = 1)`
+- [[Distributions of Probability and Random Variables|Gaussian]] ($X \sim \mathcal N(\mu, \sigma^2)$)
+	- Due to the complexity of the density function, software like R or precalculated tables are used to estimate
+	- $\mathbb E[X] = \mu$ and $\mathbb V[X] = \sigma^2$
+	- R Function: `rnorm(n, mean = 0, sd = 1)`
+		- Note that this uses standard deviation and not variance
+	- We can transform any Gaussian-distributed variable to the standard Gaussian through normalization (centering and scaling)
+		- $Y = \frac{X - \mu}{\sigma^2} \implies Y \sim \mathcal N(0,1)$
+- Chi-Square ($X \sim \chi^2(d)$)
+	- The chi-square random variable is a sum of squared gaussian random variables
+		- Let $X_1, \dots, X_d$ [[Distributions of Probability and Random Variables|iid]] whose distribution is $\mathcal N(0,1)$, consider $C = \overset{d}{\underset{k=1}{\sum}}X^2_k$
+		- $C$ is then a $\chi^2$ random variable with degrees of freedom $d$
+	- $\mathbb E[X] = d$ and $\mathbb V[X] = d \mathbb V[X_1^2] = 2d$
+	- Like Gaussian random variables, there is also a table for calculation based on the degrees of freedom
+	- R Function: `rchisq(n, df, ncp = 0)`
+- Student's $T$ Random Variable ($X \sim \mathcal T(d)$)
+	- Ratio of a standard Gaussian and normalized $\chi^2$
+		- Let $N \sim \mathcal N(0,1)$ and $C \sim \chi^2(d)$, $X = \frac{N}{\sqrt{\frac{C}{d}}}$
+	- Has degrees of freedom $d$
+	- $\mathbb E[X] = 0$ if $d \gt 1$ and $\mathbb V[X]  = \frac{d}{d - 2}$ if $d \gt 2$
+	- This is a <mark style="background: #FFB86CA6;">symmetric distribution</mark>
+		- $\forall t \in \mathbb R, f_X(t) = f_x(-t) \text{ and } P(X \le -t) = P(X \ge t)$
+	- R Function: `rt(n, df, ncp)`
+- Fisher Random Variables $X \sim \mathcal F(d, p)$
+	- Ratio of two $\chi^2$ random variables normalized by their degrees of freedom
+		- Let $N \sim \chi^2(d)$ and $D \sim \chi^2(p), X = \frac{\frac{N}{d}}{\frac{D}{p}}$
+	- Has $d$ and $p$ degrees of freedom
+		- $\frac{1}{F}$ has $p$ and $d$ degrees of freedom
+	- Typically used for comparing datasets
+		- Start by comparing variances, then means
+		- Then, if above satisfied, turn to Fisher 
+	- $\mathbb E[X] = \frac{p}{p-2}$ if $p \gt 2$ and $\mathbb V[X] = \frac{2p^2(d + p -2)}{d(p-2)^2(p-4)}$ if $p \gt 4$

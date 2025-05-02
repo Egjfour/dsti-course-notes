@@ -12,6 +12,7 @@
 2. The variance is ALWAYS a positive value
 3. Moments of random variables are not themselves random variables, they are constants
 4. Estimating the density function of a transformation involves finding the distribution function and taking the derivative of the distribution function
+5. A random variable with a negative exponential as its density function will always have an expectation
 # Definitions
 - Expectation ($\mathbb E[X]$): Let $x$ be a [[Random Variables|random variable]] with [[Distributions of Probability and Random Variables|density function]] $f$, if $\int_{\mathbb R} |x|f(x)dx \lt + \infty$, then $x$ is an integrable variable (denoted $x \in \mathscr L^1$), and in this case, $\mathbb E[X]$ exists and is given by $\mathbb E[X] = \int_{\mathbb R}xf(x)dx$ 
 	- The expectation is the integral of the density function times the observations across the entire [[Random Variables|support]]
