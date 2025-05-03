@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
+                "file": "Statistics and Probability/Estimation/Point Estimators.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Random Vectors"
+              "title": "Point Estimators"
             }
           }
         ]
@@ -170,8 +170,12 @@
   },
   "active": "1aac300ae2aa0baf",
   "lastOpenFiles": [
-    "Applied Mathematics/Vectors.md",
+    "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
+    "Statistics and Probability/Estimation/Point Estimators.md",
+    "Statistics and Probability/Basics/Descriptive Statistics.md",
+    "Statistics and Probability/Basics/Properties of Sums and Products.md",
     "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
+    "Applied Mathematics/Vectors.md",
     "Statistics and Probability/Random Variables and Vectors/Random Variables.md",
     "Software Engineering/Data Structures.md",
     "Applied Mathematics/Matrix Diagonalization.md",
@@ -182,17 +186,13 @@
     "Statistics and Probability/Probability/Conditional Probability and Independence.md",
     "google_image_thumbnails/Pasted image 20250503091647.png",
     "google_image_thumbnails/Pasted image 20250503091247.png",
-    "Statistics and Probability/Basics/Descriptive Statistics.md",
-    "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
     "Statistics and Probability/Random Variables and Vectors/Moments of Random Variables.md",
     "Optimization/Optimization Basics & Problem Statement.md",
     "Optimization/Optimality Conditions.md",
     "Optimization/Algorithms.md",
-    "Statistics and Probability/Basics/Properties of Sums and Products.md",
     "Statistics and Probability/Probability/Probability Theory.md",
     "Statistics and Probability/Convergence.md",
     "Optimization/Constrained Optimization - Lagrangian.md",
-    "Statistics and Probability/Estimation/Point Estimators.md",
     "Statistics and Probability/Estimation/Estimators-Convergence & Comparison.md",
     "Statistics and Probability/Estimation",
     "Statistics and Probability/Random Variables and Vectors/Expectation and Variance.md",
