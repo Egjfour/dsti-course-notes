@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 546.5
   },
   "right": {
     "id": "000a40d206344b08",
@@ -170,9 +170,12 @@
   },
   "active": "1aac300ae2aa0baf",
   "lastOpenFiles": [
-    "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
-    "Statistics and Probability/Random Variables and Vectors/Random Variables.md",
+    "google_image_thumbnails/Pasted image 20250503091647.png",
+    "google_image_thumbnails/Pasted image 20250503091247.png",
+    "Statistics and Probability/Basics/Descriptive Statistics.md",
     "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
+    "Statistics and Probability/Random Variables and Vectors/Random Variables.md",
+    "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
     "Statistics and Probability/Random Variables and Vectors/Moments of Random Variables.md",
     "Optimization/Optimization Basics & Problem Statement.md",
     "Optimization/Optimality Conditions.md",
@@ -180,7 +183,6 @@
     "Statistics and Probability/Basics/Properties of Sums and Products.md",
     "Statistics and Probability/Probability/Probability Theory.md",
     "Statistics and Probability/Convergence.md",
-    "Statistics and Probability/Basics/Descriptive Statistics.md",
     "Optimization/Constrained Optimization - Lagrangian.md",
     "Statistics and Probability/Estimation/Point Estimators.md",
     "Statistics and Probability/Estimation/Estimators-Convergence & Comparison.md",
@@ -197,8 +199,6 @@
     "google_image_thumbnails/Pasted image 20250419103442.png",
     "NoSQL and Graph Databases/Semantic Web/SPARQL Advanced.md",
     "NoSQL and Graph Databases/Semantic Web/SPARQL Basics.md",
-    "NoSQL and Graph Databases/Semantic Web/OWL Property Extensions.md",
-    "NoSQL and Graph Databases/Semantic Web/RDFS.md",
     "google_image_thumbnails/Pasted image 20250409104211.png",
     "google_image_thumbnails/Pasted image 20250409104131.png",
     "google_image_thumbnails/Pasted image 20250409103811.png",
@@ -207,7 +207,6 @@
     "google_image_thumbnails/Pasted image 20250407162018.png",
     "google_image_thumbnails/Pasted image 20250407102412.png",
     "google_image_thumbnails/Pasted image 20250407100850.png",
-    "google_image_thumbnails/Pasted image 20250407100541.png",
     "NoSQL and Graph Databases/Semantic Web/desktop.ini",
     "NoSQL and Graph Databases/Semantic Web",
     "Ethics, Data Laws, and Project Management/Project Management",

@@ -6,7 +6,7 @@
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/johnny_najjar_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fjohnny%5Fnajjar%5Fdsti%5Finstitute%2FDocuments%2FRecordings%281%29%2FA24%20%2D%20Common%20Link%20%2D%20DS%2DDE%2DDA%2D20250116%5F095107%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E00f8464c%2D5165%2D473e%2Dba3a%2D6418387d76cf)
 
 # Summary
-*Random variables are the mapping between events that can happen in the physical world and the real number space which allows for effective measurement. Like probability distributions, there are also common distributions of random variables which have known expectation and variance calculations. *
+*Random variables are the mapping between events that can happen in the physical world and the real number space which allows for effective measurement. Like probability distributions, there are also common distributions of random variables which have known expectation and variance calculations.*
 
 # Key Takeaways
 1. Random variables are the link between the possible outcomes ($\Omega$) and the events
@@ -121,3 +121,26 @@
 		- Start by comparing variances, then means
 		- Then, if above satisfied, turn to Fisher 
 	- $\mathbb E[X] = \frac{p}{p-2}$ if $p \gt 2$ and $\mathbb V[X] = \frac{2p^2(d + p -2)}{d(p-2)^2(p-4)}$ if $p \gt 4$
+## Graphical Representation
+- Histogram
+	- Representation of the density function
+	- Divides the random variable into classes on the x-axis and uses the empirical density on the y-axis
+	- Acts as a [[Point Estimators|non-parametric estimation]] of the true density function
+	- To determine class length
+		- Set the number of classes: $k \approx 1 + 3.22 \cdot log_{10}(n)$ with $n$ as number of observations
+		- Define the class limits with a margin ($\epsilon$)
+			- $a_0 = min(X) - \epsilon; a_k = max(X) + \epsilon; \forall i \in [1, k-1], a_i = a_0 + i\cdot range$
+				- $range = \frac{a_k-a_0}{k}$
+	- The histogram is generated using the [[Descriptive Statistics|continuous frequency table]]
+	- In R, the `hist(x)` function creates a histogram
+		- Be sure to set the argument `freq = FALSE` to have the empirical density on the y-axis instead of the count
+		- We can also redefine the breaks, but by default, R uses the Sturges algorithm (formula above)
+	- Example R plot: `hist(rnorm(10000), freq = FALSE, main="Histogram of Normal Distribution", xlab="x", ylab="Empirical Density")`
+		 ![[Pasted image 20250503091247.png]]
+- Cumulative Empirical Distribution Curve
+	- Estimates the distribution function
+	- Depends on the number of observations and classes
+	- <mark style="background: #FFB86CA6;">Since it uses random variable observations, it is a random object</mark>
+	- Calculates an ordered-sum of the empirical densities across classes
+	- R Example: `plot(ecdf(rnorm(10000)), main="Empirical CDF of Normal Distribution", xlab="x", ylab="Empirical CDF")`
+		 ![[Pasted image 20250503091647.png]]
