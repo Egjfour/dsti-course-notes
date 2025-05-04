@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Statistics and Probability/Estimation/Point Estimators.md",
+                "file": "Statistics and Probability/Estimation/Estimators-Convergence & Comparison.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Point Estimators"
+              "title": "Estimators-Convergence & Comparison"
             }
           }
         ]
@@ -168,10 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1aac300ae2aa0baf",
+  "active": "545bdb10f1d9ac77",
   "lastOpenFiles": [
-    "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
     "Statistics and Probability/Estimation/Point Estimators.md",
+    "Statistics and Probability/Random Variables and Vectors/Distributions of Probability and Random Variables.md",
     "Statistics and Probability/Basics/Descriptive Statistics.md",
     "Statistics and Probability/Basics/Properties of Sums and Products.md",
     "Statistics and Probability/Random Variables and Vectors/Random Vectors.md",
