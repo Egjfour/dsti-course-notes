@@ -15,6 +15,7 @@
 
 # Definitions
 - Convergent/Consistent Estimator: An estimator which [[Convergence|converges in probability]] towards the actual parameter
+- Cramer-Rao Bound: The level at which an estimator cannot be improved. This is defined as 1 over the Fisher information $\frac{1}{I(\theta)}$
 
 # Additional Resources
 - [Mean Square Convergence](https://www.statlect.com/asymptotic-theory/mean-square-convergence)
@@ -49,3 +50,7 @@
 	- $MQE(\hat\theta_n) = \mathbb V[\hat\theta_n] + (b_{\theta}(\hat\theta_n))^2$
 		- Variance plus the [[Random Variables|squared bias]]
 		- When the estimator is unbiased, the mean quadratic error is equal to the variance because the bias is zero
+- Cramer's Rule: $\forall \hat\theta_n$ unbiased, we have Cramer-Rao bound $\le \mathbb V[\hat\theta_n]$
+	- If an estimator is equal to this bound, there can be no improvement
+	- The Cramer-Rao Bound is 1 over the Fisher Information with Fisher information as
+		- $n \mathbb E_{x;\theta}[(\frac{\partial log(X;\theta)}{\partial \theta})^2]$ with $log(X;\theta)$ is the log-likelihood, and in the case of iid variables is just the density function
