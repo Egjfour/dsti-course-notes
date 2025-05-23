@@ -47,11 +47,11 @@
 		- Note: $A_n$ and $B_n$ are random variables themselves
 	- Step 3: Write the equations of $A_n$ and $B_n$ as a probability that the true parameter is inside the interval
 	- Step 4: Modify the probability such that $P_n$ and $S_n$ are by themselves and such that the probability is equal to $\alpha$
-	- Step 5: Change the center portion of the equation to get to a known distribution
+	- Step 5: Change the center portion of the inequality to get to a known distribution
 	- Step 6: Write the [[Probability Theory|probability of the disjoint events as the sum of the probability]]
 	- Step 7: Set these probabilities as equal to $\alpha_1$ and $\alpha_2$ respectively and recognize this as a [[Distributions of Probability and Random Variables|quantile function]]
 	- Step 8: Solve for $P_n$ and $S_n$ and then substitute back into $A_n$ and $B_n$
-## Interval for Expectation - Gaussian Setting - Known Variance
+## Interval for Expectation - Gaussian - Known Variance
 - Framework: Consider $X_1, \dots, X_n$ iid random variables. We want to calculate a confidence interval for the expectation $\mu$ with confidence level $100(1-\alpha)\%$
 	- Assume $X_1,\dots, X_n \sim \mathcal N(\mu, \sigma^2)$ with $\sigma^2$ known
 - The classical estimator for $\mu$ is $\bar X_n$
@@ -68,7 +68,7 @@
 	- Also stated as $P(\bar X_n - S_n \le \mu \le \bar X_n + P_n)$
 - Step 4: Modify the probability such that $P_n$ and $S_n$ are by themselves and such that the probability is equal to $\alpha$
 	- Rearrange the probability from step 3: $P(-S_n \le \bar X_n - \mu \le P_n) = 1-\alpha$
-- Step 5: Change the center portion of the equation to get to a known distribution
+- Step 5: Change the center portion of the inequality to get to a known distribution
 	- See that $\bar X_n - \mu \sim \mathcal N(0,\frac{\sigma^2}{n})$
 	- Need to consider the reduced/scaled version of $\bar X_n - \mu$ by dividing by the standard deviation: $(\bar X_n - \mu)/\sqrt{\frac{\sigma^2}{n}} = \sqrt n (\frac{\bar X_n - \mu}{\sigma}) \sim N(0,1)$ 
 	- So, $I = P(\frac{-\sqrt n P_n}{\sigma} \le \sqrt n (\frac{\bar X_n - \mu}{\sigma}) \le \frac{\sqrt n S_n}{\sigma}) = 1 - \alpha$
@@ -87,3 +87,31 @@
 		- So, we convert $B_n$ to be $\bar X_n + \frac{\sigma}{\sqrt n}z_{1-\alpha_1}$ since the Gaussian is symmetric
 	- This gives us a confidence interval for $\mu$ with confidence level $100(1-\alpha)\%$ when $X_1,\dots,X_n$ are iid Gaussian random variables with expectation $\mu$ and known variance
 		- $[\bar X_n - \frac{\sigma}{\sqrt n}z_{1-\alpha_2};\hspace{1.5mm}\bar X_n + \frac{\sigma}{\sqrt n}z_{1-\alpha_1}]$ with $\alpha_1 \ge 0, \alpha_2 \ge 0, \alpha_1 + \alpha_2 = \alpha$
+## Interval for Expectation - Gaussian - Unknown Variance
+- Framework: Consider $X_1, \dots, X_n$ iid random variables. We want to calculate a confidence interval for the expectation $\mu$ with confidence level $100(1-\alpha)\%$
+	- Assume $X_1,\dots, X_n \sim \mathcal N(\mu, \sigma^2)$ with $\sigma^2$ unknown
+	- The previous intervals cannot be used since they would depend on an unknown parameter
+	- $\sigma^2$ should be replaced with an estimator: $\hat \sigma^2$
+- Steps 1-4 are the same as the Gaussian case with known variance
+	- Producing $P(-S_n \le \bar X_n - \mu \le P_n) = 1-\alpha$
+- Step 5: Change the center portion of the inequality to get to a known distribution
+	- We cannot use $\sqrt n (\bar X_n - \mu)/\sigma$ since it depends on unknown parameter $\sigma$
+	- Instead, we should consider $\sqrt n (\bar X_n - \mu)/\hat\sigma_n$, but we also should have an idea about the distribution of this random variable
+	- Properties of $\hat\sigma^2_n$ <mark style="background: #FFB86CA6;">(only apply because we are in the Gaussian setting)</mark>
+		- An unbiased estimator for $\hat\sigma_n^2$ is $\frac{1}{n-1}\underset{k-1}{\overset{n}{\sum}}(X_k - \bar X_n)^2$
+			- Can be rewritten as $(n-1)\frac{\hat\sigma_n^2}{\sigma^2}$
+		- We see that this estimator is distributed $\chi^2(n-1)$ with $\mathbb E[Y_k] = 0$ and $\mathbb V[\hat\sigma_n^2] = \frac{n-1}{n}$
+			- $Y_k = \frac{X_k - \bar X_n}{\sigma} = \frac{1}{\sigma}(X_k - \bar X_n)$
+		- We also know that $\hat\sigma_n^2 \perp \!\!\! \perp \bar X_n$
+	- We can decompose $\sqrt n (\bar X_n - \mu)/\hat\sigma_n$ as $\frac{\sqrt n (\bar X_n - \mu)/\sigma}{\sqrt {\frac{(n-1)(\hat\sigma_n^2/\sigma^2)}{n-1}}}$
+		- This gives us a [[Random Variables|Student variable]] distributed $\mathcal T(n-1)$
+	- Therefore, we can state that we want to find $P(\frac{\sqrt n P_n}{\hat\sigma_n} \le \sqrt n \frac{\bar X_n - \mu}{\hat\sigma_n} \le \frac{\sqrt n S_n}{\hat\sigma_n}) = 1 - \alpha$
+- The remaining steps are the same as in the Gaussian case with known variance except that we use the Student - $\mathcal T(n-1)$ - distribution
+	- $-\frac{\sqrt n P_n}{\hat\sigma_n}$ and $\frac{\sqrt n S_n}{\hat\sigma_n}$ are quantiles of the Student distribution
+- Applying the quantiles, we get the interval $[\bar X_n - \frac{\hat\sigma_n}{\sqrt n}t_{1-\alpha_2;\hspace{1mm}n-1}; \hspace{1.5mm} \bar X_n + \frac{\hat \sigma_n}{\sqrt n}]$
+## Interval for Expectation - Not Gaussian - Known Variance
+- Framework: Let $X_1, \dots, X_n$ be a random variable with expectation $\mu$ and variance $\sigma^2$. Scope isa confidence interval for $\mu$
+- The classical point estimator is still $\bar X_n$ with $\mathbb E[\bar X_n] = \mu$ and $\mathbb V[\bar X_n] = \frac{\sigma^2}{n}$
+- The Central Limit Theorem lets us solve this in the exact same way as the Gaussian case with known variance because $\sqrt n \frac{\bar X_n - \mu}{\sigma}\underset{d}{\to}\mathcal N(0,1)$
+- So, the calculation is exactly the same as the interval for the expectation in the Gaussian setting EXCEPT we now <mark style="background: #FFB86CA6;">only have asymptotical convergence of the estimation</mark>
+	- $e.g., \underset{n\to\infty}{lim}P(\mu \in [\bar X_n - \frac{\sigma}{\sqrt n}Z_{1-\alpha_2};\hspace{1.5mm}\bar X_n + \frac{\sigma}{\sqrt n}Z_{1-\alpha_1}]) = 1-\alpha$
