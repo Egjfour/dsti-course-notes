@@ -110,8 +110,49 @@
 	- $-\frac{\sqrt n P_n}{\hat\sigma_n}$ and $\frac{\sqrt n S_n}{\hat\sigma_n}$ are quantiles of the Student distribution
 - Applying the quantiles, we get the interval $[\bar X_n - \frac{\hat\sigma_n}{\sqrt n}t_{1-\alpha_2;\hspace{1mm}n-1}; \hspace{1.5mm} \bar X_n + \frac{\hat \sigma_n}{\sqrt n}]$
 ## Interval for Expectation - Not Gaussian - Known Variance
-- Framework: Let $X_1, \dots, X_n$ be a random variable with expectation $\mu$ and variance $\sigma^2$. Scope isa confidence interval for $\mu$
+- Framework: Let $X_1, \dots, X_n$ be a random variable with expectation $\mu$ and variance $\sigma^2$. Scope is a confidence interval for $\mu$
 - The classical point estimator is still $\bar X_n$ with $\mathbb E[\bar X_n] = \mu$ and $\mathbb V[\bar X_n] = \frac{\sigma^2}{n}$
 - The Central Limit Theorem lets us solve this in the exact same way as the Gaussian case with known variance because $\sqrt n \frac{\bar X_n - \mu}{\sigma}\underset{d}{\to}\mathcal N(0,1)$
 - So, the calculation is exactly the same as the interval for the expectation in the Gaussian setting EXCEPT we now <mark style="background: #FFB86CA6;">only have asymptotical convergence of the estimation</mark>
 	- $e.g., \underset{n\to\infty}{lim}P(\mu \in [\bar X_n - \frac{\sigma}{\sqrt n}Z_{1-\alpha_2};\hspace{1.5mm}\bar X_n + \frac{\sigma}{\sqrt n}Z_{1-\alpha_1}]) = 1-\alpha$
+## Interval for Expectation - Not Gaussian - Unknown Variance
+- Framework: Let $X_1, \dots, X_n$ be a random variable with expectation $\mu$ and unknown variance $\sigma^2$. Scope is a confidence interval for $\mu$
+- Again, consider $\bar X_n$ an estimator for $\mu$ which gives $\sqrt n \frac{\bar X_n - \mu}{\sigma}\sim \mathcal N(0,1)$ thanks to the Central Limit Theorem
+- Like in the Gaussian case with unknown variance, we use the plug-in method with $\sqrt n \frac{\bar X_n - \mu}{\hat\sigma_n}$
+	- But we should have an idea about the distribution of this random variable
+- This is not $\mathcal T(n-1)$ because $\sqrt n \frac{\bar X_n - \mu}{\hat\sigma_n}$ is not $\mathcal N(0,1)$ and $(n-1) \frac{\hat\sigma_n^2}{\sigma^2}$ not $\chi^2(n-1)$
+	- But we can say that $\hat\sigma_n^2 \underset{as}{\to}\sigma^2$ and thus $\hat\sigma_n \underset{as}{\to} \sigma$ since square root is a continuous function
+	- This additionally means that $\hat\sigma_n \underset{p}{\to} \sigma$, and therefore, $\frac{\hat\sigma_n}{\sigma}\underset{p}{\to}1$
+	- We can show <mark style="background: #FFB86CA6;">through the application of Slutsky, that</mark> $\sqrt n \frac{\bar X_n - \mu}{\hat\sigma_n} \underset{d}{\to} \mathcal N(0,1)$
+- Thus, $1-\alpha = P(-\sqrt n/\hat\sigma_nP_n \le \sqrt n \frac{\bar X_n - \mu}{\hat\sigma_n} \le \sqrt n S_n / \hat\sigma_n)$
+	- And this gives that $1-\alpha = P(-\sqrt n/\hat\sigma_nP_n \le N \le \sqrt n S_n / \hat\sigma_n)$ with $N \sim N(0,1)$ as an <mark style="background: #FFB86CA6;">approximated/asymptotic confidence interval</mark>
+- Once we solve, we get the interval as $[\bar X_n - \frac{\hat\sigma_n}{\sqrt n}Z_{1-\alpha_1}; \hspace{1.5mm}\bar X_n + \frac{\hat\sigma_n}{\sqrt n}Z_{1-\alpha_2}]$
+## Interval for Proportions
+- Framework: Consider $X_1, \dots, X_n$ iid $\mathcal B(p)$. Goal is to estimate $p$ and construct an interval for $p$
+- Remark: $\mathbb E[X_1] = p$, so we want an estimator for the [[Moments of Random Variables|expectation]]
+- Remark: $\mathbb V[X_1] = p(1-p)$
+- Because of the two remarks, this is a <mark style="background: #FFB86CA6;">special case of the interval for a Gaussian expectation with unknown variance</mark>
+	- A classical estimator for $p$ is $\bar X_n$ (thanks to remark 1)
+- Remark: $n\bar X_n = \underset{k=1}{\overset{n}{\sum}}X_k \sim \mathcal B(n; p)$ and by the central limit theorem, we have that $\frac{\sqrt n \bar X_n -p}{\sqrt{p(1-p)}} \underset{d}{\to}\mathcal N(0,1)$
+	- So, for $n$ large enough, an approximated distribution for $\bar X_n$ is $\mathcal N(p, p(1-p)/n)$ and we can approach a binomial distribution with a Gaussian
+- Using the same computations as the non-Gaussian, known variance expectation interval
+	- $A_n = \bar X_n - \frac{\sqrt {p (1-p)}}{\sqrt n}\cdot Z_{1-\alpha_2}$ and $B_n = \bar X_n + \frac{\sqrt{p(1-p)}}{\sqrt n}\cdot Z_{1-\alpha_1}$
+	- These cannot, however, be confidence interval bounds since they depend on $p$
+	- Since $Z_{1-\alpha_1} \ge 0, Z_{1-\alpha_2} \ge 0$, and $\sqrt{p(1-p)} \le 1/4$, $\bar X_n - \frac{1}{2\sqrt n}Z_{1-\alpha_2} \le A_n$ and $\bar X_n - \frac{1}{2\sqrt n}Z_{1-\alpha_1} \le B_n$
+	- AND $P(p \in [A_n, B_n]) \le P(p \in [\bar X_n - \frac{1}{2\sqrt n}Z_{1-\alpha_2};\hspace{1.5mm} \bar X_n + \frac{1}{2\sqrt n}Z_{1-\alpha_1}])$
+- This produces an asymptotic confidence interval defined as
+	- $[\bar X_n - \frac{1}{2\sqrt n}Z_{1-\alpha_2};\hspace{1.5mm}\bar X_n + \frac{1}{2\sqrt n}Z_{1-\alpha_1}]$
+## Interval for Variance - Gaussian
+- Define a [[Point Estimators|point estimator]] for $\sigma^2 = \hat\sigma_n^2 = \frac{1}{n-1}\underset{k=1}{\overset{n}{\sum}}(X_i - \bar X_n)^2$
+- In the Gaussian setting, we have $(n-1)\frac{\hat\sigma_n^2}{\sigma^2} \sim \chi^2(n-1)$
+	- Want to find $A_n$ and $B_n$ such that $1-\alpha = P(A_n \le \sigma^2 \le B_n)$
+- We can define $A_n$ and $B_n$ using $\hat\sigma^2_n$ since it is close to $\sigma^2$
+	- $A_n = \hat\sigma^2_n \cdot S_n$
+	- $B_n = \hat\sigma^2_n \cdot P_n$
+- Thus (step 3), $P(\hat\sigma_n^2S_n \le \sigma^2 \le \hat\sigma_n^2P_n) = 1-\alpha$
+- We divide by $\sigma^2$ so we can get the desired random variable ($\chi^2(n-1)$)
+	- $P(\frac{\hat\sigma_n^2S_n}{\sigma^2} \le 1 \le \frac{\hat\sigma_n^2P_n}{\sigma^2}) = 1-\alpha$
+	- Rewrite: $P(\frac{n-1}{S_n} \le (n-1)\frac{\hat\sigma^2_n}{\sigma^2} \le \frac{n-1}{P_n}) = 1-\alpha$ since $C = (n-1)\frac{\hat\sigma^2_n}{\sigma^2} \sim \chi^2(n-1)$
+- The main difference with the other scenarii is that Chi-squared is an asymmetric distribution
+	- $P_n = \frac{n-1}{C_{\alpha_1;n-1}}$ and $S_n = \frac{n-1}{C_1-\alpha_2; n-1}$
+- This produces a final confidence interval of $[\hat\sigma_n^2\cdot\frac{n-1}{C_{1-\alpha_2;n-1}};\hspace{1.5mm}\hat\sigma_n^2\cdot\frac{n-1}{C_{\alpha_1;n-1}}]$
