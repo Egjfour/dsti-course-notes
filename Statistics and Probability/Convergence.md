@@ -46,6 +46,7 @@
 	- As the sample size increases, the probability that the sample average deviates from the expected value $\mu$ by more than $\epsilon$ becomes increasingly small
 - This implies [[Probability Theory|almost-sure convergence]] in the Strong Law of Large Numbers
 	- The Weak Law of Large Numbers only implies convergence in probability
+	- Almost Sure Convergence: $X_n \underset{as}{\to} X \Leftrightarrow P(\underset{n\to\infty}{lim}|\bar x_n - \mu | \lt \epsilon) = 1, \forall \epsilon \in \mathbb R^+$
 - Central Limit Theorem
 	- $\sqrt n (\bar X_n - \mu) \overset{d}{\to} \mathcal N(0, \sigma^2)$ as $n \to \infty$
 	- The difference between sample means from a sequence of random variables and the true mean converges in distribution to a centered normal distribution as the sample sizes get sufficiently large
