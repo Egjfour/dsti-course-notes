@@ -96,6 +96,7 @@
 - Definition
 	- Let $X = \begin{pmatrix}X_1\\ \vdots\\X_d\end{pmatrix}$ a random vector
 	- $X$ is a Gaussian random vector if $\forall (\lambda_1, \dots, \lambda_d) \in \mathbb R^d, \underset{k=1}{\overset{d}{\sum}}\lambda_kX_k$ is a Gaussian random variable (i.e., all possible [[Vectors|linear combinations]] of the random vector produce a Gaussian random variable)
+- If a vector of random variables, $R$ is a Gaussian random vector and $\mathbb V[R]$ is a [[Matrices|diagonal matrix]], then the random variables contained within are [[Random Variables|independent random variables]]
 ### Example - Gaussian Random Vector
 - Setup
 	- Let $X \sim \mathcal N(0,1)$ and $\epsilon$ a rademaker (symmetric) random variable such that $P(\epsilon = -1) = P(\epsilon = 1) = \frac{1}{2}$

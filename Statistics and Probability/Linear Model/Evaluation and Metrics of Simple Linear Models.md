@@ -8,9 +8,10 @@
 *A 3-4 sentence description of what was learned in italics*
 
 # Key Takeaways
-1. The t-value is the ability, under Gaussian settings, to test if $b=0$ or $b\ne0$
-2. $R^2$ is what is used when we are not operating in a Gaussian setting to see if there is a linear connection between the dependent and independent variables
-3. $R^2$ can be defined as $1 -$ the ratio of the residual sum of squares to the total sum of squares $SSR/SST$ or as the sum of explained residuals over the sum of total residuals $SSE/SST$
+1. A histogram of the residuals is not an appropriate evaluation because the residuals are not identically distributed
+2. The t-value is the ability, under Gaussian settings, to [[Hypothesis Testing|test]] if $b=0$ or $b\ne0$
+3. $R^2$ is what is used when we are not operating in a Gaussian setting to see if there is a linear connection between the dependent and independent variables
+4. $R^2$ can be defined as $1 -$ the ratio of the residual sum of squares to the total sum of squares $SSR/SST$ or as the sum of explained residuals over the sum of total residuals $SSE/SST$
 
 # Definitions
 - Regression t-value: The ratio between a parameter estimate and its standard error
