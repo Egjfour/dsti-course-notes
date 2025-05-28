@@ -48,7 +48,7 @@
 	- We say that $\hat\theta_{n,1}$ is better than $\hat\theta_{n,2}$ is $MQE(\hat\theta_{n,1}) \le MQE(\hat\theta^{n,2})$
 - <mark style="background: #FFB86CA6;">Practical formulation of MQE:</mark>
 	- $MQE(\hat\theta_n) = \mathbb V[\hat\theta_n] + (b_{\theta}(\hat\theta_n))^2$
-		- Variance plus the [[Random Variables|squared bias]]
+		- Variance plus the [[Point Estimators|squared bias]]
 		- When the estimator is unbiased, the mean quadratic error is equal to the variance because the bias is zero
 - Cramer's Rule: $\forall \hat\theta_n$ unbiased, we have Cramer-Rao bound $\le \mathbb V[\hat\theta_n]$
 	- If an estimator is equal to this bound, there can be no improvement
