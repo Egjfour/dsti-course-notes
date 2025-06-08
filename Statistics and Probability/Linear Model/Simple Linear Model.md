@@ -1,6 +1,6 @@
-|                        Course Name                        |   Topic    |    Professor    |    Date     |    Tags     |
-| :-------------------------------------------------------: | :--------: | :-------------: | :---------: | :---------: |
-| **Foundations of Statistics and Machine Learning Part 2** | Regression | Christine Malot | 09 mai 2025 | #Statistics |
+|                        Course Name                        |   Topic    |    Professor    |       Date       |    Tags     |
+| :-------------------------------------------------------: | :--------: | :-------------: | :--------------: | :---------: |
+| **Foundations of Statistics and Machine Learning Part 2** | Regression | Christine Malot | 07 & 09 mai 2025 | #Statistics |
 
 [Class Video Link](URL)
 
@@ -96,8 +96,12 @@
 	- The expectation is the zero vector: $\mathbb E[\hat U] = \mathbb E[RU] = R\mathbb E[U] = 0_n$
 		- So, $\forall i,\hspace{1.5mm} \mathbb E[y_i - \hat y_i] = 0$
 	- The variance is $\sigma^2$ multiplied with the projection matrix $R$
-		- $\mathbb V[\hat U] = \mathbb V[RU] = R\mathbb V[U]R^T = \sigma^2RR^T = \sigma^2R^2 = \sigma^2R$
+		- $\mathbb V[\hat U] = \mathbb V[RU] = R\mathbb V[U]R^T = \sigma^2RR^T = \sigma^2R^2 = \sigma^2R$\
 			- Since $R$ is a projection matrix, $R^2 = R = R^T$
 			- $\mathbb V[U] = \sigma^2 I$
 		- Since $R$ is not the identity matrix, the <mark style="background: #FFB86CA6;">residuals do not all have the same variance and are therefore not identically distributed</mark>
-	- We can take the 
+	- We can take the standardized residuals however which makes them normally distributed
+		- $\hat U^{(sd)}_i = (y_i - \hat y_i)/(\hat \sigma_n \sqrt{R_{ii}}) \sim \mathcal N(0,1)$ with $R_{ii}$ as the term at row and column $i$ of $R$
+	- We cannot determine the exact distribution of the standardized residuals, so we use Studentized residuals
+		- $\hat U^{(st)}_i = (y_i - \hat y_i)/(\hat \sigma_{n, i} \sqrt{R_{ii}}) \sim \mathcal T(n-3)$
+		- $\hat \sigma^2_{n, i}$ is an estimator of $\sigma^2$ when we perform the linear model on learning sample $\{(x_k, y_k), \hspace{1.5mm} k \in [1,n],\hspace{1mm} k\ne i\}$; <mark style="background: #FFB86CA6;">estimate the variance without the current observation in the sample</mark>
