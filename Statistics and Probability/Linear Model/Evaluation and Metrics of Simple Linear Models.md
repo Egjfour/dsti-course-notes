@@ -5,7 +5,7 @@
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DS%5FDE%5FDA%2D20250507%5F084913%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E9745aef7%2D0aa1%2D46f7%2Dafb3%2D6170b9eff77d)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*[[Simple Linear Model|Linear models]] have many mechanisms which allow us to determine how reliable the results are. Some of these rely heavily on the underlying assumptions of the linear model (in particular [[Simple Linear Model|H4]]) like the t-value and standard error calculations. Others, however, are less restrictive and are useful when these assumptions are not guaranteed like R-squared. There are many methodologies to determine if the Gaussian assumption is upheld such as the Q-Q plot and K-S test.*
 
 # Key Takeaways
 1. A histogram of the residuals is not an appropriate evaluation because the residuals are not identically distributed
@@ -26,7 +26,7 @@
 	- Variance of the $Y_k$
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- 
 
 # Notes
 ## Regression Metrics

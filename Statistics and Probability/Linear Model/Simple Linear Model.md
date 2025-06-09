@@ -2,10 +2,10 @@
 | :-------------------------------------------------------: | :--------: | :-------------: | :--------------: | :---------: |
 | **Foundations of Statistics and Machine Learning Part 2** | Regression | Christine Malot | 07 & 09 mai 2025 | #Statistics |
 
-[Class Video Link](URL)
+[Class Video Link](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DS%5FDE%5FDA%2D20250507%5F084913%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed56432e0%2D1413%2D4687%2Da922%2Dc7126601ac06)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*The simple linear model linearly projects a dependent variable, $y$, onto a design matrix of independent features, $\mathbb X$. We estimate the coefficients of this model using least squares estimation which is a [[Optimization Basics & Problem Statement|minimization problem]] of the squared error over the regression parameters. This model comes with some strict assumptions particularly as it relates to the error term. This model can also be written in matrix form making it easier to work with*
 
 # Key Takeaways
 1. It is essential that the error is Gaussian distributed
@@ -26,6 +26,8 @@
 
 # Additional Resources
 - [Confidence vs Prediction Intervals in Regression (DataCamp)](https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals)
+- [Studentized Residuals](https://online.stat.psu.edu/stat462/node/247/)
+- [Simple Linear Model (PSU)](https://online.stat.psu.edu/stat462/node/79/)
 
 # Notes
 ## Overview of the Linear Model
@@ -89,7 +91,7 @@
 	- $\hat U = Y - \hat Y = Y - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T Y$
 	- $= (I - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T) Y$
 	- $= (I - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T)(\mathbb X\beta + U)$
-		- Define $I - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T$ as $R$
+		- Define $I - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T$ as $R$, the residual space, orthogonal to $\mathbb X$
 	- $= RU$
 	- When we assume Gaussian noise (H4), $U$ is a Gaussian random vector and $\hat U$ is a Gaussian random vector as well since $R$ is deterministic
 	- <mark style="background: #FFB86CA6;">Therefore</mark>, $\forall i, y_i - \hat y_i$ <mark style="background: #FFB86CA6;">is a Gaussian random variable</mark>

@@ -5,7 +5,7 @@
 [Class Video Link 1](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DS%5FDE%5FDA%2D20250505%5F085243%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E31320220%2Db160%2D4d6c%2Db594%2Debcebb2b4ef3)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*A confidence interval is a range in which the probability that the true value of a population parameter is high (described as 1 - some level alpha). Similarly to estimators, the formula for a confidence interval cannot depend on any unknown parameters, so the more unknown parameters there are, the more difficult it is to estimate the interval. In many such cases, lack of knowledge of parameters (e.g., variance when the true distribution function is not Gaussian) means that we can only generate asymptotic confidence intervals.*
 
 # Key Takeaways
 1. The smaller the value of $\alpha$, the wider the interval will be
