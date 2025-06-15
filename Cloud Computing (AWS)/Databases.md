@@ -21,7 +21,7 @@
 	- Complex and time-consuming since it involves upgrading memory, storage, or processing power
 - Horizontal Scaling: Increasing the number of servers that the database tuns on
 	- Capacity added while database is running (no downtime to scale)
-- Data Warehouse: An online analytical processing (OLAP) relational database that is optimized for read-heavy querying of entire datasets for reporting and analytics
+- Data Warehouse: An [[Hadoop, MapReduce, and Hive|online analytical processing (OLAP)]] relational database that is optimized for read-heavy querying of entire datasets for reporting and analytics
 
 # Additional Resources
 - [Difference between RDS and Aurora](https://medium.com/awesome-cloud/aws-difference-between-amazon-aurora-and-amazon-rds-comparison-aws-aurora-vs-aws-rds-databases-60a69dbec41f)
