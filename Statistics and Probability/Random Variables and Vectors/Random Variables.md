@@ -32,6 +32,7 @@
 - [Chi-Square Distribution Video](https://www.khanacademy.org/math/statistics-probability/inference-categorical-data-chi-square-tests/chi-square-goodness-of-fit-tests/v/chi-square-distribution-introduction)
 - [Student's T Distribution Video](https://www.youtube.com/watch?v=0wjK7Ya7lOA)
 - [F-distribution](https://www.statlect.com/probability-distributions/F-distribution)
+- [Fisher Information](https://www.youtube.com/watch?v=pneluWj-U-o)
 
 # Notes
 ## Random Variables as Functions

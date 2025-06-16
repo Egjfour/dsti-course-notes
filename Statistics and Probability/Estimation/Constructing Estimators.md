@@ -21,12 +21,13 @@
 
 # Additional Resources
 - [Maximum Likelihood Estimation Explained](https://medium.com/data-science/probability-concepts-explained-maximum-likelihood-estimation-c7b4342fdbb1)
+- [Maximum Likelihood Estimation Video](https://www.youtube.com/watch?v=YevSE6bRhTo)
 
 # Notes
 ## Method of Moments
 - The method of moments is a consequence of the [[Distributions of Probability and Random Variables|Law of Large Numbers]]
 - Framework
-	- Let $X_1, \dots, X_n$ iid random variables whose density depends on an unknown parameter
+- Let $X_1, \dots, X_n$ iid random variables whose density depends on an unknown parameter
 	- Let $\theta$ a <mark style="background: #FFB86CA6;">function of this unknown parameter</mark>
 		- We do not need to estimate the parameter $\theta$ but ANY function of it
 - Version 1: Using raw moments
