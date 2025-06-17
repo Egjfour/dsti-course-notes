@@ -64,32 +64,32 @@
 		- Discrete: $\mu_k = \sum_ix_i^kf(x_i)$
 		- Continuous: $\mu_k = \int_{- \infty}^\infty x^kf(x_i)$
 	- Standardized Moments
-		- $\tilde{\mu_k}= \frac{\mu_k}{\sigma_k}$
+		- $\tilde{\mu_k}= \dfrac{\mu_k}{\sigma_k}$
 			- $\mu_k = E[(X - \mu)^k]$
 			- $\sigma_k = \mu_2^{k/2}$
 ## Important Inequalities of Random Variables
 - Markov's Inequality
-	- If X is positive, then $\forall r > 0, P(X\ge r) \le \frac{E[X]}{r}$ 
+	- If X is positive, then $\forall r > 0, P(X\ge r) \le \dfrac{E[X]}{r}$ 
 		- The probability that a random variable is greater than a chosen value is at most the ratio of the expected value of that random variable and the chosen value
 - Tchebychev Inequality
 	- Let X be a random variable and g(x) be a non-negative function of that random variable
-	- $\forall r > 0, P(g(X) \ge r) \le \frac{E[g(x)]}{r}$
+	- $\forall r > 0, P(g(X) \ge r) \le \dfrac{E[g(x)]}{r}$
 	- Same as Markov's, but this applies to non-negative functions of the random variable
 ## Classical Random Variables and Their Properties
 - Uniform ($X \sim \mathcal U(a, b)$)
-	- Density Function: $f_X(t) = \begin{cases}\frac{1}{b - a} \text{ if } t \in [a,b]\\ 0 \text{ otherwise }\end{cases}$
-	- $\mathbb E[X] = \frac{a+b}{2}$ and $\mathbb V[X] = (b-a)^2/12$
-	- Distribution Function: $F_X(t) = \begin{cases}0 \text{ if } t \lt a\\\frac{t-a}{b-a} \text{ if } t\in [a,b]\\1 \text{ if }t \gt b\end{cases}$
+	- Density Function: $f_X(t) = \begin{cases}\dfrac{1}{b - a} \text{ if } t \in [a,b]\\ 0 \text{ otherwise }\end{cases}$
+	- $\mathbb E[X] = \dfrac{a+b}{2}$ and $\mathbb V[X] = (b-a)^2/12$
+	- Distribution Function: $F_X(t) = \begin{cases}0 \text{ if } t \lt a\\\dfrac{t-a}{b-a} \text{ if } t\in [a,b]\\1 \text{ if }t \gt b\end{cases}$
 	- The distribution $X \sim \mathcal U(0,1)$ can be converted to any range
 		- $Y = a + (b-a)X \implies Y \sim \mathcal U(a, b)$
 	- R Function: `runif(n, min = 0, max = 1)`
 - Exponential ($X \sim \epsilon(\lambda)$)
 	- Density Function: $f_X(t) = \begin{cases}\lambda t e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
-	- $\mathbb E[X] = \frac{1}{\lambda}$ and $\mathbb V[X] = \frac{1}{\lambda^2}$
+	- $\mathbb E[X] = \dfrac{1}{\lambda}$ and $\mathbb V[X] = \dfrac{1}{\lambda^2}$
 		- This is the French version. English version is $\lambda$ and $\lambda^2$
 	- $F_X(t)=\begin{cases}1-e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
 	- The distribution $X \sim \epsilon(1)$ can be converted to anything
-		- $Y = \frac{1}{\lambda}X \implies Y \sim \epsilon(\lambda)$
+		- $Y = \dfrac{1}{\lambda}X \implies Y \sim \epsilon(\lambda)$
 	- R Function: `rexp(n, rate = 1)`
 - [[Distributions of Probability and Random Variables|Gaussian]] ($X \sim \mathcal N(\mu, \sigma^2)$)
 	- Due to the complexity of the density function, software like R or precalculated tables are used to estimate
@@ -97,7 +97,7 @@
 	- R Function: `rnorm(n, mean = 0, sd = 1)`
 		- Note that this uses standard deviation and not variance
 	- We can transform any Gaussian-distributed variable to the standard Gaussian through normalization (centering and scaling)
-		- $Y = \frac{X - \mu}{\sigma^2} \implies Y \sim \mathcal N(0,1)$
+		- $Y = \dfrac{X - \mu}{\sigma^2} \implies Y \sim \mathcal N(0,1)$
 - Chi-Square ($X \sim \chi^2(d)$)
 	- The chi-square random variable is a sum of squared gaussian random variables
 		- Let $X_1, \dots, X_d$ [[Distributions of Probability and Random Variables|iid]] whose distribution is $\mathcal N(0,1)$, consider $C = \overset{d}{\underset{k=1}{\sum}}X^2_k$
@@ -107,21 +107,21 @@
 	- R Function: `rchisq(n, df, ncp = 0)`
 - Student's $T$ Random Variable ($X \sim \mathcal T(d)$)
 	- Ratio of a standard Gaussian and normalized $\chi^2$
-		- Let $N \sim \mathcal N(0,1)$ and $C \sim \chi^2(d)$, $X = \frac{N}{\sqrt{\frac{C}{d}}}$
+		- Let $N \sim \mathcal N(0,1)$ and $C \sim \chi^2(d)$, $X = \dfrac{N}{\sqrt{\dfrac{C}{d}}}$
 	- Has degrees of freedom $d$
-	- $\mathbb E[X] = 0$ if $d \gt 1$ and $\mathbb V[X]  = \frac{d}{d - 2}$ if $d \gt 2$
+	- $\mathbb E[X] = 0$ if $d \gt 1$ and $\mathbb V[X]  = \dfrac{d}{d - 2}$ if $d \gt 2$
 	- This is a <mark style="background: #FFB86CA6;">symmetric distribution</mark>
 		- $\forall t \in \mathbb R, f_X(t) = f_x(-t) \text{ and } P(X \le -t) = P(X \ge t)$
 	- R Function: `rt(n, df, ncp)`
 - Fisher Random Variables $X \sim \mathcal F(d, p)$
 	- Ratio of two $\chi^2$ random variables normalized by their degrees of freedom
-		- Let $N \sim \chi^2(d)$ and $D \sim \chi^2(p), X = \frac{\frac{N}{d}}{\frac{D}{p}}$
+		- Let $N \sim \chi^2(d)$ and $D \sim \chi^2(p), X = \dfrac{\dfrac{N}{d}}{\dfrac{D}{p}}$
 	- Has $d$ and $p$ degrees of freedom
-		- $\frac{1}{F}$ has $p$ and $d$ degrees of freedom
+		- $\dfrac{1}{F}$ has $p$ and $d$ degrees of freedom
 	- Typically used for comparing datasets
 		- Start by comparing variances, then means
 		- Then, if above satisfied, turn to Fisher 
-	- $\mathbb E[X] = \frac{p}{p-2}$ if $p \gt 2$ and $\mathbb V[X] = \frac{2p^2(d + p -2)}{d(p-2)^2(p-4)}$ if $p \gt 4$
+	- $\mathbb E[X] = \dfrac{p}{p-2}$ if $p \gt 2$ and $\mathbb V[X] = \dfrac{2p^2(d + p -2)}{d(p-2)^2(p-4)}$ if $p \gt 4$
 ## Graphical Representation
 - Histogram
 	- Representation of the density function
@@ -131,7 +131,7 @@
 		- Set the number of classes: $k \approx 1 + 3.22 \cdot log_{10}(n)$ with $n$ as number of observations
 		- Define the class limits with a margin ($\epsilon$)
 			- $a_0 = min(X) - \epsilon; a_k = max(X) + \epsilon; \forall i \in [1, k-1], a_i = a_0 + i\cdot range$
-				- $range = \frac{a_k-a_0}{k}$
+				- $range = \dfrac{a_k-a_0}{k}$
 	- The histogram is generated using the [[Descriptive Statistics|continuous frequency table]]
 	- In R, the `hist(x)` function creates a histogram
 		- Be sure to set the argument `freq = FALSE` to have the empirical density on the y-axis instead of the count

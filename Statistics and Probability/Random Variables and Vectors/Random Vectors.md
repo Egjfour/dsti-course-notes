@@ -52,11 +52,11 @@
 	- First derive the value of $c$
 	- Then determine the marginal densities $f_X$ and $f_Y$
 - Derive $c$
-	- Recognize that $f_{X,Y}$ is a triangle, so the area is $\frac{2\cdot 2}{2} = 2 = c$
+	- Recognize that $f_{X,Y}$ is a triangle, so the area is $\dfrac{2\cdot 2}{2} = 2 = c$
 	- Or integrate:
 		- $\iint_{\mathbb R^2}f(x,y)dxdy = \iint_Dc\hspace{1mm}dxdy = c\cdot\iint_Ddxdy$
 		- $\iint_Ddxdy = \int_{x=0}^2\int{y=0}^{2-x}dydx = \int_0^2[y]_0^{2-x}dx$
-		- $=\int_0^2(2-x)dx=[2x - \frac{x^2}{2}]_0^2 = 2\cdot2 - \frac{2^2}{2} = 2 = c$
+		- $=\int_0^2(2-x)dx=[2x - \dfrac{x^2}{2}]_0^2 = 2\cdot2 - \dfrac{2^2}{2} = 2 = c$
 - Determine $f_X$
 	- $f_X(t) = \int_{y \in \mathbb R}f(t,y)dy = \int_0^{2-t}cdy = c[y]_0^{2-t} = 4-2t$
 		- Remember: $y = 2-x$
@@ -81,7 +81,7 @@
 		- Independent random variables have a covariance of 0
 			- However, <mark style="background: #FFB86CA6;">covariance of 0, does not imply independence</mark>. It simply implies no linear dependency. There can still be a non-linear dependency
 	- Correlation is normalized covariance between 0 and 1
-		- $corr(X,Y) = \frac{cov(X,Y)}{\sqrt{\mathbb V[X] \cdot \mathbb V[Y]}}$
+		- $corr(X,Y) = \dfrac{cov(X,Y)}{\sqrt{\mathbb V[X] \cdot \mathbb V[Y]}}$
 ## Generalization to Higher Dimensions
 - Always expressed as a column vector when dimension ($p$) > 3
 - Definitions for expectation and variance as a vector and matrix respectively remain the same
@@ -99,7 +99,7 @@
 - If a vector of random variables, $R$ is a Gaussian random vector and $\mathbb V[R]$ is a [[Matrices|diagonal matrix]], then the random variables contained within are [[Random Variables|independent random variables]]
 ### Example - Gaussian Random Vector
 - Setup
-	- Let $X \sim \mathcal N(0,1)$ and $\epsilon$ a rademaker (symmetric) random variable such that $P(\epsilon = -1) = P(\epsilon = 1) = \frac{1}{2}$
+	- Let $X \sim \mathcal N(0,1)$ and $\epsilon$ a rademaker (symmetric) random variable such that $P(\epsilon = -1) = P(\epsilon = 1) = \dfrac{1}{2}$
 	- Assume $X {\perp \!\!\! \perp} \epsilon$ and introduce $y = \epsilon X$
 - Prove that $Y$ is a Gaussian Random Variable
 	- Need to determine $f_Y$
@@ -109,7 +109,7 @@
 		- $P(X \ge -t, \epsilon = -1) = P(X \ge -t) \cdot P(\epsilon = -1)$
 		- $P(X \le t, \epsilon = 1) = P(X \le t) \cdot P(\epsilon = 1)$
 	- Because the Gaussian is centered
-		- $\frac{1}{2}(P(X\le t) + P(X \ge -t))=\frac{1}{2}(P(X\le t) + P(X \le t)) = P(X \le t)$
+		- $\dfrac{1}{2}(P(X\le t) + P(X \ge -t))=\dfrac{1}{2}(P(X\le t) + P(X \le t)) = P(X \le t)$
 	- So, we have $\forall t \in \mathbb R f_Y(t) = f_X(t)$
 		- This means $X$ and $Y$ come from the same distribution
 		- Since $X \sim \mathcal N(0, 1)$, so is $Y$. Thus, $Y$ is a Gaussian random variable
@@ -118,7 +118,7 @@
 		- $\mathbb E[X] \cdot \mathbb E[Y] = 0$ because they are standard Gaussians
 		- $\mathbb E[XY] = \mathbb E[X \cdot \epsilon X]=\mathbb E[X^2 \epsilon]$
 		- Since $X {\perp \!\!\! \perp} \epsilon$, $\mathbb E[X^2 \epsilon] = \mathbb E[X^2] \cdot \mathbb E[\epsilon]$
-		- Since $\mathbb E[\epsilon] = \frac{1}{2} \cdot -1 + \frac{1}{2} \cdot 1 = 0$, $\mathbb E[XY] =0$
+		- Since $\mathbb E[\epsilon] = \dfrac{1}{2} \cdot -1 + \dfrac{1}{2} \cdot 1 = 0$, $\mathbb E[XY] =0$
 	- Thus, $cov(X,Y) = 0 - 0 = 0$
 - Is $X {\perp \!\!\! \perp} Y$?
 	- Assume that $X {\perp \!\!\! \perp} Y$
@@ -129,6 +129,6 @@
 - Consider $Z = (X, Y)$. Prove that $Z$ is not a Gaussian random vector
 	- Take the combination $X + Y$
 	- Restate as $X + \epsilon X = X(1 + \epsilon)$
-	- Since $\epsilon$ is discrete, we can calculate $P(X + Y = 0) = P(\epsilon = -1) = \frac{1}{2}$
+	- Since $\epsilon$ is discrete, we can calculate $P(X + Y = 0) = P(\epsilon = -1) = \dfrac{1}{2}$
 	- Because we have a non-zero probability for a specific outcome, the random variable $X + Y$ is neither Gaussian nor continuous
 	- Further, because there is a linear combination of $Z$ which does not produce a Gaussian random variable, $Z$ is not a Gaussian random vector

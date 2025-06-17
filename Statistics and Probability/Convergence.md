@@ -37,7 +37,7 @@
 		- $X_i \sim f(\theta), \forall i$
 - If the samples are not iid, then we get a stochastic process (e.g., a Markov Process)
 ## Universal Boundary
-- $P(|X - \mu| \le t\sigma) \ge \frac{1}{t^2}$
+- $P(|X - \mu| \le t\sigma) \ge \dfrac{1}{t^2}$
 	- The probability that a centered random variable is at least t standard deviations away from the the mean is at least one over t-squared
 	- This is true no matter the distribution of X
 	- <mark style="background: #FFB86CA6;">For the normal distribution, this is an equality</mark>

@@ -41,8 +41,8 @@
 	- We additionally assume that $X_1, \dots, X_n$ are [[Distributions of Probability and Random Variables|iid]] random variables with a common distribution $P_{\theta}, \theta$ unknown
 	- Create a function which provides an idea about $\theta$ based on the observations
 - Example: For a [[Random Variables|Gaussian random variable]], $\mu$ and $\sigma^2$ are the parameters we want to estimate
-	- $\frac{1}{n}\underset{k=1}{\overset{n}{\sum}}(X_k - \mu)^2$ is NOT an estimator for $\sigma^2$ since it relies on unknown parameter $\mu$
-	- $\frac{1}{n}\underset{k=1}{\overset{n}{\sum}}(X_k - \bar X)^2$, however, is an estimator for $\sigma^2$ since it has no unknown parameter values
+	- $\dfrac{1}{n}\underset{k=1}{\overset{n}{\sum}}(X_k - \mu)^2$ is NOT an estimator for $\sigma^2$ since it relies on unknown parameter $\mu$
+	- $\dfrac{1}{n}\underset{k=1}{\overset{n}{\sum}}(X_k - \bar X)^2$, however, is an estimator for $\sigma^2$ since it has no unknown parameter values
 - Notation: An estimator for parameter $\theta$ constructed with $X_1, \dots, X_n$ is denoted $\hat \theta_n$
 	- The hat generally means estimator and $n$ is the length of the dataset
 	- The same notation is also used for the estimation of the estimator
@@ -67,27 +67,27 @@
 		- This also equals the joint probability that each observation $\le t$
 			- Since observations are independent., this is the product of each probability: $\underset{k=1}{\overset{n}{\prod}}P(X_k \le t)$
 			- Additionally, since they are identically distributed, this product can use a single random variable from the vector $=P(X_1 \le t)^n = (F_X(t))^n$
-		- Since we have $X \sim \mathcal U(0,\theta)$, we have $F_X(t) = \begin{cases}0 \text{ if } t \lt 0\\ \frac{t}{\theta} \text{ if } t \in [0, \theta]\\ 1 \text{ otherwise }\end{cases}$
-		- This gives for our parameter $F_{\hat\theta_{n,1}}\begin{cases}0 \text{ if }t \lt 0\\ \frac{t^2}{\theta^2}\text{ if } t \in [0, \theta]\\1 \text{ if }t \gt \theta\end{cases}$
+		- Since we have $X \sim \mathcal U(0,\theta)$, we have $F_X(t) = \begin{cases}0 \text{ if } t \lt 0\\ \dfrac{t}{\theta} \text{ if } t \in [0, \theta]\\ 1 \text{ otherwise }\end{cases}$
+		- This gives for our parameter $F_{\hat\theta_{n,1}}\begin{cases}0 \text{ if }t \lt 0\\ \dfrac{t^2}{\theta^2}\text{ if } t \in [0, \theta]\\1 \text{ if }t \gt \theta\end{cases}$
 	- Density function $f_{\hat\theta_{n,1}}$:
 		- $f_{\hat\theta_{n,1}} = F_{\hat\theta_{n,1}}'$
-		- So, $f_{\hat\theta_{n,1}} = \begin{cases}n\cdot\frac{t^{n-1}}{\theta^n}\text{ if }t\in]0,\theta[\\0\text{ otherwise }\end{cases}$
+		- So, $f_{\hat\theta_{n,1}} = \begin{cases}n\cdot\dfrac{t^{n-1}}{\theta^n}\text{ if }t\in]0,\theta[\\0\text{ otherwise }\end{cases}$
 	- Now compute the expectation of the density function $\mathbb E[f_{\hat\theta\_{n,1}}]$
-		- $\int_{\mathbb R}x\cdot\frac{nx^{n-1}}{\theta^n}=\frac{n}{\theta^n}[\frac{X^{n+1}}{n+1}]_0^{\theta} = \frac{n}{\theta^n}\cdot\frac{\theta^{n+1}}{n+1} = \frac{n}{n+1}\cdot\theta$
+		- $\int_{\mathbb R}x\cdot\dfrac{nx^{n-1}}{\theta^n}=\dfrac{n}{\theta^n}[\dfrac{X^{n+1}}{n+1}]_0^{\theta} = \dfrac{n}{\theta^n}\cdot\dfrac{\theta^{n+1}}{n+1} = \dfrac{n}{n+1}\cdot\theta$
 	- As we can see, this expectation does not equal $\theta$, so $\hat\theta_{n,1}$ is not unbiased
-		- However, since $\underset{n\to\infty}{lim}\frac{n}{n+1} = 1$, $\underset{n\to\infty}{lim}\mathbb E[f_{\hat\theta_{n,1}}] = \theta$
+		- However, since $\underset{n\to\infty}{lim}\dfrac{n}{n+1} = 1$, $\underset{n\to\infty}{lim}\mathbb E[f_{\hat\theta_{n,1}}] = \theta$
 		- Thus, $\hat\theta_{n,1}$ is asymptotically unbiased
 - Calculate the expectation for $\hat\theta_{n,2}$
 	- $\mathbb E[\hat\theta_{n,2}] = \mathbb E[2\cdot \bar X_n] = 2 \cdot \mathbb E[\bar X_n]$
-	- The expectation of $\bar X_n$ is the expectation of one observation of the random variable because they are i.i.d. $\mathbb E[\bar X_n] = n\cdot\frac{1}{n}\cdot\mathbb E[X_1]=\mathbb E[X_1]$
-	- Since $X \sim \mathcal U(0, \theta)$, $\mathbb E[X_1] = \frac{\theta}{2}$
-	- Thus, the $\mathbb E[\hat\theta_{n,2}] = 2 \cdot \frac{\theta}{2} = \theta$
+	- The expectation of $\bar X_n$ is the expectation of one observation of the random variable because they are i.i.d. $\mathbb E[\bar X_n] = n\cdot\dfrac{1}{n}\cdot\mathbb E[X_1]=\mathbb E[X_1]$
+	- Since $X \sim \mathcal U(0, \theta)$, $\mathbb E[X_1] = \dfrac{\theta}{2}$
+	- Thus, the $\mathbb E[\hat\theta_{n,2}] = 2 \cdot \dfrac{\theta}{2} = \theta$
 	- So, $\hat\theta_{n,2}$ is unbiased
 ## Transforming a Biased Estimator Into an Unbiased One
 - We need to modify the estimator to have an expectation equal to $\theta$
 - BEWARE: This <mark style="background: #FFB86CA6;">modification cannot involve introducing unknown parameters</mark>
-	- Example: $\hat\theta_{n,3} = \hat\theta_{n,1} + \frac{\theta}{n + 1}$ has a dependency on $\theta$ and is NOT an estimator
+	- Example: $\hat\theta_{n,3} = \hat\theta_{n,1} + \dfrac{\theta}{n + 1}$ has a dependency on $\theta$ and is NOT an estimator
 - Consider the example from above $\hat\theta_{n,1} = max(X_n)$
-	- We know $\mathbb E[\hat\theta_{n,1}] = \frac{n}{n+1}\cdot\theta, \text{ so }\frac{n+1}{n}\cdot\mathbb E[\hat\theta_{n,1}] = \theta$
-	- Therefore, a debiased estimator $\hat\theta_{n,4}$ can be defined as $\frac{n+1}{n}\cdot max(X_k)$
+	- We know $\mathbb E[\hat\theta_{n,1}] = \dfrac{n}{n+1}\cdot\theta, \text{ so }\dfrac{n+1}{n}\cdot\mathbb E[\hat\theta_{n,1}] = \theta$
+	- Therefore, a debiased estimator $\hat\theta_{n,4}$ can be defined as $\dfrac{n+1}{n}\cdot max(X_k)$
 - Ultimately, any estimator can be debiased by finding a way to make the expected value of the estimator equal the parameter being estimated so long as such a method does not introduce the unknown parameter into the estimator function

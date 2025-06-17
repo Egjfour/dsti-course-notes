@@ -69,16 +69,16 @@
 	- Then, solve for the integral $\int_{\mathbb R}cx^2dx = 1$
 		- Pull the constant out: $c \cdot \int_{\mathbb R}x^2dx$
 		- Separate the integral to focus on the support only: $c \cdot \int_{1}^{2}x^2dx$
-		- Apply the [[Integration|power rule]]: $c \cdot [\frac{1}{3}x^3]_1^2 = c \cdot (\frac{8}{3} - \frac{1}{3}) = c \cdot \frac{7}{3}$
-		- Solve for $c$: $c = \frac{3}{7}$ which satisfies the positivity condition as well
+		- Apply the [[Integration|power rule]]: $c \cdot [\dfrac{1}{3}x^3]_1^2 = c \cdot (\dfrac{8}{3} - \dfrac{1}{3}) = c \cdot \dfrac{7}{3}$
+		- Solve for $c$: $c = \dfrac{3}{7}$ which satisfies the positivity condition as well
 - Question: If $X$ is a [[Random Variables|random variable]] w/ density function $f$, compute $P(X \in [0, 1.2]\cup [1.8,2])$
 	- We want to calculate the cumulative density of the regions, so we integrate the PDF
 	- Since we have a union of disjoint events, we can simply sum the probabilities/integrals
-	- $\int_0^{1.2} \frac{7}{3}x^2dx + \int_{1.8}^2 \frac{7}{3}x^2dx$
+	- $\int_0^{1.2} \dfrac{7}{3}x^2dx + \int_{1.8}^2 \dfrac{7}{3}x^2dx$
 	- We can further separate the first integral to isolate the support ($[1,2]$)
-		- $\int_1^{1.2} \frac{7}{3}x^2dx + \int_{1.8}^2 \frac{7}{3}x^2dx$
+		- $\int_1^{1.2} \dfrac{7}{3}x^2dx + \int_{1.8}^2 \dfrac{7}{3}x^2dx$
 	- Now evaluate
-		- $\frac{3}{7}([\frac{x^3}{3}]_1^{1.2} + [\frac{x^3}{3}]_{1.8}^{2})$
+		- $\dfrac{3}{7}([\dfrac{x^3}{3}]_1^{1.2} + [\dfrac{x^3}{3}]_{1.8}^{2})$
 	- Using R to solve: `"The probability of [0, 1.2] U [1.8, 2] is 0.414"`
 		```r
 		solve_primitive <- function(x){
@@ -115,11 +115,11 @@
 		- PMF: $P(X = k) = p(1-p)^{k-1}$ 
 		- CDF: $P(X > k) = (1-p)^k$
 - Logistic (continuous): Logistic regression tasks and neural networks
-	- $F_X(x) = \frac{1}{1 + exp(- \frac{x - \mu}{\sigma})}$
+	- $F_X(x) = \dfrac{1}{1 + exp(- \dfrac{x - \mu}{\sigma})}$
 	- Calculating probability on an interval
 		- With CDF: $F_X(b) - F_X(a)$ based on the [[Continuity & Derivability|mean value theorem]]
 		- With PDF: $\int_a^bf_X(x)dx$ as an integral
-			- $f_X(x) = \frac{d}{dx}F_X(x) = \frac{e^{-x}}{(1+e^{-x})^2}$
+			- $f_X(x) = \dfrac{d}{dx}F_X(x) = \dfrac{e^{-x}}{(1+e^{-x})^2}$
 ## [[Random Variables|Multidimensional Random Variables]]
 - Joint Distribution
 	- Probability Mass (Discrete $X, Y$)
@@ -132,7 +132,7 @@
 	- Continuous: $\int_{- \infty}^\infty f(x, y)dy$
 - Conditional Distribution
 	- Same definition as [[Conditional Probability and Independence|conditional probability]]
-	- $f(y|x)=\frac{f(x,y)}{f_X(x)}, \forall x: f_X > 0$
+	- $f(y|x)=\dfrac{f(x,y)}{f_X(x)}, \forall x: f_X > 0$
 	- <mark style="background: #FFB86CA6;">This is a valid pmf/pdf</mark>
 	- Independence is determined by the same condition as [[Conditional Probability and Independence|independence for probability]]
-		- $f(y|x) = \frac{f(x,y)}{f_X(x)}=\frac{f_X(x)f_Y(y)}{f_X(x)}=f_Y(y)$
+		- $f(y|x) = \dfrac{f(x,y)}{f_X(x)}=\dfrac{f_X(x)f_Y(y)}{f_X(x)}=f_Y(y)$

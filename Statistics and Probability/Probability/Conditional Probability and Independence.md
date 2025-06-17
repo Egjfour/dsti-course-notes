@@ -10,7 +10,7 @@
 # Key Takeaways
 1. $P(A|B) = P(A) \hspace{2mm}\mathrm{iff}$ A and B are independent
 2. $P(A|B) \ne P(B|A)$
-3. Bayes Theorem: $P(A|B) = \frac{P(B|A) * P(A)}{P(B)}$
+3. Bayes Theorem: $P(A|B) = \dfrac{P(B|A) * P(A)}{P(B)}$
 # Definitions
 - Independence: Knowledge of the outcome of one event gives no information about another
 	- $P(A \cap B) = P(A) * P(B)$
@@ -31,7 +31,7 @@
 
 # Notes
 ## Conditional Probability
-- $P(A|B) = \frac{P(A \cap B)}{P(B)}$
+- $P(A|B) = \dfrac{P(A \cap B)}{P(B)}$
 	- The probability of event A given a specific known outcome of event B equals the intersection of events A and B divided by the marginal probability of B
 	- Probability of event B must be > 0
 - The reversal of the conditions does not hold $P(A|B) \ne P(B|A)$
@@ -44,15 +44,15 @@
 		- $P(E|A_2) = 0.001$: Probability of a positive test given that you do not have HIV
 			- 1 - Specificity
 		- Since $P(A_1|E) \ne P(E|A_1)$, there is not a 99.9% chance of HIV due to the positive test
-		- Instead, $P(A_1 | E) = \frac{P(E|A_1)*P(A_1)}{P(E)} = \frac{P(A_1 \cap E)}{P(E)}$
+		- Instead, $P(A_1 | E) = \dfrac{P(E|A_1)*P(A_1)}{P(E)} = \dfrac{P(A_1 \cap E)}{P(E)}$
 			- We don't know $P(A_1 \cap E) = P(E \cap A_1) = P(E|A_1)*P(A_1)$ and can get $P(A_1)$ as the base rate of the disease 0.01% in a developed Western country
 		- $P(E)$ can be found as $P(E \cap A_1) + P(E \cap A_2)$ because $A_1$ and $A_2$ form a partition
-		- So, $P(A_1|E) = \frac{P(E|A_1)*P(A_1)}{P(E \cap A_1) + P(E \cap A_2)} = \frac{99.9 * 0.01}{99.9 * 0.01 + 0.01 * 99.9} = 50$
+		- So, $P(A_1|E) = \dfrac{P(E|A_1)*P(A_1)}{P(E \cap A_1) + P(E \cap A_2)} = \dfrac{99.9 * 0.01}{99.9 * 0.01 + 0.01 * 99.9} = 50$
 		- Thus, having a positive result means that there is a 50% chance of having HIV
 		 ![[Pasted image 20250119140751.png]]
 - Bayes Theorem
 	- <mark style="background: #FFB86CA6;">We are multiplying the inverse conditional probability by the ratio of the marginal probabilities to effectively do a "change of base"</mark>
-	- Since, $P(A|B) \ne P(B|A)$, we instead calculate $P(A|B) = \frac{P(B|A) * P(A)}{P(B)}$
+	- Since, $P(A|B) \ne P(B|A)$, we instead calculate $P(A|B) = \dfrac{P(B|A) * P(A)}{P(B)}$
 ## Independence
 - Prisoner example (Independent):
 	- 3 prisoners are on death row and one is pardoned at random. The warden randomly chooses between prisoners B and C and tells prisoner A that B will not be executed. Prove that this provides no additional information to Prisoner A

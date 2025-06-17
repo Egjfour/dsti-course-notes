@@ -23,10 +23,10 @@
 	- $\sum_k b_k + a_k = \sum_k a_k + \sum_k b_k$
 - Special Properties
 	- If $a_k = k$
-		- $\sum_k = \frac{k(k+1)}{2}$
-		- Example: The sum of all numbers from 1-100 = $\frac{100(100 +1)}{2} = 5050$
+		- $\sum_k = \dfrac{k(k+1)}{2}$
+		- Example: The sum of all numbers from 1-100 = $\dfrac{100(100 +1)}{2} = 5050$
 	- If $a_k = x^k$
-		- $\sum_k a_k = \frac{x-x^{n+1}}{1-x}$
+		- $\sum_k a_k = \dfrac{x-x^{n+1}}{1-x}$
 		- <mark style="background: #FFB86CA6;">Represents the partial sum of a geometric series</mark>
 		- Example: Total value of an asset with diminishing marginal returns over time
 			- **Scenario:** You start with an initial value of 1 unit of currency (normalized). In each subsequent year, the additional value added decreases by a factor $x$. Over $n$ years, you want to calculate the total value remaining after accounting for this decay.
@@ -34,7 +34,7 @@
 				- $x=0.9x = 0.9x=0.9$ (the asset retains 90% of its value each year),
 				- $n=4n = 4n=4$ (you want the total value for the first 4 years).
 			- $\sum_{k=0}^4​x^k=1+0.9+0.81+0.729+0.6561$
-			- OR with the formula: $\sum_{k=1}^4 0.9^k = \frac{0.9 - 0.9^5}{1 - 0.9}$
+			- OR with the formula: $\sum_{k=1}^4 0.9^k = \dfrac{0.9 - 0.9^5}{1 - 0.9}$
 				- Then add the initial value at time 0 (1) to get 4.0951
 ## Product
 - Notation is the same as a sum, but it is the product of the elements

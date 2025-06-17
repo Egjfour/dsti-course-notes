@@ -14,7 +14,7 @@
 4. Estimating the density function of a transformation involves finding the distribution function and taking the derivative of the distribution function
 5. A random variable with a negative exponential as its density function will always have an expectation
 6. Adding a scalar to a random variable moves the expectation but not the variance
-7. A continuous density on a finite domain has all moments but an infinite support may not have moments (ex: $f(x) = \frac{1}{x^2}$ is a density but it's expectation is $+\infty$)
+7. A continuous density on a finite domain has all moments but an infinite support may not have moments (ex: $f(x) = \dfrac{1}{x^2}$ is a density but it's expectation is $+\infty$)
 # Definitions
 - Expectation ($\mathbb E[X]$): Let $x$ be a [[Random Variables|random variable]] with [[Distributions of Probability and Random Variables|density function]] $f$, if $\int_{\mathbb R} |x|f(x)dx \lt + \infty$, then $x$ is an integrable variable (denoted $x \in \mathscr L^1$), and in this case, $\mathbb E[X]$ exists and is given by $\mathbb E[X] = \int_{\mathbb R}xf(x)dx$ 
 	- The expectation is the integral of the density function times the observations across the entire [[Random Variables|support]]
@@ -57,13 +57,13 @@
 	- Due to the positivity constraint, $c \ge 0$
 	- $\int_{\mathbb R}cx^2dx = c\int_{-2}^2x^2dx$
 	- Thanks to symmetry, $c\int_{-2}^2x^2dx=2c\int_{0}^2x^2dx$
-	- Solving, we get $\frac{2c}{3}\cdot(2^3 - 0^3) = \frac{16}{3}$
-	- Setting the integral equal to one gives, $c = \frac{3}{16}$
+	- Solving, we get $\dfrac{2c}{3}\cdot(2^3 - 0^3) = \dfrac{16}{3}$
+	- Setting the integral equal to one gives, $c = \dfrac{3}{16}$
 - Solve $\mathbb E[Y]$ with the transfer formula
-	- Formula states $\mathbb E[Y] = \int_{\mathbb R}y\cdot f(x)dx = \int_{\mathbb R}x^2\cdot \frac{3}{16}x^2dx$
-	- Focusing in on the support we get $\frac{3}{16}\int_{-2}^2 x^4 dx = \frac{3}{8}\int_{0}^2 x^4dx$
-	- The primitive of which is $\frac{3}{40}[x^5]_0^2$
-	- Evaluating gives $\frac{3}{40} \cdot (2^5 - 0^5) = \frac{3}{40} * 32 = \frac{12}{5}$
+	- Formula states $\mathbb E[Y] = \int_{\mathbb R}y\cdot f(x)dx = \int_{\mathbb R}x^2\cdot \dfrac{3}{16}x^2dx$
+	- Focusing in on the support we get $\dfrac{3}{16}\int_{-2}^2 x^4 dx = \dfrac{3}{8}\int_{0}^2 x^4dx$
+	- The primitive of which is $\dfrac{3}{40}[x^5]_0^2$
+	- Evaluating gives $\dfrac{3}{40} \cdot (2^5 - 0^5) = \dfrac{3}{40} * 32 = \dfrac{12}{5}$
 - OR Solve $\mathbb E[Y]$ by finding the density function for $Y$ (transfer formula is MUCH easier)
 	- First, we need to find the distribution function: $F_Y(t) = P(Y \le t) = P(x^2 \le t)$
 		- First case: $t \lt 0$
@@ -71,15 +71,15 @@
 		- Second Case: $t \ge 0$
 			- $F_Y(t) = P(x^2 \le t) = P(-\sqrt t \le x \sqrt t) = P(x \le \sqrt t) - P(x \le -\sqrt t)$
 			- $F_X(\sqrt t) - F_X(-\sqrt t)$
-			- Can immediately compute $f_Y$ since $f_Y(t) = F_Y'(t) = \frac{1}{2\sqrt t} \cdot f_X(\sqrt t)$
+			- Can immediately compute $f_Y$ since $f_Y(t) = F_Y'(t) = \dfrac{1}{2\sqrt t} \cdot f_X(\sqrt t)$
 				- But this is difficult, so instead we calculate $F_X(t)$
 			- $F_X(t) = P(X \le t) = \begin{cases}0 \text{ if } t \lt -2\\ \int_{-2}^tf(x)dx \text{ if } t \in [-2, 2]\\ 1 \text{ if } t \gt 2 \end{cases}$
-			- $F_X(\sqrt t) = \begin{cases}\frac{1}{16}(t^{\frac{3}{2}} + 8) \text{ if } 0 \le t \lt 4\\ 1 \text{ if } t \gt 4\end{cases}$
-			- $F_X(-\sqrt t) = \begin{cases}\frac{1}{16}(-t^{\frac{3}{2}} + 8) \text{ if } 0 \le t \lt 4\\ 0 \text{ if } t \gt 4\end{cases}$
+			- $F_X(\sqrt t) = \begin{cases}\dfrac{1}{16}(t^{\dfrac{3}{2}} + 8) \text{ if } 0 \le t \lt 4\\ 1 \text{ if } t \gt 4\end{cases}$
+			- $F_X(-\sqrt t) = \begin{cases}\dfrac{1}{16}(-t^{\dfrac{3}{2}} + 8) \text{ if } 0 \le t \lt 4\\ 0 \text{ if } t \gt 4\end{cases}$
 			- Combine $F_X(\sqrt t)$ and $F_X(-\sqrt t)$ to get $F_Y(t)$
-				- $F_Y(t) = \begin{cases}0 \text{ if } t < 0\\ \frac{1}{16}(t^{\frac{3}{2}} + 8 + t^{\frac{3}{2}} - 8) \text{ if } 0 \le t \le 4\\ 1-0 = 1 \text{ if } t \gt 4\end{cases}$
+				- $F_Y(t) = \begin{cases}0 \text{ if } t < 0\\ \dfrac{1}{16}(t^{\dfrac{3}{2}} + 8 + t^{\dfrac{3}{2}} - 8) \text{ if } 0 \le t \le 4\\ 1-0 = 1 \text{ if } t \gt 4\end{cases}$
 			- Using the distribution function. we can determine the derivative
-				- $f_Y(t)=\begin{cases}\frac{1}{8} \cdot \frac{3}{2} \cdot t ^{\frac{1}{2}} \text{ if } t \in ]0, 4[\\ 0 \text{ otherwise}\end{cases}$
-				- Simplify the top to $\frac{3}{16}\sqrt t$
+				- $f_Y(t)=\begin{cases}\dfrac{1}{8} \cdot \dfrac{3}{2} \cdot t ^{\dfrac{1}{2}} \text{ if } t \in ]0, 4[\\ 0 \text{ otherwise}\end{cases}$
+				- Simplify the top to $\dfrac{3}{16}\sqrt t$
 			- Use the density function to calculate $\mathbb E[Y]$
-				- $\int_0^4 \frac{3}{16} t \sqrt t \hspace{1mm}dt = \frac{2}{5} \cdot \frac{3}{16} \cdot [t^{\frac{5}{2}}]_0^4 = \frac{3}{40} \cdot 4^{\frac{5}{2}} = \frac{12}{5}$
+				- $\int_0^4 \dfrac{3}{16} t \sqrt t \hspace{1mm}dt = \dfrac{2}{5} \cdot \dfrac{3}{16} \cdot [t^{\dfrac{5}{2}}]_0^4 = \dfrac{3}{40} \cdot 4^{\dfrac{5}{2}} = \dfrac{12}{5}$

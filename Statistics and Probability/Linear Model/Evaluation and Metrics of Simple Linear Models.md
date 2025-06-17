@@ -16,10 +16,10 @@
 # Definitions
 - Estimate Standard Error: Square root of the variance of the estimated parameters
 - Residual Standard Error: Square root of the variance of the entire model
-	- $\sigma = \sqrt{\frac{1}{n-2}\underset{k=1}{\overset{n}{\sum}}(y_k - (\hat a_n - \hat b_n x_k))^2}$
+	- $\sigma = \sqrt{\dfrac{1}{n-2}\underset{k=1}{\overset{n}{\sum}}(y_k - (\hat a_n - \hat b_n x_k))^2}$
 - Regression t-value: The ratio between a parameter estimate and its standard error
 - R-squared value: The ratio between the square [[Vectors|norm]] of the difference between the predicted and average values with the square norm of the difference between the actual values and the average
-	- $\frac{||\hat Y-\bar Y_n||^2}{||Y-\bar Y_n||^2} = \frac{\sum(\hat Y_k - \bar Y_n)^2}{\sum(Y - \bar Y_n)^2} = 1 - \frac{\sum(Y_k - \hat Y_k)^2}{\sum(Y_k - \bar Y_n)^2}$
+	- $\dfrac{||\hat Y-\bar Y_n||^2}{||Y-\bar Y_n||^2} = \dfrac{\sum(\hat Y_k - \bar Y_n)^2}{\sum(Y - \bar Y_n)^2} = 1 - \dfrac{\sum(Y_k - \hat Y_k)^2}{\sum(Y_k - \bar Y_n)^2}$
 - Total Variance ($SST$): $||Y - \bar Y_n||^2$
 - Residual Variance ($SSR$): $||Y-\hat Y||^2$
 - Explained Variance ($SSE$): $||\hat Y - \bar Y_n||^2$
@@ -45,8 +45,8 @@
 	- Assume we want to see if our observations which are associated to [[Distributions of Probability and Random Variables|identically distributed]] random variables $Z_1, \dots, Z_n$ which are associated to a Gaussian distribution
 		- We should use [[Simple Linear Model|standardized/studentized residuals]] for this
 	- We sort the $Z_k$ in increasing order
-	- $z_i$ is the empirical quantile associated to order $\frac{i}{n}$
+	- $z_i$ is the empirical quantile associated to order $\dfrac{i}{n}$
 		- Since this is not a [[Applications and Compositions of Sets|bijection]], there is no inverse, however there is a generalized inverse: $\forall p \in [0,1], F_n^{-1}(p) = inf\{t \in \mathbb R/F_n(t) \ge p\}$
-	- Theoretical quantiles are calculated $t(i) = F^{-1}(\frac{1}{n})$ with $F$ the distribution function of the Gaussian distribution
+	- Theoretical quantiles are calculated $t(i) = F^{-1}(\dfrac{1}{n})$ with $F$ the distribution function of the Gaussian distribution
 	- The plot is simply the cloud of points $(t_i, z_i)$
 		- <mark style="background: #FFB86CA6;">If the Gaussian assumption is correct, the points are close to the line</mark> $(x,x)$

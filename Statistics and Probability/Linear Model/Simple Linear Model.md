@@ -13,7 +13,7 @@
 3. The individual $y_i$ are not identically distributed because $\mathbb E[Y_i] = a + bX_i$
 4. With assumption H4 (the errors form a [[Random Vectors|Gaussian Random Vector]]), we can assume that our parameter vector $\begin{pmatrix}\hat a_n \\ \hat b_n \end{pmatrix}$ is a Gaussian random vector
 5. $\hat Y$ is the orthogonal projection of $Y$ on $X$ and the error $\hat \epsilon \perp X$ with $X$ a vectorial subspace of dimension $n-2$
-6. A confidence interval for forecasted values is $[\hat y_{new} \pm \hat\sigma_n \sqrt{1 + \frac{1}{n}\frac{(X_{new} - \bar X_n)^2}{\underset{k}{\sum}(X_k - \bar X_n)^2}}\cdot t_{1-\alpha/2;\hspace{1mm} n-2}]$
+6. A confidence interval for forecasted values is $[\hat y_{new} \pm \hat\sigma_n \sqrt{1 + \dfrac{1}{n}\dfrac{(X_{new} - \bar X_n)^2}{\underset{k}{\sum}(X_k - \bar X_n)^2}}\cdot t_{1-\alpha/2;\hspace{1mm} n-2}]$
 7. The further we are from $\bar X_n$, the less confident we are in the prediction. Prediction interval is a pair of hyperbolic curves which increase in width as we move away from the mean
 8. Any model which can be written as a product of a data matrix with a coefficient matrix plus some error vector is a linear model (ex: $Y = \mathbb X\beta + U$)
 
@@ -55,25 +55,25 @@
 - Least Squares Estimation for $\hat a_n, \hat b_n$
 	- $(\hat a_n, \hat b_n) = \underset{\lambda, \gamma \in \mathbb R}{argmin}\underset{k=1}{\overset{n}{\sum}}(y_k - (\lambda + \gamma x_k))^2$
 	- $\hat a_n = \bar Y_n - \hat b_n \bar X_n$
-	- $\hat b_n = \frac{\sum(y_k - \bar Y_n)(x_k - \bar X_n)}{\sum(x_k - \bar X_n)^2} = \frac{\sum y_k x_k - n \bar X_n \bar Y_n}{\sum x_k^2 - n\bar X_n^2}$
-	- $\hat b_n$ can also be estimated with $\frac{\sum \epsilon_k (x_k - \bar X_n)}{\sum (x_k - \bar X_n)^2} + b$ for theoretical calculations
+	- $\hat b_n = \dfrac{\sum(y_k - \bar Y_n)(x_k - \bar X_n)}{\sum(x_k - \bar X_n)^2} = \dfrac{\sum y_k x_k - n \bar X_n \bar Y_n}{\sum x_k^2 - n\bar X_n^2}$
+	- $\hat b_n$ can also be estimated with $\dfrac{\sum \epsilon_k (x_k - \bar X_n)}{\sum (x_k - \bar X_n)^2} + b$ for theoretical calculations
 		- Not practical since it relies on $b$ which is unknown
 - Our estimators $\hat a_n, \hat b_n$ are unbiased if we can assume assumptions H1, H2, and H3
 - Variance of the estimators $\hat a_n, \hat b_n$ under H1, H2, H3
 	- $\mathbb V[\hat a_n] = \sigma^2 \sum x_k^2/\sum(x_k - \bar x_n)^2 n$
 	- $\mathbb V[\hat b_n] = \sigma^2/\sum(x_k - \bar x_n)^2$
-	- $cov(\hat a_n, \hat b_n) = - \bar X_n \mathbb V[\hat b_n] = \frac{-\sigma^2 \bar x_n}{\sum(x_k - \bar x_n)^2}$
+	- $cov(\hat a_n, \hat b_n) = - \bar X_n \mathbb V[\hat b_n] = \dfrac{-\sigma^2 \bar x_n}{\sum(x_k - \bar x_n)^2}$
 - Since $\mathbb V[\hat a_n] \textrm{ and } \mathbb V[\hat b_n]$ depend on $\sigma^2$, we need an estimator, $\hat \sigma^2_n$
-	- Such an estimator is $\frac{1}{n-2}\underset{k}{\sum}\hat \epsilon_k^2 \textrm{ with } \hat\epsilon_k = y_k - \hat y_k$
+	- Such an estimator is $\dfrac{1}{n-2}\underset{k}{\sum}\hat \epsilon_k^2 \textrm{ with } \hat\epsilon_k = y_k - \hat y_k$
 	- The sum of the squared residuals debiased by dividing by n-2 since $Y \perp X$ and $X$ is a vectorial subspace with dimension n-2
 ## Forecasting and Prediction Intervals
 - Forecasting allows us to have an idea about the response variable when presented with new explanatory variables
 	- ex: $\hat y_{new} = \hat a_n + \hat b_n x_{new}$
 - Given $Y_{new} = a + b X_{new} + \epsilon_{new} \textrm{ with } \epsilon {\perp \!\!\! \perp} \epsilon_1, \dots, \epsilon_n \textrm { and } \epsilon_{new} \sim \mathcal N(0, \sigma^2)$
-	- The length of the prediction interval for $Y_{new}$ interval is $2\cdot\hat\sigma_n \sqrt{a + \frac{1}{n}\frac{(X_{new} - \bar X_n)^2}{\sum(X_k - \bar X_n)^2}}$ which is an increasing function of the distance from the mean $\bar X_n$
-	- $Y_{new} - \hat Y_{new} \sim \mathcal N(0, \sigma^2 (1 + \frac{1}{n}((X_{new} - \bar X_n)^2)/\sum(X_k - \bar X_n)^2))$
+	- The length of the prediction interval for $Y_{new}$ interval is $2\cdot\hat\sigma_n \sqrt{a + \dfrac{1}{n}\dfrac{(X_{new} - \bar X_n)^2}{\sum(X_k - \bar X_n)^2}}$ which is an increasing function of the distance from the mean $\bar X_n$
+	- $Y_{new} - \hat Y_{new} \sim \mathcal N(0, \sigma^2 (1 + \dfrac{1}{n}((X_{new} - \bar X_n)^2)/\sum(X_k - \bar X_n)^2))$
 	- $\mathbb E[Y_{new} - \hat Y_{new}] = 0$
-	- $\mathbb V[Y_{new} - \hat Y_{new}] = \mathbb V[a + b X_{new} - \hat a_n - \hat b_n X_{new} + \epsilon_{new}] = \sigma^2(1 + \frac{1}{n}\frac{(X_{new} - \bar X_n)^2}{\sum (X_k - \bar X_n)^2})$
+	- $\mathbb V[Y_{new} - \hat Y_{new}] = \mathbb V[a + b X_{new} - \hat a_n - \hat b_n X_{new} + \epsilon_{new}] = \sigma^2(1 + \dfrac{1}{n}\dfrac{(X_{new} - \bar X_n)^2}{\sum (X_k - \bar X_n)^2})$
 		- Only true if $X_{new}$ not in $\begin{pmatrix}X_1\\ \vdots \\ X_n \end{pmatrix}$. Otherwise $\epsilon_{new}\hspace{1.5mm} {\not\!\perp \!\!\! \perp} \begin{pmatrix}\epsilon_1 \\ \vdots \\ \epsilon_n \end{pmatrix}$ 
 ## Matrix Notation of the Linear Model
 - Objects

@@ -42,7 +42,7 @@
 		- Then get the density as the frequency divided by the width of the class ($x_1 - x_0$)
 		 ![[Pasted image 20250118132453.png]]
  - Empirical Cumulative Distribution Function (ECDF)
-	 - $F_n(t) = \frac{\sum_iI_{x_i \le t}}{n}$
+	 - $F_n(t) = \dfrac{\sum_iI_{x_i \le t}}{n}$
 	 - Count the number of observations below $t$ and divide by the total number of observations
 	 - Used to get median, quartiles, percentiles, etc
 	 - The ECDF is non-decreasing and right continuous
@@ -58,7 +58,7 @@
 	- Median (50th percentile of ECDF)
 		- *median(x) = min(*{$x_i: F_n(x_i) \ge 0.5$})
 	- Mean ($\mu$) - first moment
-		- $\frac{1}{n}\sum_ix_i$
+		- $\dfrac{1}{n}\sum_ix_i$
 		- If summarized in a distribution frequency
 			- $\sum_jx_jf_j$
 		- Properties (same as [[Properties of Sums and Products|properties of sum]])
@@ -70,16 +70,16 @@
 	- Standard Deviation
 		- $\sqrt{\sigma^2 (x)}$
 	- Coefficient of Variation
-		- $\frac{\sigma(x)}{\mu(x)}$
+		- $\dfrac{\sigma(x)}{\mu(x)}$
 	- Interquartile Range
 		- 75th percentile - 25th percentile
 - Symmetry
 	- Skew - third moment
-		- $\mu[(\frac{x - \mu(x)}{\sigma(x)})^3]$
+		- $\mu[(\dfrac{x - \mu(x)}{\sigma(x)})^3]$
 		- positive skewness is skewed right and negative is skewed left
 		 ![[Pasted image 20250119091824.png]]
 	- Kurtosis - fourth moment
-		- $\mu[(\frac{x - \mu(x)}{\sigma(x)})^4]$
+		- $\mu[(\dfrac{x - \mu(x)}{\sigma(x)})^4]$
 		- The kurtosis of a standard normal distribution is 3, so it is commonly the threshold
 		 ![[Pasted image 20250119091806.png]]
 	 ![[Pasted image 20250118172720.png]]
@@ -89,7 +89,7 @@
 - Histograms, boxplots, and violin plots for one continuous / one categorical
 - Scatterplots for two quantitative variables
 - Covariance - identify how two variables move together
-	- $\sigma_{x, y} = \frac{1}{n}\sum_i(x_i = \mu_x)(y_i-\mu_y)$
+	- $\sigma_{x, y} = \dfrac{1}{n}\sum_i(x_i = \mu_x)(y_i-\mu_y)$
 - Correlation: Covariance on a standardized scale
-	- $\rho_{x, y} = \frac{\sigma_{x, y}}{\sigma_x \sigma_y}$
+	- $\rho_{x, y} = \dfrac{\sigma_{x, y}}{\sigma_x \sigma_y}$
 	- Has values between -1 and 1 with values further away from 0 being a stronger relationship
