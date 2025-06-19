@@ -9,7 +9,7 @@
 
 # Key Takeaways
 1. The smaller the value of $\alpha$, the wider the interval will be
-2. Before calculating an interval, we \should be able to calculate a point estimator and have some idea about its distribution
+2. Before calculating an interval, we should be able to calculate a point estimator and have some idea about its distribution
 3. In the Gaussian setting with known variance, the reduced version of $\bar X_n - \mu$ is distributed $\mathcal N(0, \dfrac{\sigma^2}{n})$
 4. A confidence interval for $\mu$ with level $100(1-\alpha)\%$ when $X_1, \dots, X_n$ are iid [[Random Variables|Gaussian random variables]] with known variance $\sigma^2$ is $[\bar X_n - \dfrac{\sigma}{\sqrt N} \cdot Z_{1-\alpha_2},\hspace{1.5mm} \bar X_n + \dfrac{\sigma}{\sqrt N} \cdot Z_{1-\alpha_1}]$
 5. A plug-in may change the distribution used for the estimator
@@ -33,7 +33,7 @@
 	- $X_n / Y_n = X/c$
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [Normal Approximation to Binomial Distribution](https://www.youtube.com/watch?v=SmjepW2Mb28)
 
 # Notes
 ## Overview

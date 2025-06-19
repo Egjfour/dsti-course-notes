@@ -33,6 +33,8 @@
 - [Student's T Distribution Video](https://www.youtube.com/watch?v=0wjK7Ya7lOA)
 - [F-distribution](https://www.statlect.com/probability-distributions/F-distribution)
 - [Fisher Information](https://www.youtube.com/watch?v=pneluWj-U-o)
+- [Linear Combinations of Random Variables](https://www.youtube.com/watch?v=93VgYYOWNio)
+- [Calculating Probabilities of Linear Combinations of Random Variables](https://www.youtube.com/watch?v=0Rcc0htSgPU)
 
 # Notes
 ## Random Variables as Functions
