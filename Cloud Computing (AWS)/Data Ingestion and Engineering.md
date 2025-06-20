@@ -12,7 +12,7 @@
 # Definitions
 - Homogenous Ingestion: Move data from source to data store while keeping the same format or storage engine type
 	- Extract and load directly (not transformation)
-- Heterogenous Ingestion: Transformation of the data either as ETL or ELT
+- Heterogenous Ingestion: Transformation of the data either as [[Data Warehousing (NiFi)|ETL]] or [[Data Warehousing (NiFi)|ELT]]
 	- ELT is better for unstructured data going to a data lake
 - Streaming Data: Streaming data is emitted at high volume in a continuous, incremental manner with the goal of low-latency processing.
 - Data Lake: Data storage, a data catalog, and security access in a centralized repository for all structured and unstructured data
