@@ -3,6 +3,7 @@
 | **Big Data Ecosystem** | Big Data and Distributed Systems | Joe Sanchez | 02 juin 2025 | #Data_Management |
 
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20250602%5F095456%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E2413f3bf%2Dd3e9%2D4438%2Db1ac%2Dd366bfcd3654)
+[Final Day Review Video Link](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20250613%5F095106%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed47833d2%2D04fa%2D41b3%2D9769%2D3c6aaa08b037)
 
 # Summary
 *Distributed systems are needed in a modern data environment because the required volume, velocity, and variety of data that needs processed is too large, too quick, and too vast to handle on single machines. These distributed systems allow for horizontal scaling that is partition tolerant for many different workloads including batch processing and streaming.*

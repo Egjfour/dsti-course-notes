@@ -75,7 +75,7 @@
 	- Number of output parts = number of reducers
 ## Hive
 - Provides an [[Basic Querying|SQL]]-like language to query <mark style="background: #FFB86CA6;">data already on HDFS</mark> called HiveQL
-	- HiveQL builds a directed acyclic graph (DAG) of jobs on YARN and executes them using one of many frameworks (MapReduce, Tez, or Spark) -- Tex uses RAM and can chain reduces
+	- HiveQL builds a directed acyclic graph (DAG) of jobs on YARN and executes them using one of many frameworks (MapReduce, Tez, or Spark) -- Tez uses RAM and can chain reduces
 	- Supports querying of many file formats including CSV, JSON or optimized formats like Apache ORC, Parquet, and Avro
 		- <mark style="background: #FFB86CA6;">ORC and Parquet are columnar storage while Avro is row-based</mark>
 - Provides for Online Analytical Processing (OLAP) only
