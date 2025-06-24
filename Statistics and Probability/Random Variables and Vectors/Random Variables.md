@@ -35,6 +35,7 @@
 - [Fisher Information](https://www.youtube.com/watch?v=pneluWj-U-o)
 - [Linear Combinations of Random Variables](https://www.youtube.com/watch?v=93VgYYOWNio)
 - [Calculating Probabilities of Linear Combinations of Random Variables](https://www.youtube.com/watch?v=0Rcc0htSgPU)
+- [Ratio of Exponentials Example](https://swnydick.github.io/assets/reports/Ratio_of_Exponentials.pdf)
 
 # Notes
 ## Random Variables as Functions
@@ -86,7 +87,7 @@
 		- $Y = a + (b-a)X \implies Y \sim \mathcal U(a, b)$
 	- R Function: `runif(n, min = 0, max = 1)`
 - Exponential ($X \sim \epsilon(\lambda)$)
-	- Density Function: $f_X(t) = \begin{cases}\lambda t e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
+	- Density Function: $f_X(t) = \begin{cases}\lambda e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
 	- $\mathbb E[X] = \dfrac{1}{\lambda}$ and $\mathbb V[X] = \dfrac{1}{\lambda^2}$
 		- This is the French version. English version is $\lambda$ and $\lambda^2$
 	- $F_X(t)=\begin{cases}1-e^{-\lambda t} \text{ if } t \ge 0\\0 \text{ otherwise }\end{cases}$
