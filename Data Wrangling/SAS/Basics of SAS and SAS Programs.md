@@ -33,7 +33,7 @@
 	- SAS Studio
 - SAS lets us access and manage data across many sources and perform analysis to deliver information
 ## SAS Programs
-- `data` steps create SAS data and `proc` steps process SAS datasets to [[Creating Reports|generate reports]]/graphs and manage data 
+- `data` steps create SAS data and `proc` steps process SAS datasets to [[Creating Reports & Logical Operations|generate reports]]/graphs and manage data 
 - Programs are sequences of steps and steps are sequences of statements
 	- Step boundaries are the start of the step which is always either a `data` or `proc` statement and the end of the step which is either a `run`, `quit`, or start of another step
 	- If there is no end detected, the step will wait and not calculate or move on
