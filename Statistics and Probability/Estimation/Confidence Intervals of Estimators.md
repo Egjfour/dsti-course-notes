@@ -27,7 +27,7 @@
 	- Gaussian w/ known variance: $[\bar X_n - \dfrac{\sigma}{\sqrt n}\cdot Z_{1-\alpha/2};\hspace{1.5mm}\bar X_n + \dfrac{\sigma}{\sqrt n} \cdot Z_{1-\alpha/2}]$
 - Unilateral Confidence Interval: A confidence interval for an upper or lower bound. The other side of the interval is $+\infty$ or $-\infty$
 	- Gaussian w/ known variance - upper bound: $]-\infty;\hspace{1.5mm}\bar X_n + \dfrac{\sigma}{\sqrt n} \cdot Z_{1-\alpha}]$
-- Slutsky Theorem: Given a pair of random variables, if one [[Convergence|converges in distribution]] to a random element and the other towards a constant ($X_n \underset{d}{\to} X$ and $Y_N \underset{d}{\to} c$), then:
+- Slutsky Theorem: Given a pair of random variables, if one [[Convergence|converges in distribution]] to a random element and the other towards a constant ($X_n \underset{d}{\to} X$ and $Y_n \underset{d}{\to} c$), then:
 	- $X_n + Y_n = X + c$
 	- $X_n \cdot Y_n = cX$
 	- $X_n / Y_n = X/c$

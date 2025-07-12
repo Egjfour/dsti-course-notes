@@ -13,12 +13,10 @@
 2. Functions of a random variable are also random variables themselves
 3. A function continuous random variable is continuous (discrete is discrete)
 4. Moments of a random variable can always be calculated (even for discrete random variables)
-5. The moments of a random vector create a vector of moments: $E[X, Y] = \begin{pmatrix}E[X]\\E[Y]\end{pmatrix}$
-6. The random variables of a random vector are independent if and only if their [[Distributions of Probability and Random Variables|joint distribution]] is equal to the product of their marginal distributions
-7. A necessary (not sufficient) condition for $X, Y$ to be independent is to have no instances with a probability of 0 in the joint domain
-8. When the degrees of freedom are $+ \infty$ for the $\mathcal T$-distribution, $\mathcal T(d) = \mathcal N(0,1)$
-9. Two random variables with the same expectation and variance are not necessarily from the same distribution. The Fisher random variable allows us to confirm if they are or not
-10. However, two random variables with the same expectation, variance, and distribution may not always be equal (e.g., $X \sim \mathcal U(-1, 1)$ and $Y = -X$)
+5. A necessary (not sufficient) condition for $X, Y$ to be independent is to have no instances with a probability of 0 in the joint domain
+6. When the degrees of freedom are $+ \infty$ for the $\mathcal T$-distribution, $\mathcal T(d) = \mathcal N(0,1)$
+7. Two random variables with the same expectation and variance are not necessarily from the same distribution. The Fisher random variable allows us to confirm if they are or not
+8. However, two random variables with the same expectation, variance, and distribution may not always be equal (e.g., $X \sim \mathcal U(-1, 1)$ and $Y = -X$)
 
 # Definitions
 - Random Variable: A function that maps from a [[Probability Theory|sample space]] $\Omega$ to a numeric value $\mathbb R$

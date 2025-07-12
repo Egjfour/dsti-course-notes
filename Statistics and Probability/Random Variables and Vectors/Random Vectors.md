@@ -14,6 +14,8 @@
 4. $\mathbb V[X - Y] = \mathbb V[X] + \mathbb V[Y] - 2cov(X,Y)$
 5. The variance-covariance matrix is a [[Matrices|square, symmetric]], [[Matrix Diagonalization|positive semi-definte]] matrix
 6. The summation of non-independent Gaussian random variables is not always a Gaussian random variable
+7. The moments of a random vector create a vector of moments: $E[X, Y] = \begin{pmatrix}E[X]\\E[Y]\end{pmatrix}$
+8. The random variables of a random vector are independent if and only if their [[Distributions of Probability and Random Variables|joint distribution]] is equal to the product of their marginal distributions
 
 # Definitions
 - [[Conditional Probability and Independence|Independence]] (${\perp \!\!\! \perp}$): The joint probability of two events is equal to the product of their marginal probabilities (i.e., knowing the outcome of one event gives no information about another)
