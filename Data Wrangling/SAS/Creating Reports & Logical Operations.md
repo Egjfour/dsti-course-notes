@@ -34,7 +34,7 @@
 	- Variable names are provided as a space-separated list
 - Filtering can be done using the `where` statement
 	- Operands are used to make logical comparisons to data values
-	- `where` statements are the <mark style="background: #FFB86CA6;">first element processed</mark> during the [[Reading, Writing, and Processing Data|execution phase]]
+	- `where` statements are the <mark style="background: #FFB86CA6;">first element processed</mark> during the [[Reading, Writing, and Processing Data (SAS)|execution phase]]
 	- We can compare dates by using date constants
 		- Always of the format `'ddmmm<yy>yy'd`
 - We can generate total rows using the `sum` statement
