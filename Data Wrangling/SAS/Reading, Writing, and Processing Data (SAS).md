@@ -5,7 +5,7 @@
 [Class Video Link](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FS25%20%2D%20Common%20Link%20DSDEDA%2D20250709%5F084946%2DMeeting%20Recording%201%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E0e4a1d83%2Dfd52%2D4689%2D8889%2D6e0ca6bc6685)
 
 # Summary
-*The `data` step is the main way that we process data in SAS. It reads data one observation at a time from disk into the program data vector (PDV) for processing. We can also read from many other sources using engines or the `infile` statement including databases, spreadsheets, and raw text/csv files. Reports can be written to many sources as well including HTML, PDF, and rich text format (RTF) using the Output Data System commands to sink report commands into files.*
+*The `data` step is the main way that we process data in SAS. It reads data one observation at a time from disk into the program data vector (PDV) for processing. We can also read from many other sources using engines or the `infile` statement including databases, spreadsheets, and raw text/csv files. Reports can be written to many sources as well including HTML, PDF, and rich text format (RTF) using the Output Data System commands to sink report commands into files. We can also apply logic iteratively in the data steps using do-loops to create and process SAS statements multiple times.*
 
 # Key Takeaways
 1. Data in SAS is not stored in [[Computer Systems Basics|RAM]]; it is stored on disk and read in one observation at a time
@@ -30,6 +30,7 @@
 # Additional Resources
 - [Where vs If](https://www.listendata.com/2013/09/sas-where-vs-if-statements.html)
 - [Documentation - Reading Raw Data](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/lepg/p1vahis9wkdkvin17obs1381xenf.htm)
+- [Documentation - Iterative Processing](https://documentation.sas.com/doc/en/pgmsascdc/9.4_3.5/lestmtsref/p1cydk5fq0u4bfn1xfbjt7w1c7lu.htm)
 
 # Notes
 ## Reading and Manipulating SAS Datasets
@@ -97,7 +98,7 @@
 - Many data output formats exist for reports (though many are interface-specific)
 	- We can choose which destination we write to (HTML, PDF, RTF) using the <mark style="background: #FFB86CA6;">output delivery system (ODS)</mark>
 		- Cannot use ODS for Excel. Need the xlsx engine
-	- We specify the filepath and format with an `ods` command. Then, we run [[Creating Reports & Logical Operations|reporting steps]] which will all be added to the report until we call `ods close;`
+	- We specify the filepath and format with an `ods` command. Then, we run [[Creating Reports & Logical Operations in SAS|reporting steps]] which will all be added to the report until we call `ods close;`
 	```sas
 	ods html file="&path\example.html";
 	ods pdf file="&path\example.pdf";
@@ -115,3 +116,23 @@
 	ods pdf close;
 	ods rtf close;
 	```
+## Iterative Data Processing
+- `Do-loop` performs basic iteration and allows us to repeat code operations
+	- We either provide a `start`, `stop`, and (optional) `by` options or an item list to iterate through
+	- Must have an `end;` statement
+	```sas
+	data forecast;
+	   set orion.growth;
+	   do Year=1 to 6;
+	     Total_Employees=Total_Employees*(1+Increase);
+	     output;
+	   end;
+	run;
+	```
+- We can also process until a condition is met (a `while` loop)
+	- `do-until` evaluates the condition at the bottom of the loop
+		- If the condition is true, one iteration will occur
+	- `do-while` evaluates the condition at the top of the loop
+		- If the condition is true, zero iteration will occur
+	 ![[Pasted image 20250713175558.png]]
+- Loops may also be nested
