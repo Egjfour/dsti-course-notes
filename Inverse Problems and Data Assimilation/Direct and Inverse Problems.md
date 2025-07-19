@@ -31,8 +31,7 @@
 
 # Notes
 ## Overview and Examples of Inverse Problems
-- Framework: We have a physical, sociological, economic phenomenon wherein we have a model which takes parameters and states as input to produce forecasts as an output
-- For inverse functions we have the observations and the data-independent model, our goal is to recover $x$ and/or $p$
+- For inverse functions we have the observations and a model, our goal is to recover $x$ and/or $p$
 	- Typically observations are noisy, partial, and/or indirect
 	- Normally we only try to recover $x$ or $p$ but not both. Model calibration is the 
 - Example - Heat Equation (how does temperature evolve in some domain)
