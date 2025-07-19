@@ -9,7 +9,7 @@
 
 # Key Takeaways
 1. The cost function maps from an input vector ($V$) in space $\mathbb R^m$ to the real number space $\mathbb R$
-2. As soon as we leave the domain of the constraint, we [[Algorithms|project onto the constraint]]
+2. As soon as we leave the domain of the constraint, we [[Algorithms - Gradient-Based Optimization|project onto the constraint]]
 3. A maximization problem is equal to the minimization of a negative cost function
 4. A global minimum is also local, but the reverse is generally false except in the convex case 
 5. Any linear form can be represented with a gradient according to the Reisz Theorem
