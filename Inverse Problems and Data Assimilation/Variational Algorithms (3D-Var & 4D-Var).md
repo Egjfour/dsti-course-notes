@@ -1,6 +1,6 @@
-|                Course Name                 |   Topic    |   Professor   |         Date         |    Tags    |
-| :----------------------------------------: | :--------: | :-----------: | :------------------: | :--------: |
-| **Inverse Problems and Data Assimilation** | Algorithms | Didier Auroux | 15 & 18 juillet 2025 | #Calculus  |
+|                Course Name                 |   Topic    |   Professor   |         Date         |   Tags    |
+| :----------------------------------------: | :--------: | :-----------: | :------------------: | :-------: |
+| **Inverse Problems and Data Assimilation** | Algorithms | Didier Auroux | 15 & 18 juillet 2025 | #Calculus |
 
 [Class Video Link 1](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20250715%5F094957%2DMeeting%20Recording%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E4faee5d4%2D9ae3%2D4fd1%2D92bd%2D251cb7e407d6)
 [Class Video Link 2](https://dstisas-my.sharepoint.com/personal/blaise_pascal_nuc_dsti_institute/_layouts/15/stream.aspx?id=%2Fpersonal%2Fblaise%5Fpascal%5Fnuc%5Fdsti%5Finstitute%2FDocuments%2FRecordings%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20250715%5F125737%2DMeeting%20Recording%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E984069cc%2Ddbf6%2D4575%2D93b0%2Dd50df4b31913)
@@ -19,6 +19,7 @@
 7. The 4D-Var algorithm requires that $x(t_i)$ [[Vectors|depends linearly]] on $x_0$
 8. The adjoint model gives the gradient for the same computation cost as one function evaluation
 9. When a Dirac function is used in a [[Constrained Optimization - Lagrangian|Lagrangian optimization]], we say that $P_0\delta_0$ only contributes to the [[Function Optimization|gradient]] at time 0
+10. When implementing, we need to use the gradient of the discretized cost (with time steps $\Delta t$) using the Lagrangian NOT the theoretical cost function that uses ODEs
 
 # Definitions
 - Variational Algorithm: Algorithms which perform [[Data Assimilation Overview|data assimilation]] by [[Optimization Basics & Problem Statement|minimizing a cost function]]
@@ -99,6 +100,11 @@
 	- Can use a local linearization
 - Estimating the covariance matrix is extremely difficult and the choice of the $B$ matrix has a strong influence on the forecast
 ## Python Implementation - Lorenz Model
+- We need to use the discretized gradient
+	- $-\dfrac{\partial p}{\partial t}= [J(F(x))]^Tp$
+	- $\dfrac{\partial p}{\partial t}(t_i) \approx \dfrac{(t_i) - p(t_{i+1})}{\Delta t}$
+- The gradient calculation can be verified by calculating the Gâteaux derivative to see that given $\epsilon$ and a direction, $y$, the inner product of the gradient and direction makes sense
+	- If we use a random direction, we can check all values at once - should be within decimals
 ```python
 import numpy as np
 import matplotlib.pyplot as plt
@@ -156,7 +162,7 @@ beta = 8./3.
 # numerical parameters
 T = 4. # final time of the assimilation window
 N = 4001 # number of times (including 0 and T)
-deltat = T/(N-1) # time step
+deltat = T/(N-1) # time step. Test many time steps and see if we need to adjust
 
 # we make it simple: B = Id, R = Id
 # background state:
