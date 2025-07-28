@@ -133,6 +133,6 @@
 	- `do-until` evaluates the condition at the bottom of the loop
 		- If the condition is true, one iteration will occur
 	- `do-while` evaluates the condition at the top of the loop
-		- If the condition is true, zero iteration will occur
+		- If the condition is false, zero iteration will occur
 	 ![[Pasted image 20250713175558.png]]
 - Loops may also be nested

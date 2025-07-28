@@ -29,7 +29,7 @@
 		- $\sum_k a_k = \dfrac{x-x^{n+1}}{1-x}$
 		- <mark style="background: #FFB86CA6;">Represents the partial sum of a geometric series</mark>
 		- Example: Total value of an asset with diminishing marginal returns over time
-			- **Scenario:** You start with an initial value of 1 unit of currency (normalized). In each subsequent year, the additional value added decreases by a factor $x$. Over $n$ years, you want to calculate the total value remaining after accounting for this decay.
+			- **Scenario:** You start with an initial value of 1 unit of currency (normalized). In each subsequent year, the additional value added decreases by a factor $x$. Over $n$ years, you want to calculate the total valpue remaining after accounting for this decay.
 			- **Parameters**:
 				- $x=0.9x = 0.9x=0.9$ (the asset retains 90% of its value each year),
 				- $n=4n = 4n=4$ (you want the total value for the first 4 years).
