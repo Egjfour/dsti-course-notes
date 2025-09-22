@@ -35,7 +35,7 @@
 	- All the observations are mutually independent
 	- All the observations are [[Distributions of Probability and Random Variables|identically distributed]]
 		- $X_i \sim f(\theta), \forall i$
-- If the samples are not iid, then we get a stochastic process (e.g., a Markov Process)
+- If the samples are not iid, then we get a stochastic process (e.g., a [[Model Types and Use Cases|Markov Process]])
 ## Universal Boundary
 - $P(|X - \mu| \le t\sigma) \ge \dfrac{1}{t^2}$
 	- The probability that a centered random variable is at least t standard deviations away from the the mean is at least one over t-squared
