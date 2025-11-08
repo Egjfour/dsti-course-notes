@@ -26,7 +26,7 @@
 	- Variance of the $Y_k$
 
 # Additional Resources
-- 
+- [Confidence vs Prediction Intervals](https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals)
 
 # Notes
 ## Regression Metrics

@@ -24,7 +24,7 @@
 	- $P_{H_0}(|\hat b_n| \gt |\hat b_{n, obs}|)$ OR $P_{H_0}(|\mathcal T(n-2)| \gt \hat b_{n,obs}/(\hat \sigma_n / \sqrt{\sum (x_i - \bar x_n)^2})|)$
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [KS Test (IBM)](https://www.ibm.com/docs/en/spss-statistics/cd?topic=tests-one-sample-kolmogorov-smirnov-test)
 
 # Notes
 ## Statistical Tests Overview

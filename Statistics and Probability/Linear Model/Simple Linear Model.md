@@ -13,7 +13,7 @@
 3. The individual $y_i$ are not identically distributed because $\mathbb E[Y_i] = a + bX_i$
 4. With assumption H4 (the errors form a [[Random Vectors|Gaussian Random Vector]]), we can assume that our parameter vector $\begin{pmatrix}\hat a_n \\ \hat b_n \end{pmatrix}$ is a Gaussian random vector
 5. $\hat Y$ is the orthogonal projection of $Y$ on $X$ and the error $\hat \epsilon \perp X$ with $X$ a vectorial subspace of dimension $n-2$
-6. A confidence interval for forecasted values is $[\hat y_{new} \pm \hat\sigma_n \sqrt{1 + \dfrac{1}{n}\dfrac{(X_{new} - \bar X_n)^2}{\underset{k}{\sum}(X_k - \bar X_n)^2}}\cdot t_{1-\alpha/2;\hspace{1mm} n-2}]$
+6. A [[Confidence Intervals of Estimators|confidence interval]] for forecasted values is $[\hat y_{new} \pm \hat\sigma_n \sqrt{1 + \dfrac{1}{n}\dfrac{(X_{new} - \bar X_n)^2}{\underset{k}{\sum}(X_k - \bar X_n)^2}}\cdot t_{1-\alpha/2;\hspace{1mm} n-2}]$
 7. The further we are from $\bar X_n$, the less confident we are in the prediction. Prediction interval is a pair of hyperbolic curves which increase in width as we move away from the mean
 8. Any model which can be written as a product of a data matrix with a coefficient matrix plus some error vector is a linear model (ex: $Y = \mathbb X\beta + U$)
 
@@ -28,6 +28,7 @@
 - [Confidence vs Prediction Intervals in Regression (DataCamp)](https://www.datacamp.com/blog/confidence-intervals-vs-prediction-intervals)
 - [Studentized Residuals](https://online.stat.psu.edu/stat462/node/247/)
 - [Simple Linear Model (PSU)](https://online.stat.psu.edu/stat462/node/79/)
+- [Understanding the hat matrix](https://math.stackexchange.com/questions/47093/is-there-a-name-for-the-matrix-xxtx-1xt)
 
 # Notes
 ## Overview of the Linear Model
@@ -84,9 +85,12 @@
 		- [[Matrices|Rank]] of $\mathbb X$ is 2 in the simple linear model
 - We can write the linear model as the explanatory variables multiplied with the coefficient vector added with the error term
 	- $Y = \mathbb X \beta + U \Leftrightarrow \begin{pmatrix}y_1 = a + bx_1 + \epsilon_1 \\ \vdots \\ y_n = a + bx_n + \epsilon_n \end{pmatrix}$
+	- We consider that the intercept is simply a column vector of 1s appended to the design matrix, $\mathbb X$ (see definition of $\mathbb X$ above)
 - $\hat Y$ is the orthogonal projection of $\mathbb X$ on $Y$
 	- $\hat Y = P_{\mathbb X} Y = \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T Y$
 	- $\mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T$ is the matrix of the orthogonal projection of $Y$ on the linear subspace $\epsilon_{\mathbb X}$
+		- The "hat matrix"
+		- Derived from $\beta = (\mathbb X^TX)^{-1}XY$
 - Residuals ($Y - \hat Y$)
 	- $\hat U = Y - \hat Y = Y - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T Y$
 	- $= (I - \mathbb X (\mathbb X^T\mathbb X)^{-1}\mathbb X^T) Y$
