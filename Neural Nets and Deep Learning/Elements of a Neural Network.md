@@ -11,7 +11,6 @@
 1. Neural networks approximate <mark style="background: #FFB86CA6;">continuous</mark> functions
 2. The output of a linear layer is a logit ($z$)
 3. [[Activation Functions|Activation functions]] are what introduce nonlinearity to the model
-4. It essential that the [[Functions and Derivatives of Functions|derivative]] of the activation function can be calculated
 
 # Definitions
 - Artificial Intelligence: Field of computer science that creates machines which perform tasks that **normally** require human intelligence
