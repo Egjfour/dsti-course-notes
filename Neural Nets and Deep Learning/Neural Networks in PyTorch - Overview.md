@@ -1,6 +1,6 @@
-|          Course Name           |  Topic  |   Professor   |         Date         |           Tags            |
-| :----------------------------: | :-----: | :-----------: | :------------------: | :-----------------------: |
-| **Artificial Neural Networks** | PyTorch | Benoit Mialet | 3,4,5 novembre, 2025 | #MachineLearning #Python  |
+|          Course Name           |  Topic  |   Professor   |         Date         |           Tags           |
+| :----------------------------: | :-----: | :-----------: | :------------------: | :----------------------: |
+| **Artificial Neural Networks** | PyTorch | Benoit Mialet | 3,4,5 novembre, 2025 | #MachineLearning #Python |
 
 # Summary
 *PyTorch is the leading framework for building and executing neural networks in Python. It offers a suite of building blocks for both models and data that makes it both simple to use and highly flexible. Models and data are defined by using custom classes that impose requirements on method implementation. Additionally, PyTorch supports easy integration with GPU acceleration and mult-GPU architectures.*
@@ -133,6 +133,7 @@
 		- Calculate Loss
 		- Perform backpropagation
 		- Take a step in the [[Algorithms - Gradient-Based Optimization|opposite direction of the gradient]] using the [[Gradient Descent and Optimizers|optimizer]]
+- In PyTorch, it is essential, that we set the model in train mode using `model.train()` to ensure gradient updates and dropout are happening
 - During model training, we can use the `SummaryWriter` from tensorboard to easily track metrics such as loss, RMSE, R1, F1 score, etc in a professional front-end
 	- In Colab, Tensorboard is initialized with the following
 	```python
