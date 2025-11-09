@@ -62,6 +62,13 @@
         "a": 1,
         "rgb": 5401056
       }
+    },
+    {
+      "query": "tag:#MachineLearning  ",
+      "color": {
+        "a": 1,
+        "rgb": 14701242
+      }
     }
   ],
   "collapse-display": false,

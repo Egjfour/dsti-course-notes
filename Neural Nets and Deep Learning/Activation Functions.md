@@ -34,7 +34,7 @@
 - Sigmoid/Logistic Function
 	- Outputs a value between 0 and 1 which can be <mark style="background: #FFB86CA6;">directly interpreted as probabilities</mark>
 	- $S(z) = \dfrac{1}{1 + e^{-z}}$
-	- Suffers from the [[Identifying Issues & Improving Results|vanishing gradient problem]] and is computationally expensive
+	- Suffers from the [[Gradient Descent and Optimizers|vanishing gradient problem]] and is computationally expensive
 		- Since gradients are very small even at 0
 	- More commonly used for the [[Elements of a Neural Network|output layer]] since it is highly interpretable
 	![[Pasted image 20251109111758.png]] 
