@@ -10,7 +10,7 @@
 # Key Takeaways
 1. It essential that the [[Functions and Derivatives of Functions|derivative]] of the activation function can be calculated
 2. The sigmoid and softmax activations are primarily used in the output layers
-3. Sigmoid, in particular, suffers from the [[Identifying Issues & Improving Results|vanishing gradient problem]] due to its low [[Function Optimization|gradient]] values
+3. Sigmoid, in particular, suffers from the [[The Training Process|vanishing gradient problem]] due to its low [[Function Optimization|gradient]] values
 4. Many activations like swish try to solve the dying ReLU problem, but this is challenging because these functions reintroduce the computational complexity of activations like sigmoid
 5. Softmax is exclusively used in the output layer of [[Elements of a Neural Network|multiclass classification models]]
 

@@ -93,7 +93,7 @@
 - Torch offers utilities for commonly-used elements
 	- `nn.Linear()` creates a single feed-forward fully-connected layer with random initialization for the weights and biases
 	- [[Activation Functions|Activation functions]] with simple calles like `torch.sigmoid()` and `torch.relu()`
-	- Improvement components like [[Identifying Issues & Improving Results|dropout and batch/layer normalization]]
+	- Improvement components like [[Evaluation of ML Models & Improving Results|dropout and batch/layer normalization]]
 		- `nn.Dropout()`, `nn.BatchNorm1d`, `nn.LayerNorm`
 	- Additional utilities such as `nn.Sequential` and `nn.ModuleDict` allow for more streamlined and/or dynamic model builds
 	```python
