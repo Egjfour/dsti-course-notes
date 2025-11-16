@@ -16,6 +16,7 @@
 6. The summation of non-independent Gaussian random variables is not always a Gaussian random variable
 7. The moments of a random vector create a vector of moments: $E[X, Y] = \begin{pmatrix}E[X]\\E[Y]\end{pmatrix}$
 8. The random variables of a random vector are independent if and only if their [[Distributions of Probability and Random Variables|joint distribution]] is equal to the product of their marginal distributions
+9. A deterministic matrix multiplied with a Gaussian random vector results in a Gaussian random vector
 
 # Definitions
 - [[Conditional Probability and Independence|Independence]] (${\perp \!\!\! \perp}$): The joint probability of two events is equal to the product of their marginal probabilities (i.e., knowing the outcome of one event gives no information about another)
@@ -92,6 +93,7 @@
 	- $\mathbb E[MX] = M\mathbb E[X]$
 		- The expectation retains its linearity property multiplying by a constant matrix
 	- $\mathbb V[MX] = M\mathbb V[X] M^T$
+		- Since $\mathbb V[X]$ is always positive, we know that $\mathbb V[MX]$ is as well
 - A matrix of random variables is a random matrix
 	- The variance-covariance matrix is a random matrix
 ## Gaussian Random Vectors

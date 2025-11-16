@@ -13,7 +13,7 @@
 3. <mark style="background: #FFB86CA6;">The values along the main diagonal of a triangular or diagonal matrix are the eigenvalues</mark>
 4. Eigenvectors are pair-wise [[Vectors|orthogonal]]
 5. In $\mathbb R^2$, the sign of the trace and [[Matrix Determinant|determinant]] gives the sign of the eigenvalues
-6. Eigenvalues help us see if linear relations exist even in the presence of noise since [[Matrices|rank]] cannot handle noise being present
+6. Eigenvalues help us see if linear relations exist even in the presence of noise since [[Vectors|rank]] cannot handle noise being present
 7. If one or more eigenvalues for a matrix is 0, then there is a relationship between the columns of that matrix ($\exists$ linear dependency)
 8. If the eigenvalues are all positive, then the entire matrix is positive
 9. If the matrix $\textbf A$ is not symmetric, then we will get no real roots and the eigenvalues will be a [[Complex Numbers|complex conjugate]]
@@ -26,7 +26,7 @@
 - Matrix-Vector Multiplication: Process that takes a matrix in $\mathbb R^{m\hspace{1mm} x \hspace{1mm} n}$ and multiplies it by a vector $\textbf v \in \mathbb R^n$ to produce a vector in $\mathbb R^n$
 	- Calculate the [[Vectors|dot product]] of the vector with each row of the matrix
 - Matrix <mark style="background: #FFB86CA6;">Trace: Sum of the elements on the main diagonal</mark>
-	- $\textbf A = \begin{pmatrix}3,-1,2\\0,4,1\\1,-1,-5\end{pmatrix}$
+	- $\textbf A = \begin{pmatrix}3&-1&2\\0&4&1\\1&-1&-5\end{pmatrix}$
 	- $tr(\textbf A) = 3 + 4 + (-5) = 2$
 
 # Additional Resources
@@ -52,7 +52,7 @@
 		- Solutions to this polynomial equation will be the eigenvalues
 - Example: Let $\textbf A = \begin{pmatrix}2,7\\7,2\end{pmatrix}$
 	- Find $det(\textbf A - \lambda \textbf I) = 0$
-	- Perform the [[Matrices|subtraction]]: $det(\begin{pmatrix}2-\lambda, 7\\7,2-\lambda\end{pmatrix}) = 0$
+	- Perform the [[Matrices|subtraction]]: $det(\begin{pmatrix}2-\lambda& 7\\7&2-\lambda\end{pmatrix}) = 0$
 	- Apply [[Matrix Determinant|Determinant Formula]]: $(2 - \lambda)(2-\lambda) - 49 = 0$
 	- Simplify the polynomial: $\lambda^2 - 4\lambda - 45 = 0$
 	- Solve for $\lambda$ (Solve - Quadratic Roots)
