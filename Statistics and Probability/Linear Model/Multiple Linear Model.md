@@ -2,10 +2,8 @@
 | :------------------------------------------: | :---------------: | :-------------: | :-------------: | :---------: |
 | **Advanced Statistics and Machine Learning** | Linear Regression | Christine Malot | 27 octobre 2025 | #Statistics |
 
-[Class Video Link](URL)
-
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*The multiple linear model is simply an extension of the [[Simple Linear Model|simple linear model]] that allows for additional covariates to be included. Like in the simple case, we utilize the least-squares estimator to identify our vector of estimated coefficients, $\hat\beta$. In the multiple case, we must ensure that there is no perfect multicollinearity among our predictors - else the least-squares estimator cannot be determined. Additionally, the evaluation of such models differs slightly from the [[Evaluation and Metrics of Simple Linear Models|evaluation of simple linear models]] in that we must be sure to use penalized methods and handle for multiple testing of coefficients.*
 
 # Key Takeaways
 1. We must be sure to use the Adjusted [[Evaluation and Metrics of Simple Linear Models|R-Squared]] for regressions with more than one variable since the R-squared increases as the number of predictors increases
@@ -79,3 +77,19 @@
 	- But in practice, it is much easier to calculate the p-value
 		- $P(F \gt F_{observed})$
 	- It is essential that the Gaussian noise assumption holds to use the Fisher test
+## Testing of Individual Coefficients
+- Instead of a global Fisher test on all coefficients, we seek to understand each coefficient individually
+	- In this case, we're in the multiple testing scenario
+	- $\forall k \in [1, p], H_0: \beta_k = 0; H_1: \beta_k \ne 0$
+- Since we are in a multiple testing framework, we must apply a Bonferroni or Benjamini and Hochberg correction to account for the inflated Type I error
+	- Bonferroni: Adjust the p-value to be $p-val/num\_tests$
+		- Tends to be <mark style="background: #FFB86CA6;">more conservative and accept less tests</mark>
+	- Benjamini Hochberg:
+		- Sort the tests ascending according to p-value
+		- Find the largest integer $k$ such that $P_{(k)} \le \alpha \cdot \frac{k}{p}$
+- In R, we use the regression output on the coefficients with the associated t-statistics and p-values from the `summary()` function applied to an `lm()` object
+	- In particular, a test using the student random variable is conducted because we use the plug-in method for the sample variance which is given by the residual standard error
+	- The t-statistic is $\dfrac{\hat\beta_k}{\hat\sigma_n\sqrt{v_k}}$ with $v_k = (\mathbb X^T \mathbb X)^{-1}_{k+1, k+1}$
+		- Divide the estimated coefficient by the standard ddeviation of the estimate of $\hat \beta_k$ for the given coefficient
+	- The p-values for each coefficient are
+		- $P_{H_0^{(k)}}(|\mathcal T(n - rk(\mathbb X))| \gt |tstat|)$
