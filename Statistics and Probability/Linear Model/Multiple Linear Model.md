@@ -14,6 +14,7 @@
 6. To perform a [[Hypothesis Testing|hypothesis test]] of a single parameter value, we use a [[Random Variables|student random variable]] to calculate the test statistic
 7. The hypothesis test for regression parameters is equivalent to saying that 0 is not in the [[Confidence Intervals of Estimators|confidence interval]] for $\hat \beta_k$
 8. A confidence interval for $\hat \beta_k$ is $[\hat \beta_k \pm \hat \sigma_n \sqrt{v_k} \cdot \mathcal t_{1 - \alpha/2; n - rk(\mathbb X)}]$ with $v_k = (\mathbb X^T \mathbb X)^{-1}_{k+1, k+1}$
+9. A confidence interval for prediction is $[\hat y_{n+1} \pm \hat\sigma_n\sqrt{1 + (1 \hspace{0.5mm}\mathbb X_{n+1}) (\mathbb X^T\mathbb X)^{-1}(1 \hspace{0.5mm}\mathbb X_{n+1})^T} \cdot t_{1 = \alpha/2; n-rk(\mathbb X)}]$
 
 # Definitions
 - Multicollinearity: A situation in which one or more combinations of columns of the design matrix is a [[Vectors|linear combination]] of another column

@@ -21,6 +21,7 @@
 	- Car mileage, amount of rainfall, prices
 - Indicator Function ($I$): The count of observations **below** a set threshold ($t$)
 - Quantile Functions: The proportion of data falling **below** a value of interest on an empirical cumulative distribution function (ECDF)
+- Empirical Quantile: Observation at position $k$ after being sorted ascending
 - Interquartile Range: 75th quartile - 25th quartile
 
 # Additional Resources
