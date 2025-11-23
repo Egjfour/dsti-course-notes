@@ -5,7 +5,7 @@
 [Class Video Link](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251106%5F084942%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ed61c708c%2Dfe34%2D4269%2Dbf5d%2D576b40734e56)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*It is essential that we perform tests and evaluate the Gaussian assumption on the residuals as we interpret regression results. Goodness-of-fit testing allows us to perform this. For continuous variables, the KS-test is preferred (though Chi-square GOF is also frequently used in practice despite being designed for discrete variables). These tests however, don't tell us anything about centeredness or constant variance of the residuals. For that, we inspect graphically. If there is heteroscedasticity present, we can look to cluster our observations into groups with similar variance by transforming our response vector with the decomposition of the variance matrix of residuals.*
 
 # Key Takeaways
 1. The main challenge with testing the Gaussian noise assumption is that there are no observed values of the error term, so we must instead consider the model residuals
@@ -17,10 +17,10 @@
 # Definitions
 - The Projection Matrix on $\mathbb X$ ($P_{\mathbb X}$): The matrix which moves our observed output values into the linear subspace defined by our design matrix
 	- $P_{\mathbb X} = \mathbb X(\mathbb X^T\mathbb X)^{-1}\mathbb X^T$
-- 
+- Homoscedasticity: In multiple regression, this refers to the assumption of constant variance on the error term. The opposite of this is known as heteroscedasticity
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [Heteroscedasticity (Reddit)](https://www.reddit.com/r/AskStatistics/comments/n3ahnj/eli5_heteroskedastic_robust_standard_errors_with/)
 
 # Notes
 ## Residuals
@@ -82,3 +82,21 @@
 		- <mark style="background: #FFB86CA6;">This estimation, however, changes the degrees of freedom</mark> for the distribution to $k-1-m$ with $m$ the number of estimated parameters
 	- Since the degrees of freedom are different, we must manually calculate the p-value
 		- In R: `1 - pchisq(chisq_stat, df_corrected)`
+## Checking Centeredness and Equal Variance
+- The KS test is preferred to $\chi^2$-GOF, but it still does not tell us anything about the centeredness and consistency in the variance of the residuals
+	- We must inspect graphically
+- We plot the studentized residuals on the y-axis and the fitted values from the regression on the x-axis. We should see roughly even numbers of positive and negative residuals with no fanning
+	 ![[Pasted image 20251123115024.png]]
+- The [[Evaluation and Metrics of Simple Linear Models|Q-Q plot]] can also help to ensure constant variance and validate our assumptions on the residuals
+## Handling Non-Constant Variance
+- Goal: Create clusters of individuals for whom we can assume constant variance
+	- Decompose the matrix of the variance of noise, $\Sigma$, into $A^TIA$ with $A = \begin{pmatrix}\sqrt{\sigma^2_1}&0&0\\0&\ddots&0\\0&0&\sqrt{\sigma^2_n}\end{pmatrix}$
+	- We know that $A^T = A$ since this is a [[Matrices|diagonal matrix]]
+- This means we can decompose the variance into
+	- $\Sigma = A^TIA=\mathbb V[AW]$ with $W$ such that $V[W] = I$
+- And instead of working with $U$, we work with $W$ such that $U = AW$
+- This gives the following regression equation
+	- $Y = \mathbb X\beta + U = \mathbb X\beta + AW = A^{-1}Y = A^{-1}\mathbb X\beta + W$
+	- $W$ <mark style="background: #FFB86CA6;">becomes the new noise term</mark>
+- This process of calculating the new response vector and new noise is what performs the clustering
+- We can estimate $\Sigma$ using $\dfrac{1}{n - rk(\mathbb X)} \cdot \sum(\hat y - y)^2$
