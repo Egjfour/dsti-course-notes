@@ -18,7 +18,7 @@
 - Deep Learning: Subfield of ML where learning is based on neural networks
 - Artificial Neural Networks: A subset of machine learning which serve as a core element of deep learning based on the Universal Approximation Theorem and work by extracting underlying relationships in the data
 - Universal Approximation Theorem: At least one neural network exists that can approximate any [[Continuity & Derivability|continuous function]] with arbitrary precision thanks to any non-polynomial activation function
-- Semi-Supervised Learning: The utilization of a few few labelled examples to fill in missing labels on the rest of the dataset to then retrain
+- Semi-Supervised Learning: The utilization of a few labelled examples to fill in missing labels on the rest of the dataset to then retrain
 	- RISK: Initial biases in the model on a few records will compound in the final model
 - Pre-activation: The [[Vectors|linear combination]] portion of a neuron
 - Layer: A group of neurons at the same level of a neural network

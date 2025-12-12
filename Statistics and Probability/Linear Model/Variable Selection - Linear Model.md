@@ -31,9 +31,11 @@
 - Akaike Information Criterion (AIC): An evaluation of likelihood which penalizes for model complexity and tends to be less conservative than the BIC
 	- $AIC = 2k - 2 \cdot log(\hat L)$ with $\hat L$ the likelihood in the Gaussian setting
 	- Said otherwise: $2k + \textrm{constant} + \textrm{L.S. criterion}$
+	- Frequentist, approximation of the deviance (KL divergence) of the model
 - Bayes Information Criterion (BIC): A modification of the AIC which tends to be more punitive to unnecessarily complex models especially for large datasets
 	- $BIC = k\cdot log(n) - 2\cdot log(\hat L)$
 	- `Imagine AIC as a friend who says, “Add a few details, as long as they help,” while BIC says, “Only add details if they’re absolutely necessary.”`
+	- Bayesian, approximation of the integrated likelihood $\int_{\theta}log(\mathcal L(x_1, \dots, x_n; \theta))d\theta$
 
 # Additional Resources
 - [AIC and BIC](https://medium.com/@jshaik2452/choosing-the-best-model-a-friendly-guide-to-aic-and-bic-af220b33255f)
