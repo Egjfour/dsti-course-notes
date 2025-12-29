@@ -33,7 +33,7 @@
 - Then $\exists \hspace{1.5mm} m$ Lagrange multipliers $(\lambda_1, ..., \lambda_m)$ such that $J'(u) + \underset{i=1}{\overset{m}{\sum}}\lambda_iF'_i(u) = 0$
 	- <mark style="background: #FFB86CA6;">This implies that the lambda values are all unique</mark>
 - We can express all of this as the Lagrangian function
-	- $\mathcal L(v,\mu) = J(v) + \overset{m}{\underset{i=1}{\sum}}\mu_iF_i(v) - J(v) + <\mu, F(v)>$
+	- $\mathcal L(v,\mu) = J(v) + \overset{m}{\underset{i=1}{\sum}}\mu_iF_i(v) = J(v) + <\mu, F(v)>$
 	- Thus
 		- $\frac{\partial \mathcal L}{\partial \mu} = F(v)$
 		- $\frac{\partial \mathcal L}{\partial v} = J'(v) + <\mu, F'(v)>$
