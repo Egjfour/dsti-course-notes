@@ -11,6 +11,7 @@
 1. Generative models output a sequence and the input is usually a sequence as well
 2. RNNs struggle to preserve long-term dependencies because of the [[Gradient Descent and Optimizers|vanishing gradient problem]] as the sequence is processed iteratively
 3. An embedding is always the same predetermined length regardless of the input size
+4. Transformer models are trained for very few [[Neural Networks in PyTorch - Overview|epochs]] (1-2) else they overfit
 
 # Definitions
 - Memory/Hidden State: Definition

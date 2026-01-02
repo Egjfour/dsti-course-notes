@@ -11,6 +11,7 @@
 # Key Takeaways
 1. Traditional transfer learning freezes the parameters of everything except the final [[Elements of a Neural Network|fully-connected layer]]
 2. Pre-training of a model is always self-supervised (no labeled data)
+3. FP16 format is widely used by most GPUs and ML libraries
 
 # Definitions
 - Transfer Learning: Taking one model that is already trained and update the weights using your data
@@ -24,9 +25,13 @@
 	- Encoder-Decoder model training
 - Causal Language Modeling: Predict next tokens unidirectionally using only the previous tokens
 	- Training method for decoder-only models
+- Zero-Shot: Using a pre-trained model on new data directly without any fine tuning or additional training on this new data in the related but new context
+- Quantization: Use of lower-precision floating point representations for model weights and activations to increase computation speed
+- Mixed Precision: Using low precision (FP16 or BF16) for [[The Training Process|forward and backward passes]] but high precision (FP32) for weight update
 
 # Additional Resources
 - [Finetuning (Huggingface)](https://huggingface.co/docs/transformers/training)
+- [Quantization Overview](https://huggingface.co/docs/optimum/concept_guides/quantization)
 
 # Notes
 ## Transfer Learning Overview
@@ -56,3 +61,10 @@ model_conv.classifier[6] = nn.Linear(num_ftrs, len(class_names))
 		- We freeze the parameters of the body during this training
 - Huggingface is a registry with thousands of pre-trained models which can be downloaded and used for pretraining
 	- Huggingface is built on top of [[Neural Networks in PyTorch - Overview|PyTorch]], so we can easily load, extend, and update models in this framework
+## Quantization
+- As the size of transformer models increases, it is more difficult for computers to process these models
+	- This is true even when only considering loading a model but is even more important during training
+- Can either shrink the [[Central Processing Unit|range, precision]], or both to speed computation and reduce memory overhead
+	- Tensor Float 32 (19 bits) can speed NVIDIA GPUs up to 20x
+	- BF16 tends to work better on bigger models (> 10B parameters)
+	- INT8 is a very small format that performs a rescaling that makes it so we have low performance loss during inference

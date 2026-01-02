@@ -1,6 +1,6 @@
-|          Course Name           |       Topic       |   Professor   |      Date       |       Tags       |
-| :----------------------------: | :---------------: | :-----------: | :-------------: | :--------------: |
-| **Artificial Neural Networks** | Training Networks | Benoit Mialet | 4 novembre 2025 | #MachineLearning |
+| Course Name[[Gradient Descent and Optimizers]] |       Topic       |   Professor   |      Date       |       Tags       |
+| :--------------------------------------------: | :---------------: | :-----------: | :-------------: | :--------------: |
+|         **Artificial Neural Networks**         | Training Networks | Benoit Mialet | 4 novembre 2025 | #MachineLearning |
 
 [Class Video Link](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251104%5F094905%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ef940bf4a%2Dcf6a%2D4f42%2D8ee5%2Da2af92a692c3)
 
