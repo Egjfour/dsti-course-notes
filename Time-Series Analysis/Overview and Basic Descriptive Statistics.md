@@ -13,12 +13,15 @@
 3. There is a linear decrease in empirical autocorrelation as $h$ increases since the sample size gets smaller for calculating the correlation
 4. If we reject the [[Hypothesis Testing|null hypothesis]] of the Box-Pierce test, we state that at least one of the lags have significant autocorrelation
 5. A t-test cannot be used in the presence of autocorrelation since t-tests assume independent and identically distributed observations
+6. Before deployment, the model needs to be re-estimated on the entire dataset to produce reliable forecasts
+7. The [[Testing|train/validation/test split]] for time-series models must be time-dependent with validation and test sets being the second-most and most recent timeframes
 
 # Definitions
 - Time Series: A series of points in time order
 - Autocovariance: The [[Descriptive Statistics|covariance]] between lagged values
 	- $\hat\sigma_n(h) = \frac{1}{n-h_t}\underset{t}{\overset{n-h}{\sum}}(x_t - \bar x_n)(x_{t+h} - \bar x_n)$
 - Autocorrelation: The autocovariance scaled by the variance to produce values between -1 and 1
+- Backtesting: Iteratively move through the data and hold out successive horizons to get multiple comparisons ([[Variable Selection - Linear Model|cross-validation]] for time series data)
 # Additional Resources
 - [Book - Forecasting: Principles and Practice](https://otexts.com/fpp2/intro.html)
 - [ts Function in R](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/ts)
@@ -49,7 +52,7 @@
 - Missing data in the time series can be imputed using `imputeTS`
 	- We can inspect missing observations using `ggplot_na_distribution(x: ts)`
 	- The simplest imputation method is to do simple interpolations between the points on either side
-		- `imputeTS:na_interpolation(x: ts)`
+		- `imputeTS::na_interpolation(x: ts)`
 		- Linear, spline, and other methods (including using forecasted values) can be used
 - Aggregating Time Series
 	- Useful for seeing trends over time since it suppresses noise
@@ -89,3 +92,13 @@
 			- `wavk_test(x ~ poly(t, 2))`
 	- Monotonic
 		- Also uses `notrend_test` using the Mann-Kendall test statistic
+## Forecast Evaluation and Tuning
+- A data split is necessary to evaluate forecast accuracy and this split must be temporal
+	- The size of the validation and/or test set depends on the forecast horizon and/or the seasonal patterns/length of the period
+- Cross-validation/backtesting is necessary to ensure there are enough comparisons
+	- The function `tsCV` in R lets us perform the cross validation
+- Metrics
+	- Classic metrics are [[Evaluation of ML Models & Improving Results|RMSE and Mean Absolute % Error]]
+	- These metrics must be modified since the length of the training set is not the same for each fold of a temporal cross validation - with $m$ as the length of the training set:
+		- $RMSE = \sqrt{\dfrac{1}{n-m}\underset{h=1}{\overset{n-m}{\sum}}(\hat x_{m,h} - x_{m+h})^2}$
+		- $MAPE = \dfrac{100}{n-m}\underset{h=1}{\overset{n-m}{\sum}}\dfrac{|\hat x_{m,h} - x_{m+h}|}{x_{m+h}}$
