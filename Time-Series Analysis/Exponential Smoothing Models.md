@@ -10,6 +10,7 @@
 # Key Takeaways
 1. Exponential smoothing methods range from basic constant forecasts to models which can consider both seasonal and trend components 
 2. R provides methods to automatically optimize the parameters of exponential smoothing models
+3. A multiplicative model cannot be used if there are zeros in the time series, but these can be replaced (convention is to fill in using the smallest value divided by 10)
 
 # Definitions
 - Exponential Smoothing: A collection of models which give more importance to recent observations
