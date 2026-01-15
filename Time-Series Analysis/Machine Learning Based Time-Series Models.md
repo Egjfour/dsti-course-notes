@@ -2,10 +2,10 @@
 | :-----------------------: | :------------: | :------------: | :--------------: | :--------------: |
 | **Timer-Series Analysis** | ML Forecasting | Julien Jacques | 11 décembre 2025 | #MachineLearning |
 
-[Class Video Link](URL)
+[Class Video Link]([URL](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251211%5F095049%2DMeeting%20Recording1%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eea1bc3eb%2Dafb4%2D472e%2D90af%2Dacefd680a723))
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*Machine learning models are quite commonly used to solve forecasting problems. In particular, they can be useful when there are several similar series with very non-linear patterns. These models are most similar to [[Probabilistic Time-Series Models|autoregressive models]] as they take lags of the time series to make a prediction. R offers specialized libraries like `nnetar` which allow for simple setup of such models.*
 
 # Key Takeaways
 1. Autoregressive models are the framework generally used for ML models
