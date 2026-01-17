@@ -15,6 +15,7 @@
 # Additional Resources
 - [nnetar Documenation](https://www.rdocumentation.org/packages/forecast/versions/8.24.0/topics/nnetar)
 - [XGBoost for Time-Series Forecasting](https://machinelearningmastery.com/xgboost-for-time-series-forecasting/)
+- [Temporal GNN Example](https://medium.com/towards-artificial-intelligence/temporal-graph-neural-networks-for-multi-product-time-series-forecasting-f4cc87f8354c)
 
 # Notes
 ## Autoregressive Models with Neural Networks

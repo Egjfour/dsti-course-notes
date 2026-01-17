@@ -34,7 +34,8 @@
 - Heteroscedastic: Variance is not constant over time
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [Intro to SARIMA in Python](https://machinelearningmastery.com/sarima-for-time-series-forecasting-in-python/)
+- [ARIMA Models (fpp2)](https://otexts.com/fpp2/arima.html)
 
 # Notes
 ## Probabilistic Models
