@@ -20,7 +20,7 @@
 - [PCA Step-by-Step - StatQuest (Video)](https://www.youtube.com/watch?v=FgakZw6K1QQ)
 
 # Notes
-## Feature Extraction vs Variable Selection
+## Feature Extraction vs [[Variable Selection - Linear Model|Variable Selection]]
 - Both techniques are dimensionality reduction
 	- Feature extraction creates a mixture of variables
 	- Variable selection performs a deletion of variables
