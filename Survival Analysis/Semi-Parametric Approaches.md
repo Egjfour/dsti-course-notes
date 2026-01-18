@@ -24,9 +24,12 @@
 - Proportional Hazards: The effects of the covariates on the hazard are constant over time
 	- Represented by parallel survival curves that should not cross
 	 ![[Pasted image 20260117153735.png]]
-
+- Stratification: Estimation of a different baseline hazard function across the strata in a Cox model instead of treating as a covariate
+	- Used when a feature violates the proportional hazards assumption
 # Additional Resources
 - [Understanding Cox PH and Partial Likelihood (Medium)](https://medium.com/data-science/survival-analysis-optimize-the-partial-likelihood-of-the-cox-model-b56b8f112401)
+- [Time-dependent Cox Vignette](https://cran.r-project.org/web/packages/survival/vignettes/timedep.pdf)
+- [Python package for survival regression](https://lifelines.readthedocs.io/en/latest/Survival%20Regression.html)
 
 # Notes
 ## Cox Proportional Hazards Model
@@ -70,3 +73,19 @@
 - <mark style="background: #FFB86CA6;">Predicted Conditional Survival:</mark> $\hat S(t|x) = [S_0(t)]^{exp(x\beta)}$
 - In R, we can get these estimates on new data directly with
 	- `survfit({fitted cox}, newdata = {data.frame})`
+## Extensions of the Cox Model
+- Stratification
+	- Lets us <mark style="background: #FFB86CA6;">control for a variable in the model</mark> even if it violates the PH assumption
+	- We won't estimate a coefficient and therefore cannot understand impact on survival
+	- The parameter estimations are averaged across strata to generate one final set of estimates
+- Truncation
+	- Shorten the dataset we consider
+	- This is used if proportionality holds only for a short time
+	- Introduce a new truncated time variable
+		- $t' = \begin{cases}t: \hspace{2mm} t \le \textrm{threshold} \\ \textrm{threshold}: \hspace{2mm} t \gt \textrm{threshold}\end{cases}$
+		- $\delta' = \begin{cases}\delta: \hspace{2mm} t \le \textrm{threshold} \\ 0: \hspace{2mm} t \gt \textrm{threshold}\end{cases}$
+- Time-Varying Coefficients
+	- To accomplish this, we [[Analysis of Variance (ANOVA)|interact]] the covariate with time
+		- R allows this by wrapping a covariate with `tt()`
+	- Each row becomes a subject with the end time for when that covariate was no longer relevant
+		- But instead of survival times, we <mark style="background: #FFB86CA6;">now consider start and stop times</mark>

@@ -69,7 +69,7 @@
 	- The study has out-of-the-box capabilities for sampling parameter spaces
 ## Regularization & Model Improvement Strategies
 - Regularization methods are used to help stabilize the learning process and improve generalization capabilities
-- L1 (Lasso) and L2 (Ridge) penalties
+- [[Variable Selection - Linear Model|L1 (Lasso) and L2 (Ridge) penalties]]
 	- These penalties force certain parameters to zero (lasso) or near-zero (ridge) by incorporating a penalty term into the loss function
 	- Lasso is rarely used in deep learning, but many optimizers have out-of-the-box implementations for ridge (Adam uses the parameter `weight_decay` for L2)
 	- These penalties introduce another hyperparameter which must be tuned, $\lambda$
