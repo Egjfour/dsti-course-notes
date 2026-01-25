@@ -56,7 +56,7 @@
 		- $spec(c, t) = Pr(X \le c|D(t) = 0) = S_0(c, t)$
 		- The challenge is to choose the right value of $c$
 			- *Could* use the predicted time as $X$ and set a threshold $c=t$
-	- These metric in a survival analysis context look at a <mark style="background: #FFB86CA6;">single point in time</mark> and are not a global metric to assess the model
+	- These metrics in a survival analysis context look at a <mark style="background: #FFB86CA6;">single point in time</mark> and are not a global metric to assess the model
 - ROC/AUC
 	- Sensitivity and specificity are used to create a harmonized index relative to the best possible model (100% correct)
 	- R offers the `survivalROC` package which calculates survival ROC curves
