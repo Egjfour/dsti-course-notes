@@ -1,11 +1,11 @@
-|                          Course Name                          |          Topic           |     Professor     |         Date          |    Tags     |
-| :-----------------------------------------------------------: | :----------------------: | :---------------: | :-------------------: | :---------: |
-| **Statistical Analysis of Massive and High Dimensional Data** | Dimensionality Reduction | Charles Bouveyron | 05 & 08 décembre 2025 | #Statistics |
+|                          Course Name                          |          Topic           |     Professor     |       Date       |    Tags     |
+| :-----------------------------------------------------------: | :----------------------: | :---------------: | :--------------: | :---------: |
+| **Statistical Analysis of Massive and High Dimensional Data** | Dimensionality Reduction | Charles Bouveyron | 05 décembre 2025 | #Statistics |
 
-[Class Video Link](URL)
+[Class Video Link]([URL](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251205%5F083404%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee208a0bc%2Dc4aa%2D47b8%2Dafe8%2D4e104de8d0d4)
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*Dimensionality reduction is the set of algorithms which allow for reducing the number of predictors for a model such that the maximal information is preserved. The model famous of these methods is the principal component analysis which using [[Matrix Diagonalization|eigen decomposition]] on the [[Random Vectors|variance-covariance matrix]], but other methods exist as well to force greater reduction of the feature space or to handle [[Modeling in High-Dimensional Spaces|high-dimensional cases]].*
 
 # Key Takeaways
 1. Feature extraction methods preserve information better but [[Variable Selection - Linear Model|variable selection]] is better for interpretability
@@ -56,7 +56,6 @@
 - In R, package `Bessel` provides options for Sparse PCA
 	- `spca(x = X, K = 2, para=rep(1, ncol(X)), sparse = 'penalty')`
 	- `para` should be a vector of the lambdas used for the L1/L2 penalties
-	- 
 - SPCA is still unlikely to completely suppress a variable (entire row of zeros in the projection)
 	- Globally sparse PPCA is used to identify relevant original variables
 	- $\mathbb X = VWy + \bar V\epsilon_1 + V\epsilon_2$

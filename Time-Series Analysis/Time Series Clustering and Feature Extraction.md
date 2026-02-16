@@ -8,7 +8,7 @@
 *Time-series tasks are not always linked to forecasting. In many cases, we want to compare and describe multiple related time series. Various distance metrics allow for comparisons across the series which are then able to be used for downstream tasks like clustering or classification. Featurization also allows for describing and comparing time series.*
 
 # Key Takeaways
-1. The goal of time series clustering is the same as [[Unsupervised Learning|traditional clustering]] with the restriction that point comparisons should be time-indexed and an entire series is the unit of analysis
+1. The goal of time series clustering is the same as [[Unsupervised Learning - Clustering|traditional clustering]] with the restriction that point comparisons should be time-indexed and an entire series is the unit of analysis
 
 # Definitions
 - Dynamic Time Warping: Measuring distance after creating the best alignment between the time series

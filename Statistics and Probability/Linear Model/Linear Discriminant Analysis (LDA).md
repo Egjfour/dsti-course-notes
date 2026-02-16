@@ -9,7 +9,7 @@
 
 # Key Takeaways
 1. LDA is an old method which is often used as a reference to compare to other methods
-2. It is like [[Dimensionality Reduction|Principle Components Analysis]] but focuses on maximizing the separability of known categories
+2. It is like [[Unsupervised Learning - Dimensionality Reduction|Principle Components Analysis]] but focuses on maximizing the separability of known categories
 3. LDA is multiclass by nature (unlike [[Logistic Regression|logistic regression]] which is designed for binary classification)
 4. Only works for continuous data with low dimensionality ($p \le 25$)
 
