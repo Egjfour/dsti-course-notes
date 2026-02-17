@@ -2,7 +2,7 @@
 | :-----------------------------------------------------------: | :----------------------: | :---------------: | :--------------: | :---------: |
 | **Statistical Analysis of Massive and High Dimensional Data** | Dimensionality Reduction | Charles Bouveyron | 05 décembre 2025 | #Statistics |
 
-[Class Video Link]([URL](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251205%5F083404%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee208a0bc%2Dc4aa%2D47b8%2Dafe8%2D4e104de8d0d4)
+[Class Video Link](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251205%5F083404%2DMeeting%20Recording%2Emp4&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee208a0bc%2Dc4aa%2D47b8%2Dafe8%2D4e104de8d0d4)
 
 # Summary
 *Dimensionality reduction is the set of algorithms which allow for reducing the number of predictors for a model such that the maximal information is preserved. The model famous of these methods is the principal component analysis which using [[Matrix Diagonalization|eigen decomposition]] on the [[Random Vectors|variance-covariance matrix]], but other methods exist as well to force greater reduction of the feature space or to handle [[Modeling in High-Dimensional Spaces|high-dimensional cases]].*

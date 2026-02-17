@@ -42,7 +42,7 @@
 	- These can be arranged into a vector, the gradient vector ($\nabla$)
 		- $\nabla f = \begin{pmatrix}f'_{x_1}(x_1,x_2)\\f'_{x_2}(x_1,x_2)\end{pmatrix}$
 	- All the second-order conditions can then be stored in a matrix, the hessian matrix
-		- $\nabla^2 f = \begin{pmatrix}\frac{\partial^2 f}{\partial x_i \partial x_j}\end{pmatrix}$
+		- $\nabla^2 f = \begin{pmatrix}\dfrac{\partial^2 f}{\partial x_i \partial x_j}\end{pmatrix}$
 - To find a min/max of $f$,
 	- $\nabla f = \textbf 0$ ; <mark style="background: #FFB86CA6;">ALL the first order conditions must be 0</mark>
 	- The <mark style="background: #FFB86CA6;">entire hessian matrix must be positive (minimum) or negative (maximum)</mark>

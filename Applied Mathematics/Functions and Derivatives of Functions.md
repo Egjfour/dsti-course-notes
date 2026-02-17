@@ -105,7 +105,7 @@
 		\to f'(x) = -\frac{1}{v(x)^2}
 		 }$$
 		- Since the inverse is itself a function, $v(x)$ is the "stuff inside" and $u(x) = \frac{1}{x}$. We can then differentiate $u(x)$ and insert $v(x)$ back into the equation
-	- $f'(x) = \frac{u'(x)v(x) + v'(x)u(x)}{v(x)^2}$
+	- $f'(x) = \dfrac{u'(x)v(x) + v'(x)u(x)}{v(x)^2}$
 - Higher orders of derivatives
 	- The first derivative $f'$ is the instantaneous rate of change
 	- The second derivative $f''$ represents curvature at a given point

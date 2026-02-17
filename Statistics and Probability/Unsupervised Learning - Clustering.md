@@ -2,7 +2,7 @@
 | :-----------------------------------------------------------: | :--------: | :---------------: | :--------------: | :--------------: |
 | **Statistical Analysis of Massive and High Dimensional Data** | Clustering | Charles Bouveyron | 05 décembre 2025 | #MachineLearning |
 
-[Class Video Link]([URL](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251205%5F083404%2DMeeting%20Recording1%2Emp4&ga=1)
+[Class Video Link](https://dstisas.sharepoint.com/sites/RecordingsArchive/_layouts/15/stream.aspx?id=%2Fsites%2FRecordingsArchive%2FShared%20Documents%2FA24%2FA24%20%2D%20Common%20Link%20DSDEDA%2D20251205%5F083404%2DMeeting%20Recording1%2Emp4&ga=1)
 
 # Summary
 *Clustering is the process of creating groups from a given unlabeled dataset which have members that are as similar as possible to each other and dissimilar to the members of other groups. A variety of algorithms exist for creating clusters including k-means and hierarchical. Among the most flexible, however, are the mixture models which leverage the EM algorithm to generate posterior probabilities for class membership.*
