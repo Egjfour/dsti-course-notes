@@ -38,3 +38,14 @@
 	- The data should be Gaussian
 	- All classes should have the same covariance structure
 	- The data must be linearly separable
+## Implementation in R
+- The package `MASS` provides function `lda`
+- This function takes the features and the outcome
+	- ```R
+	  # Fit the model
+	  f.lda = lda(X,Y) # Can also use a formula like `lm`
+	  
+	  # Predict with new data
+	  xstar = c(6.3, 2.8, 5, 1.6)
+	  predict(f.lda,xstar)
+	  ```
