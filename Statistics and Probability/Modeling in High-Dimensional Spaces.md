@@ -16,7 +16,7 @@
 - Curse of Dimensionality: The difficulty to find an optimum in a high-dimensional space due to their emptiness
 - Empty Space Phenomenon: High-dimensional spaces are mostly empty, so the data live in low-dimensional spaces
 - Parsimonious Models: Making assumptions to reduce the number of parameters which must be estimated in a model
-	- [[Unsupervised Learning - Clustering|K-means]] as a parsimonious version of [[Unsupervised Learning - Clustering|GMM]]
+	- [[Clustering|K-means]] as a parsimonious version of [[Clustering|GMM]]
 - Subspace Clustering: Explaining th phenomenon by assuming the data live in a low-dimensional and cluster-specific subspace of the original high-dimensional data
 - Scree Test of Cattel: The difference between the eigenvalues of $\Sigma_k$ with a chosen value, $\tau$, such that $d_k$ is the difference greater than $\tau$
 
@@ -31,7 +31,7 @@
 ## High-Dimensional Spaces
 - Example: IoT devices (sensors) with very high precision
 - The curse of dimensionality introduces computational and estimation problems
-	- For a full [[Unsupervised Learning - Clustering|GMM]], $\Sigma_k$ must be inverted which has the num. of parameters proportional to $p$
+	- For a full [[Clustering|GMM]], $\Sigma_k$ must be inverted which has the num. of parameters proportional to $p$
 		- If $n$ is small relative to $p^2$, the estimates of $\Sigma_k$ are ill-conditioned (or singular) and it is difficult or impossible to invert $\Sigma_k$
 	- Estimation issues can turn normally [[Point Estimators|unbiased estimators]] into biased ones
 - <mark style="background: #FFB86CA6;">Distances between points are relatively smaller</mark> in HD spaces
@@ -52,7 +52,7 @@
 - Ideally, we would <mark style="background: #FFB86CA6;">simultaneously reduce dimension, regularize, and create a sub-model</mark> at the same time
 	- Thus, we look to perform subspace clustering
 - Mixture PPCA (MPPCA)
-	- Assume the mixture includes an internal and group-specific dimension reduction through [[Unsupervised Learning - Dimensionality Reduction|PPCA]]
+	- Assume the mixture includes an internal and group-specific dimension reduction through [[Dimensionality Reduction|PPCA]]
 		- Essentially just PPCA conditioned on a cluster variable $Y$
 	- Model specification
 		- $y \sim M(1; \pi) \implies P(y=k) = \pi_k$
@@ -64,7 +64,7 @@
 			- $\epsilon$ is additive noise in $\mathbb R^p$
 	- This model allows for the recovery of the marginal distribution of $X$
 		- $p(X) = \underset{k=1}{\overset{K}{\sum}}\pi_k \mathcal N(x ; U_k\mu_k, U_k^TU_k+\sigma^2_kI_p)$
-		- This is a [[Unsupervised Learning - Clustering|GMM]] with a specific covariance: $\Sigma_K = U_k^TU_k+\sigma^2_kI_p$
+		- This is a [[Clustering|GMM]] with a specific covariance: $\Sigma_K = U_k^TU_k+\sigma^2_kI_p$
 	- Model assumes that all components (elements of $Y$) share the same dimensionality with $d << p$
 	- So, $k$ and $d$ is chosen using typical model selection with [[Variable Selection - Linear Model|BIC]]
 		- $BIC = \log \mathcal L(x; \hat\theta) - \dfrac{V(M)}{2}\log n$
@@ -82,7 +82,7 @@
 	- There are <mark style="background: #FFB86CA6;">28 total possible models in this family</mark>
 		- $[a_{kj}; b_k, Q_k, d_k]$ is the most general (MPPCA with a free $d_k$)
 		- $[a_{kj}; b_k, Q_k, d_k]$ is MPPCA
-		- $[a_{j}; b, Q, d]$ is [[Unsupervised Learning - Clustering|k-means]] + [[Unsupervised Learning - Dimensionality Reduction|PCA]]
+		- $[a_{j}; b, Q, d]$ is [[Clustering|k-means]] + [[Dimensionality Reduction|PCA]]
 	- To choose the dimension, we avoid combinatorial explosion by applying the scree-test of Cattel
 	- BIC is used to select
 		- One of the sub-models of the family
@@ -104,7 +104,7 @@
 			- $\mu_k \in \mathbb R^d$
 			- $\Sigma_k \in M_{d,x}$
 	- Alternates between the E and F steps at step $k$
-		- The E-step produces $t^{(k)}_{ik}$ as in a classical [[Unsupervised Learning - Clustering|EM algorithm]]
+		- The E-step produces $t^{(k)}_{ik}$ as in a classical [[Clustering|EM algorithm]]
 		- The F-step estimates $U$ such that it <mark style="background: #FFB86CA6;">maximizes the ratio of between to total variance</mark>
 			- $t_k(\dfrac{U^TB^{(k)U}}{U^TSU})$
 			- with $B^{(k)} = \dfrac{1}{\mu}\underset{k=1}{\overset{K}{\sum}}\mu^{(k)}_k(\mu^{(k)}_k - \mu)^T(\mu^{(k)}_k - \mu)$

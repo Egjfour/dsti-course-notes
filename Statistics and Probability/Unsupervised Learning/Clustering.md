@@ -26,7 +26,7 @@
 
 # Notes
 ## Unsupervised Overview
-- Unsupervised learning covers two main categories: [[Unsupervised Learning - Dimensionality Reduction|dimensionality reduction]] and clustering
+- Unsupervised learning covers two main categories: [[Dimensionality Reduction|dimensionality reduction]] and clustering
 - Unsupervised methods are the largest open category of problems in data science
 - These algorithms are often very sensitive to high dimensionality and variable scales
 ## K-Means Clustering
