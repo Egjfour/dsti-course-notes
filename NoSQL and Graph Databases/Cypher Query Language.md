@@ -3,7 +3,7 @@
 | **Graph Databases NoSQL** | Querying Graphs | Ana Escobar | 23, 24 & 26 juillet 2024 | #GraphTheory |
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*The Cypher query language is the mechanism for interacting with data stored in a [[Neo4j|Neo4j database]]. It is built by constructing graph patterns to match and then returns either nodes, attributes of nodes, relationships, or some combination of all. The language supports a wide array of operations include aggregation, list operations, and reading/writing from/to source files.* 
 
 # Key Takeaways
 1. Cypher matches patterns in the data and then returns results (nodes that matched)
@@ -104,3 +104,49 @@
 	- Conditional logic can be applied using `CASE WHEN`
 ## Data Aggregation
 - Aggregation functions like `count()` are placed in the `RETURN` statement
+	- `count(n)` looks for non-null occurrences, but `count(*)` looks for all occurrences
+- <mark style="background: #FFB86CA6;">Aggregation is done after the pattern is found via MATCH</mark>
+- The `collect()` function lets us create lists of attributes on nodes
+	- Example: Get all movies associated to each actor as a list
+		```cypher
+	  MATCH (a:Person)-[:ACTED_IN]->(m:Movie)
+	  RETURN
+		  a.name AS actor,
+		  count(*) AS total,
+		  collect(m.title) AS movies
+	    ```
+	- The `DISTINCT` keyword can also be used inside `collect` to remove duplicates
+	- We can also collect entire nodes instead of just attributes
+- If we need to use aggregated metrics in filtering or other downstream operations, create the metric using a `WITH` clause after the `MATCH`
+	```cypher
+	 MATCH (a:Person)-[:ACTED_IN]->(m:Movie)
+	 WITH a, count(*) AS NumMovies // aggregation for each Person node
+	 WHERE NumMovies = 2
+	 RETURN a.name AS Actor
+	```
+- List operations
+	- Can get specific elements using `head()`, `tail()`, `first()`, and `last()`
+		- `head` and `tail` can be indexed with brackets after
+			- Last 3: `tail(x) [-3]`
+	- `reduce()` is a powerful way to apply a function to a list
+	```cypher
+	 WITH [[1,2,3], [4,5,6], [7,8,9]] AS StartingList
+	 RETURN reduce(Calc = [], r IN StartingList | Calc + r)AS FlattenedList
+	```
+	- To iterate through a list (like a `for` loop) we use the command `UNWIND`
+	```cypher
+	UNWIND range(1, 100) AS i // Create the list that we will step through
+	MERGE (:Order { number: i })
+	```
+- Other aggregate functions
+	- `sum`, `avg`, `min`, `max`
+## Dates, Times, and Durations
+- Built-in functions `date()`, `time()`, and `datetime()`
+- The built-ins also have attributes we can access
+	- `x.date.year`, `x.datetime.second`, etc.
+- The `date()` function expects a string in the format `YYYY-MM-DD`
+- Durations are also functions that can be applied to calculate differences between dates or decipher new dates
+	- `duration.between(dt1, dt2)`
+	- `duration.inDays(dt1, dt2).days`
+	- Adding time to an existing date: `x.date1 + duration({months:6)`
+- `apoc` (an add-in) lets us reformat datetime objects
