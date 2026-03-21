@@ -18,7 +18,9 @@
 - Labels: A mechanism to signify that a node belongs to a subset of nodes
 
 # Additional Resources
-- Name the hyperlink in brackets then outside the brackets put the URL in parens
+- [Neo4j Documentation](https://neo4j.com/docs/)
+- [Example Use Cases](https://neo4j.com/graphgists/)
+- [Graph Data Science Python Example](https://github.com/Egjfour/vacation_bookings_prediction_neo4j)
 
 # Notes
 ## Neo4j Graph Model
@@ -28,5 +30,12 @@
 - Neo4j allows for undirected (symmetric) relationships between nodes
 - Property graph
 	- In addition to nodes and edges, graphs in Neo4j also have labels and node properties
+		- Edges are able to have attributes which can allow for weighting
 	- If a property does not exist in a given node (even w/in the same label), it is simply <mark style="background: #FFB86CA6;">treated as a null value</mark>
-- 
+	- Neo4j is also a native graph data model including storage and the processing engine
+- Features
+	- Index and schema are optional
+		- <mark style="background: #FFB86CA6;">Index-free adjacency drives performance</mark>
+	- Supports `UNIQUE` constraints
+	- [[MongoDB|ACID]] compliant
+	- Advanced distributed computing option via sharding
