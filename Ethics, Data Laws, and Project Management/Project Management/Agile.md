@@ -1,9 +1,9 @@
 |        Course Name        |          Topic           |   Professor   |       Date        | Tags |
 | :-----------------------: | :----------------------: | :-----------: | :---------------: | :--: |
-| **IT Project Management** | Agile project management | Fabien Masson | 3-5 décembre 2024 |      |
+| **IT Project Management** | Agile project management | Fabien Massol | 3-5 décembre 2024 |      |
 
 # Summary
-*A 3-4 sentence description of what was learned in italics*
+*The Agile project management framework is defined by short iterations where a determined set of work will be completed. It is popular in software development because of its ease of handling changing requirements. Agile implements scrum processes which are the meetings and tools used.*
 
 # Key Takeaways
 1. The Agile method is based on incremental small iterations
