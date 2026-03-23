@@ -8,7 +8,7 @@ The goal of this vault was to move away from isolated silos of information and i
 
 The image below represents the interconnected nature of the curriculum. You can see how **Applied Mathematics** and **Data Management** serve as the central hubs for more specialized clusters like **Deep Learning** and **MLOps**.
 
-![[Pasted image 20260323084527.png]]
+![KG](./google_image_thumbnails/vault_graph.png)
 
 ---
 
